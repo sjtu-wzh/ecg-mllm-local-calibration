@@ -76,5 +76,6 @@ for d, _, fs in os.walk(DST):  # no personal paths in the release
 open(os.path.join(DST, ".gitignore"), "w").write(
     "PULSE/\ndata/ECGBench/\ndata/derived/*\n!data/derived/sph_*\ndata/ptbxl_meta/\ndata/sph_raw/\ndata/sph_images/\ndata/sph_images_robust/\noutputs/features/\nmodels/\nscripts/score_ecgbench.py\nrelease/\n"
     "__pycache__/\n*.pyc\n*.log\n.DS_Store\n")
-n = sum(len(fs) for _, _, fs in os.walk(DST)); size = sum(os.path.getsize(os.path.join(d, f)) for d, _, fs in os.walk(DST) for f in fs)
+walk = [(d, fs) for d, _, fs in os.walk(DST) if "/.git" not in d + "/"]  # count released files only, not git history
+n = sum(len(fs) for _, fs in walk); size = sum(os.path.getsize(os.path.join(d, f)) for d, fs in walk for f in fs)
 print(f"release: {DST}  ({n} files, {size / 1e6:.1f} MB)")

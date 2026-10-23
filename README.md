@@ -10,14 +10,14 @@ The study builds on **PULSE-7B** and the **ECGBench** benchmark (Liu et al., *np
 
 ## What the study does
 
-ECG multimodal LLMs are evaluated by the text they generate. We compared that text (**B0**) with read-outs of the same forward pass:
+ECG multimodal LLMs are evaluated by the text they generate. We compared that text (**B0**) with read-outs of the same frozen model obtained with different prompts:
 
 | Read-out | What it uses | Labels needed |
 |---|---|---|
 | Zero-shot (ZS) | P(yes) for one Yes/No question per diagnosis, threshold 0.5 | none |
 | Threshold only (THR) | one threshold per label on P(yes) | tens |
-| **S1** | logistic regression per label on the logits of *all* label probabilities | ≈ 100 or more |
-| Hidden-state probe | L2 logistic regression on a language-model hidden state | ≈ 300 or more |
+| **S1** | logistic regression per label on the logits of *all* label probabilities | tens to hundreds |
+| Hidden-state probe | L2 logistic regression on a language-model hidden state | ≈ 200–300 or more |
 
 Each read-out is fitted on n = 25–600 labelled ECGs from the target site and evaluated on a fixed test split.
 
@@ -35,7 +35,7 @@ Each read-out is fitted on n = 25–600 labelled ECGs from the target site and e
 
 **Other findings:**
 
-* **The best read-out depends on the label budget.** With 600 labels, the hidden-state probe adds a further 2.4–4.1 points.
+* **The best read-out depends on the label budget.** Probability-based read-outs (THR or S1, depending on the dataset) are best with up to about 100 labels and the hidden-state probe from about 200–300; with 600 labels the probe adds a further 2.4–4.1 points. The probe's layer and token were selected on the full 600-record pool, so its advantage below 600 labels may be overstated.
 * **SPH validation.** It was pre-registered (`docs/prereg_sph.md`). Five of six hypotheses were supported.
 * **Robustness (pre-registered, `docs/prereg_robustness.md`).** The gain persists under simulated phone photographs, low-quality scans, rotation and prompt paraphrases, at +11.5 to +13.7.
 * **Calibration.** Local calibration reduces the macro ECE from 0.09–0.12 to 0.014.
