@@ -1,0 +1,3 @@
+====cpsc test====
+answers.jsonl f1 57.5 auc 76.8 hl 8.7
+Model answers.jsonl Accuracy: F1: 0.5754, AUC: 0.7684

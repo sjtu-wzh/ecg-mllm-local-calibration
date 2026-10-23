@@ -1,0 +1,15 @@
+{"question_id": "cpsc-A5348", "text": "I-AVB(First-degree atrioventricular block)", "model_id": "PULSE-7B", "sec": 4.6}
+{"question_id": "cpsc-A1312", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "cpsc-A3535", "text": "I-AVB(First-degree atrioventricular block)", "model_id": "PULSE-7B", "sec": 4.6}
+{"question_id": "cpsc-A6593", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "cpsc-A0548", "text": "AF(Atrial fibrillation); LBBB(Left bundle branch block)", "model_id": "PULSE-7B", "sec": 4.9}
+{"question_id": "cpsc-A4982", "text": "PAC(Premature atrial contraction)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "cpsc-A3425", "text": "AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "cpsc-A3004", "text": "RBBB(Right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "cpsc-A1892", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "cpsc-A1888", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "cpsc-A6706", "text": "AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.1}
+{"question_id": "cpsc-A5605", "text": "AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.2}
+{"question_id": "cpsc-A5809", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "cpsc-A3899", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "cpsc-A4200", "text": "PAC(Premature atrial contraction)", "model_id": "PULSE-7B", "sec": 2.8}

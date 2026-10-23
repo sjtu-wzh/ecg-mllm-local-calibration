@@ -1,0 +1,1357 @@
+{"question_id": "ptb-xl-14149", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.8}
+{"question_id": "ptb-xl-12758", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 4.1}
+{"question_id": "ptb-xl-573", "text": "PVC(Premature ventricular contraction)", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "ptb-xl-12178", "text": "LBBB(Left bundle branch block)", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-1266", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.6}
+{"question_id": "ptb-xl-17608", "text": "NORM(Normal ECG)", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-13214", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.6}
+{"question_id": "ptb-xl-13380", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.6}
+{"question_id": "ptb-xl-12703", "text": "LBBB(Left bundle branch block)", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-16700", "text": "RBBB(Right bundle branch block); LBBB(Left bundle branch block); AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 4.4}
+{"question_id": "ptb-xl-7769", "text": "RBBB(Right bundle branch block)", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-4335", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-805", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "ptb-xl-8241", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "ptb-xl-14457", "text": "NORM(Normal ECG)", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-17904", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.1}
+{"question_id": "ptb-xl-19924", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.8}
+{"question_id": "ptb-xl-10970", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "ptb-xl-3692", "text": "AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-9740", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.8}
+{"question_id": "ptb-xl-16340", "text": "PVC(Premature ventricular contraction)", "model_id": "PULSE-7B", "sec": 2.5}
+{"question_id": "ptb-xl-3521", "text": "NORM(Normal ECG)", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-1838", "text": "MI(Myocardial infarction)", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-5605", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "ptb-xl-11364", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "ptb-xl-18200", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "ptb-xl-14565", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "ptb-xl-10054", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.1}
+{"question_id": "ptb-xl-10760", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "ptb-xl-8774", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "ptb-xl-1275", "text": "AF(Atrial fibrillation); PVC(Premature ventricular contraction)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "ptb-xl-20515", "text": "PAC(Premature atrial contraction)", "model_id": "PULSE-7B", "sec": 2.5}
+{"question_id": "ptb-xl-3652", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.8}
+{"question_id": "ptb-xl-1494", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.8}
+{"question_id": "ptb-xl-14384", "text": "PVC(Premature ventricular contraction)", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "ptb-xl-9461", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.8}
+{"question_id": "ptb-xl-4342", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-20576", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "ptb-xl-21385", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "ptb-xl-59", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "ptb-xl-17525", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "ptb-xl-17593", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.8}
+{"question_id": "ptb-xl-15573", "text": "RBBB(Right bundle branch block)", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-19164", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.2}
+{"question_id": "ptb-xl-8254", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.8}
+{"question_id": "ptb-xl-15800", "text": "AF(Atrial fibrillation); PVC(Premature ventricular contraction)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "ptb-xl-6562", "text": "RBBB(Right bundle branch block)", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-4615", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-9773", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "ptb-xl-19664", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.8}
+{"question_id": "ptb-xl-16272", "text": "PAC(Premature atrial contraction); LBBB(Left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.2}
+{"question_id": "ptb-xl-10847", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "ptb-xl-10268", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.8}
+{"question_id": "ptb-xl-10547", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.8}
+{"question_id": "ptb-xl-11212", "text": "PVC(Premature ventricular contraction)", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "ptb-xl-18847", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.8}
+{"question_id": "ptb-xl-10878", "text": "I-AVB(First-degree atrioventricular block)", "model_id": "PULSE-7B", "sec": 3.1}
+{"question_id": "ptb-xl-18888", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.8}
+{"question_id": "ptb-xl-570", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.8}
+{"question_id": "ptb-xl-4900", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.9}
+{"question_id": "ptb-xl-18068", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.9}
+{"question_id": "ptb-xl-361", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.9}
+{"question_id": "ptb-xl-18367", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "ptb-xl-4880", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "ptb-xl-15057", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.8}
+{"question_id": "ptb-xl-4224", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.8}
+{"question_id": "ptb-xl-18506", "text": "I-AVB(First-degree atrioventricular block); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "ptb-xl-14304", "text": "NORM(Normal ECG)", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-7034", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "ptb-xl-1867", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "ptb-xl-21085", "text": "LBBB(Left bundle branch block); AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.1}
+{"question_id": "ptb-xl-5099", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "ptb-xl-1972", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "ptb-xl-928", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "ptb-xl-9416", "text": "I-AVB(First-degree atrioventricular block)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "ptb-xl-12409", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "ptb-xl-11705", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "ptb-xl-4266", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "ptb-xl-5567", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.8}
+{"question_id": "ptb-xl-5951", "text": "RBBB(Right bundle branch block)", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-6174", "text": "LBBB(Left bundle branch block)", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-6189", "text": "PAC(Premature atrial contraction)", "model_id": "PULSE-7B", "sec": 2.5}
+{"question_id": "ptb-xl-2987", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.8}
+{"question_id": "ptb-xl-911", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "ptb-xl-13855", "text": "RBBB(Right bundle branch block)", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-4565", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "ptb-xl-9458", "text": "PAC(Premature atrial contraction)", "model_id": "PULSE-7B", "sec": 2.5}
+{"question_id": "ptb-xl-4758", "text": "RBBB(Right bundle branch block)", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-688", "text": "I-AVB(First-degree atrioventricular block); LBBB(Left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "ptb-xl-1094", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.9}
+{"question_id": "ptb-xl-16144", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.8}
+{"question_id": "ptb-xl-6239", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.8}
+{"question_id": "ptb-xl-13913", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-16603", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.8}
+{"question_id": "ptb-xl-10846", "text": "AF(Atrial fibrillation); PVC(Premature ventricular contraction)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "ptb-xl-9396", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "ptb-xl-2355", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.8}
+{"question_id": "ptb-xl-19333", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.8}
+{"question_id": "ptb-xl-9992", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.8}
+{"question_id": "ptb-xl-3165", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.8}
+{"question_id": "ptb-xl-15901", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.8}
+{"question_id": "ptb-xl-4329", "text": "PVC(Premature ventricular contraction)", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "ptb-xl-15484", "text": "PAC(Premature atrial contraction)", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "ptb-xl-20220", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.9}
+{"question_id": "ptb-xl-3544", "text": "AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-16807", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-10327", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.8}
+{"question_id": "ptb-xl-1639", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.8}
+{"question_id": "ptb-xl-19893", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.8}
+{"question_id": "ptb-xl-16003", "text": "MI(myocardial infarction); NORM(normal ECG)", "model_id": "PULSE-7B", "sec": 3.1}
+{"question_id": "ptb-xl-5606", "text": "LBBB(Left bundle branch block); AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "ptb-xl-11803", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-4542", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-14597", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "ptb-xl-12082", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "ptb-xl-10401", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "ptb-xl-2830", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.9}
+{"question_id": "ptb-xl-18140", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "ptb-xl-16024", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.9}
+{"question_id": "ptb-xl-6188", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-5855", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-21796", "text": "AF(Atrial fibrillation); I-AVB(First-degree atrioventricular block)", "model_id": "PULSE-7B", "sec": 6.4}
+{"question_id": "ptb-xl-20330", "text": "AF(Atrial fibrillation); RBBB(Right bundle branch block)", "model_id": "PULSE-7B", "sec": 4.7}
+{"question_id": "ptb-xl-2813", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-15094", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-19350", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-7323", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-5973", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-11055", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-18416", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-15074", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-9306", "text": "I-AVB(First-degree atrioventricular block); PAC(Premature atrial contraction)", "model_id": "PULSE-7B", "sec": 8.6}
+{"question_id": "ptb-xl-4836", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.8}
+{"question_id": "ptb-xl-14613", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-7560", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-2146", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-6262", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-4410", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "ptb-xl-16534", "text": "NORM(Normal ECG)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-9613", "text": "PAC(Premature atrial contraction)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "ptb-xl-19981", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "ptb-xl-18132", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-4951", "text": "AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.9}
+{"question_id": "ptb-xl-618", "text": "LBBB(Left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "ptb-xl-1835", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-11108", "text": "AF(Atrial fibrillation); PVC(Premature ventricular contraction)", "model_id": "PULSE-7B", "sec": 5.8}
+{"question_id": "ptb-xl-8535", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "ptb-xl-8772", "text": "AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "ptb-xl-10990", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-11550", "text": "PAC(Premature atrial contraction); PVC(Premature ventricular contraction); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 7.8}
+{"question_id": "ptb-xl-18739", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 5.2}
+{"question_id": "ptb-xl-5725", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-21111", "text": "RBBB(Right bundle branch block); AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 5.5}
+{"question_id": "ptb-xl-10888", "text": "I-AVB(First-degree atrioventricular block)", "model_id": "PULSE-7B", "sec": 4.9}
+{"question_id": "ptb-xl-3108", "text": "MI(Myocardial infarction)", "model_id": "PULSE-7B", "sec": 4.0}
+{"question_id": "ptb-xl-2104", "text": "I-AVB(First-degree atrioventricular block)", "model_id": "PULSE-7B", "sec": 5.0}
+{"question_id": "ptb-xl-581", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 5.6}
+{"question_id": "ptb-xl-245", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "ptb-xl-16817", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-12199", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-14027", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-9756", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 5.4}
+{"question_id": "ptb-xl-9892", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-11490", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-20950", "text": "LBBB(Left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "ptb-xl-8130", "text": "RBBB(Right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "ptb-xl-5804", "text": "RBBB(Right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "ptb-xl-12528", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-6776", "text": "MI(Myocardial infarction)", "model_id": "PULSE-7B", "sec": 3.1}
+{"question_id": "ptb-xl-3507", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-12348", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-1697", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-3486", "text": "I-AVB(First-degree atrioventricular block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "ptb-xl-20252", "text": "RBBB(Right bundle branch block)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-20671", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-9562", "text": "LBBB(Left bundle branch block); AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "ptb-xl-9338", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-14662", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-18421", "text": "MI(Myocardial infarction); PVC(Premature ventricular contraction)", "model_id": "PULSE-7B", "sec": 4.0}
+{"question_id": "ptb-xl-13812", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-16427", "text": "MI(Myocardial infarction)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-13398", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "ptb-xl-18620", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-1487", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-2158", "text": "MI(Myocardial infarction)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "ptb-xl-93", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-4704", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "ptb-xl-14946", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-9178", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-9702", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-9095", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "ptb-xl-15803", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-3923", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "ptb-xl-13052", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-11842", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-19256", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "ptb-xl-2368", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "ptb-xl-11805", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-12801", "text": "I-AVB(First-degree atrioventricular block)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "ptb-xl-751", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-10806", "text": "PAC(Premature atrial contraction)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "ptb-xl-4995", "text": "I-AVB(First-degree atrioventricular block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "ptb-xl-4506", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-10196", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "ptb-xl-3949", "text": "I-AVB(First-degree atrioventricular block); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 4.3}
+{"question_id": "ptb-xl-1988", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-17370", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "ptb-xl-795", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "ptb-xl-17739", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.9}
+{"question_id": "ptb-xl-1775", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "ptb-xl-17959", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "ptb-xl-4103", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-15487", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-4066", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "ptb-xl-1172", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "ptb-xl-11411", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "ptb-xl-19853", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "ptb-xl-2144", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-3406", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "ptb-xl-6404", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "ptb-xl-16993", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-2203", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-5771", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-19293", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-4203", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "ptb-xl-4417", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-15852", "text": "AF(Atrial fibrillation); LBBB(Left bundle branch block)", "model_id": "PULSE-7B", "sec": 4.0}
+{"question_id": "ptb-xl-4960", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-13595", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "ptb-xl-16542", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-17827", "text": "AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-10143", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-5519", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "ptb-xl-3350", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-21391", "text": "MI(Myocardial infarction)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-17592", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-7491", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "ptb-xl-7438", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "ptb-xl-6355", "text": "AF(Atrial fibrillation); PVC(Premature ventricular contraction)", "model_id": "PULSE-7B", "sec": 4.0}
+{"question_id": "ptb-xl-8555", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-1355", "text": "PAC(Premature atrial contraction)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-4414", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-2550", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-6200", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "ptb-xl-20536", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "ptb-xl-10359", "text": "RBBB(Right bundle branch block)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-16783", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "ptb-xl-10902", "text": "AF(Atrial fibrillation); PVC(Premature ventricular contraction)", "model_id": "PULSE-7B", "sec": 3.9}
+{"question_id": "ptb-xl-1946", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-11575", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-10824", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-12607", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "ptb-xl-7598", "text": "I-AVB(First-degree atrioventricular block); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 4.1}
+{"question_id": "ptb-xl-8208", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-12034", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "ptb-xl-17906", "text": "LBBB(Left bundle branch block)", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "ptb-xl-19877", "text": "AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-7363", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-18121", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-8492", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "ptb-xl-12520", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "ptb-xl-19412", "text": "PAC(Premature atrial contraction)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-119", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-2432", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-15064", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "ptb-xl-14775", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-17749", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "ptb-xl-17641", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-3497", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-19328", "text": "AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-12310", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-1197", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-7819", "text": "NORM(Normal ECG)", "model_id": "PULSE-7B", "sec": 2.5}
+{"question_id": "ptb-xl-19271", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-1860", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-1016", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-18661", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-15871", "text": "STE(ST-segment elevated)", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "ptb-xl-11500", "text": "RBBB(Right bundle branch block)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-117", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-76", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "ptb-xl-5373", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "ptb-xl-14288", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "ptb-xl-4229", "text": "PAC(Premature atrial contraction)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-2560", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-11956", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "ptb-xl-16061", "text": "I-AVB(First-degree atrioventricular block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "ptb-xl-10380", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-11103", "text": "RBBB(Right bundle branch block)", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "ptb-xl-7561", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-16780", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "ptb-xl-6098", "text": "PVC(Premature ventricular contraction)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-8524", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-14534", "text": "PAC(Premature atrial contraction); RBBB(Right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "ptb-xl-20117", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-17000", "text": "AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-3272", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 4.3}
+{"question_id": "ptb-xl-8625", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 4.1}
+{"question_id": "ptb-xl-6358", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-12720", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-2913", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-16129", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-7837", "text": "PVC(Premature ventricular contraction)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-9187", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-5269", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-20023", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-11723", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "ptb-xl-15532", "text": "RBBB(Right bundle branch block)", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "ptb-xl-16233", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-1708", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-12577", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-1630", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-20301", "text": "RBBB(Right bundle branch block)", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "ptb-xl-3756", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-20724", "text": "AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "ptb-xl-1498", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-17888", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-3452", "text": "PAC(Premature atrial contraction); PVC(Premature ventricular contraction)", "model_id": "PULSE-7B", "sec": 4.0}
+{"question_id": "ptb-xl-18131", "text": "RBBB(Right bundle branch block)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-452", "text": "AF(Atrial fibrillation); PVC(Premature ventricular contraction); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 4.8}
+{"question_id": "ptb-xl-18134", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-16803", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-17511", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-19291", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "ptb-xl-8833", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-14446", "text": "AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "ptb-xl-2238", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-10283", "text": "LBBB(Left bundle branch block)", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "ptb-xl-40", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-10272", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-6265", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-11441", "text": "LBBB(Left bundle branch block)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-931", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-3454", "text": "AF(Atrial fibrillation); LBBB(Left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.9}
+{"question_id": "ptb-xl-14146", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "ptb-xl-18802", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-9010", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-1166", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-6528", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-5977", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-2101", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "ptb-xl-15059", "text": "AF(Atrial fibrillation); I-AVB(First-degree atrioventricular block); LBBB(Left bundle branch block)", "model_id": "PULSE-7B", "sec": 5.4}
+{"question_id": "ptb-xl-12609", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-3948", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-7621", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "ptb-xl-2369", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-20356", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-14729", "text": "I-AVB(First-degree atrioventricular block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "ptb-xl-20523", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-19286", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-19104", "text": "AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-16469", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-10519", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-4893", "text": "LBBB(Left bundle branch block); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "ptb-xl-11884", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-11533", "text": "PAC(Premature atrial contraction)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-1901", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-8460", "text": "AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-11564", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-38", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-20831", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-16100", "text": "LBBB(Left bundle branch block)", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "ptb-xl-7919", "text": "LBBB(Left bundle branch block)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-2224", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-10517", "text": "AF(Atrial fibrillation); PVC(Premature ventricular contraction); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 4.8}
+{"question_id": "ptb-xl-18916", "text": "LBBB(Left bundle branch block); AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "ptb-xl-16750", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "ptb-xl-8680", "text": "AF(Atrial fibrillation); RBBB(Right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "ptb-xl-19287", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-1424", "text": "RBBB(Right bundle branch block)", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "ptb-xl-3558", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-252", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-203", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-17689", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-3246", "text": "PAC(Premature atrial contraction); STD(ST-segment depression); PVC(Premature ventricular contraction)", "model_id": "PULSE-7B", "sec": 4.9}
+{"question_id": "ptb-xl-8765", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-8853", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-8450", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "ptb-xl-11789", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "ptb-xl-4556", "text": "MI(Myocardial infarction)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-16150", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-7443", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-696", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-10687", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-15898", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-10807", "text": "I-AVB(First-degree atrioventricular block); LBBB(Left bundle branch block)", "model_id": "PULSE-7B", "sec": 4.3}
+{"question_id": "ptb-xl-5217", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-18332", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-9869", "text": "I-AVB(First-degree atrioventricular block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "ptb-xl-20887", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-9589", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-17455", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-14637", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-7880", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-417", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-779", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-12618", "text": "PVC(Premature ventricular contraction)", "model_id": "PULSE-7B", "sec": 3.2}
+{"question_id": "ptb-xl-4656", "text": "I-AVB(First-degree atrioventricular block); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 4.5}
+{"question_id": "ptb-xl-3092", "text": "PVC(Premature ventricular contraction)", "model_id": "PULSE-7B", "sec": 3.2}
+{"question_id": "ptb-xl-3615", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-9108", "text": "NORM(Normal ECG)", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "ptb-xl-7811", "text": "RBBB(Right bundle branch block); AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "ptb-xl-14159", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-9", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-5212", "text": "PAC(Premature atrial contraction); RBBB(Right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "ptb-xl-21148", "text": "LBBB(Left bundle branch block); AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.9}
+{"question_id": "ptb-xl-11132", "text": "PAC(Premature atrial contraction)", "model_id": "PULSE-7B", "sec": 3.2}
+{"question_id": "ptb-xl-19314", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-3878", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-5067", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-3174", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-8224", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-13971", "text": "NORM(Normal ECG)", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "ptb-xl-4016", "text": "LBBB(Left bundle branch block)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-1741", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-11520", "text": "NORM(Normal ECG)", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "ptb-xl-17995", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.1}
+{"question_id": "ptb-xl-1790", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-10342", "text": "AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-17214", "text": "NORM(Normal ECG)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-21177", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-9110", "text": "LBBB(Left bundle branch block)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-2083", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-4646", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-6075", "text": "PAC(Premature atrial contraction)", "model_id": "PULSE-7B", "sec": 3.2}
+{"question_id": "ptb-xl-427", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 4.0}
+{"question_id": "ptb-xl-3704", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.5}
+{"question_id": "ptb-xl-19345", "text": "LBBB(Left bundle branch block)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-10887", "text": "MI(Myocardial infarction)", "model_id": "PULSE-7B", "sec": 3.2}
+{"question_id": "ptb-xl-14851", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.5}
+{"question_id": "ptb-xl-17921", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-886", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-6207", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-13711", "text": "PAC(Premature atrial contraction)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "ptb-xl-1491", "text": "MI(Myocardial infarction)", "model_id": "PULSE-7B", "sec": 3.2}
+{"question_id": "ptb-xl-7770", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-17935", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-4149", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "ptb-xl-15930", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-15136", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-14459", "text": "PVC(Premature ventricular contraction)", "model_id": "PULSE-7B", "sec": 3.1}
+{"question_id": "ptb-xl-5530", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-14167", "text": "PVC(Premature ventricular contraction)", "model_id": "PULSE-7B", "sec": 3.1}
+{"question_id": "ptb-xl-1624", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 4.0}
+{"question_id": "ptb-xl-15001", "text": "NORM(Normal ECG)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-1700", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-3159", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-8688", "text": "NORM(Normal ECG)", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "ptb-xl-15438", "text": "LBBB(Left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "ptb-xl-18111", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-16149", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-6047", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-7967", "text": "LBBB(Left bundle branch block)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-11170", "text": "RBBB(Right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "ptb-xl-14976", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-3241", "text": "AF(Atrial fibrillation); I-AVB(First-degree atrioventricular block)", "model_id": "PULSE-7B", "sec": 4.7}
+{"question_id": "ptb-xl-4110", "text": "PAC(Premature atrial contraction)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "ptb-xl-20127", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-14139", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-13333", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "ptb-xl-17731", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "ptb-xl-12407", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-1885", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-16468", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-243", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-4873", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "ptb-xl-14166", "text": "I-AVB(First-degree atrioventricular block)", "model_id": "PULSE-7B", "sec": 4.8}
+{"question_id": "ptb-xl-17891", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "ptb-xl-6735", "text": "AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.9}
+{"question_id": "ptb-xl-7055", "text": "AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.9}
+{"question_id": "ptb-xl-19424", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "ptb-xl-19906", "text": "AF(Atrial fibrillation); RBBB(Right bundle branch block)", "model_id": "PULSE-7B", "sec": 5.1}
+{"question_id": "ptb-xl-11230", "text": "MI(Myocardial infarction)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "ptb-xl-4123", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "ptb-xl-17918", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "ptb-xl-5816", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "ptb-xl-3148", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "ptb-xl-12770", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 5.5}
+{"question_id": "ptb-xl-11885", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "ptb-xl-1100", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "ptb-xl-1220", "text": "I-AVB(First-degree atrioventricular block)", "model_id": "PULSE-7B", "sec": 4.9}
+{"question_id": "ptb-xl-15809", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 5.3}
+{"question_id": "ptb-xl-1825", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "ptb-xl-1857", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "ptb-xl-17309", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.9}
+{"question_id": "ptb-xl-16193", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.5}
+{"question_id": "ptb-xl-20958", "text": "AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.1}
+{"question_id": "ptb-xl-9994", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "ptb-xl-4560", "text": "LBBB(Left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "ptb-xl-5428", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-12715", "text": "NORM", "model_id": "PULSE-7B", "sec": 3.1}
+{"question_id": "ptb-xl-13848", "text": "I-AVB(First-degree atrioventricular block)", "model_id": "PULSE-7B", "sec": 4.1}
+{"question_id": "ptb-xl-7793", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "ptb-xl-949", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-9164", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-13908", "text": "PAC(Premature atrial contraction)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "ptb-xl-1251", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-8916", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-19987", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-14256", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-15689", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-559", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-8278", "text": "RBBB(Right bundle branch block)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-2789", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-12568", "text": "AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-17658", "text": "AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "ptb-xl-16010", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-2921", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-15447", "text": "AF(Atrial fibrillation); LBBB(Left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "ptb-xl-756", "text": "PAC(Premature atrial contraction)", "model_id": "PULSE-7B", "sec": 3.1}
+{"question_id": "ptb-xl-1938", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-9543", "text": "I-AVB(First-degree atrioventricular block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "ptb-xl-11102", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-19396", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "ptb-xl-20684", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-16077", "text": "I-AVB(First-degree atrioventricular block); LBBB(Left bundle branch block); PAC(Premature atrial contraction)", "model_id": "PULSE-7B", "sec": 5.5}
+{"question_id": "ptb-xl-16132", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "ptb-xl-20149", "text": "NORM(Normal ECG)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-4672", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-6381", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-7024", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "ptb-xl-13959", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-11182", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-19461", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-9449", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-2596", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-13993", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-3035", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-19409", "text": "MI(myocardial infarction)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-2549", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-18612", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-19134", "text": "RBBB(Right bundle branch block)", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "ptb-xl-8778", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-405", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-10131", "text": "PAC(Premature atrial contraction); RBBB(Right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "ptb-xl-11532", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-2302", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-9265", "text": "I-AVB(First-degree atrioventricular block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "ptb-xl-15948", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-8744", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "ptb-xl-892", "text": "PVC(Premature ventricular contraction)", "model_id": "PULSE-7B", "sec": 3.1}
+{"question_id": "ptb-xl-11933", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-4945", "text": "PAC(Premature atrial contraction)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-9229", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-5281", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-11286", "text": "PAC(Premature atrial contraction)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-14634", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-18777", "text": "LBBB(Left bundle branch block); AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "ptb-xl-14628", "text": "AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.1}
+{"question_id": "ptb-xl-12028", "text": "PAC(Premature atrial contraction)", "model_id": "PULSE-7B", "sec": 3.1}
+{"question_id": "ptb-xl-3484", "text": "LBBB(Left bundle branch block)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-5413", "text": "AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-18234", "text": "HYP; STD", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "ptb-xl-14356", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-17805", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-1158", "text": "PAC(Premature atrial contraction)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-16647", "text": "NORM(Normal ECG)", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "ptb-xl-100", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-15507", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-14301", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-3487", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-21181", "text": "LBBB(Left bundle branch block)", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "ptb-xl-2045", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-9211", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "ptb-xl-4235", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-13282", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-11129", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-19217", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-14620", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-4979", "text": "I-AVB(First-degree atrioventricular block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "ptb-xl-5452", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-7161", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-7376", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-2507", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-3909", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-2226", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-3904", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "ptb-xl-5257", "text": "AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-10206", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-2606", "text": "I-AVB(First-degree atrioventricular block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "ptb-xl-9744", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-18364", "text": "PAC(Premature atrial contraction)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-18392", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-8203", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-7751", "text": "AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-14248", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-1157", "text": "RBBB(Right bundle branch block)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-16407", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-16905", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "ptb-xl-3634", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-6222", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-8153", "text": "PVC(Premature ventricular contraction)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "ptb-xl-3702", "text": "NORM(Normal ECG)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-8795", "text": "PVC(Premature ventricular contraction)", "model_id": "PULSE-7B", "sec": 3.1}
+{"question_id": "ptb-xl-20603", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-11601", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-765", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "ptb-xl-7998", "text": "AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-4137", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-9930", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-12033", "text": "I-AVB(First-degree atrioventricular block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "ptb-xl-9196", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-10141", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-3918", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-2050", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-7190", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-10207", "text": "AF(Atrial fibrillation); PVC(Premature ventricular contraction)", "model_id": "PULSE-7B", "sec": 3.9}
+{"question_id": "ptb-xl-19208", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.5}
+{"question_id": "ptb-xl-15090", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-8219", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-14107", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-14201", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "ptb-xl-1618", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-6004", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-2649", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-6951", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-4769", "text": "AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-2779", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-9353", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-6902", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-9952", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-18982", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-1933", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-9475", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-2019", "text": "RBBB(Right bundle branch block); AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "ptb-xl-3435", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-3625", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-122", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-15715", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-8815", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-15588", "text": "PAC(Premature atrial contraction)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-10356", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-1051", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-5924", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-20549", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-9867", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-2282", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-4261", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-10130", "text": "LBBB(Left bundle branch block)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-5000", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-16357", "text": "AF(Atrial fibrillation); LBBB(Left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "ptb-xl-5219", "text": "RBBB(Right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "ptb-xl-11113", "text": "PAC(Premature atrial contraction)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "ptb-xl-12353", "text": "NORM(Normal ECG)", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "ptb-xl-10336", "text": "RBBB(Right bundle branch block)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-12742", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-172", "text": "RBBB(Right bundle branch block)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-13494", "text": "I-AVB(First-degree atrioventricular block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "ptb-xl-7543", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-9056", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-14187", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-1084", "text": "PAC(Premature atrial contraction)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-20100", "text": "AF(Atrial fibrillation); LBBB(Left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "ptb-xl-12179", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-14427", "text": "AF(Atrial fibrillation); PVC(Premature ventricular contraction); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 4.9}
+{"question_id": "ptb-xl-12376", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-16651", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-10215", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-17358", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-6817", "text": "STE(ST-segment elevated)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-19324", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-336", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "ptb-xl-12478", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-17193", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-11755", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "ptb-xl-8538", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-14238", "text": "AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-218", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-1556", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-12641", "text": "PAC(Premature atrial contraction)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "ptb-xl-14501", "text": "PVC(Premature ventricular contraction)", "model_id": "PULSE-7B", "sec": 3.2}
+{"question_id": "ptb-xl-2416", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-17690", "text": "LBBB(Left bundle branch block)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-7882", "text": "RBBB(Right bundle branch block)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-180", "text": "LBBB(Left bundle branch block)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-21809", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-7022", "text": "PVC(Premature ventricular contraction); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "ptb-xl-2387", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "ptb-xl-15821", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-12426", "text": "PVC(Premature ventricular contraction)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "ptb-xl-2277", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-20120", "text": "LBBB(Left bundle branch block)", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "ptb-xl-7644", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-21812", "text": "RBBB(Right bundle branch block); LBBB(Left bundle branch block); I-AVB(First-degree atrioventricular block)", "model_id": "PULSE-7B", "sec": 5.3}
+{"question_id": "ptb-xl-12699", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-13025", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-7069", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-5501", "text": "PAC(Premature atrial contraction); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "ptb-xl-12144", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-13145", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-17737", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-17996", "text": "NORM(Normal ECG)", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "ptb-xl-16865", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-8164", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-5370", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-21675", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "ptb-xl-10965", "text": "PAC(Premature atrial contraction)", "model_id": "PULSE-7B", "sec": 3.2}
+{"question_id": "ptb-xl-1426", "text": "PVC(Premature ventricular contraction)", "model_id": "PULSE-7B", "sec": 3.1}
+{"question_id": "ptb-xl-8123", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-1282", "text": "NORM(Normal ECG)", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "ptb-xl-7842", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-963", "text": "AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-17661", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-9036", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-1014", "text": "AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-1009", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-18501", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-20905", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-16535", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "ptb-xl-3582", "text": "RBBB(Right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "ptb-xl-9272", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-12677", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-20891", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-19670", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-13923", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-19388", "text": "AF(Atrial fibrillation); I-AVB(First-degree atrioventricular block); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 5.4}
+{"question_id": "ptb-xl-14409", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-10093", "text": "MI(Myocardial infarction)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-4245", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-13860", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-2865", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-10537", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-2965", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-8062", "text": "PAC(Premature atrial contraction); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "ptb-xl-975", "text": "PVC(Premature ventricular contraction); RBBB(Right bundle branch block)", "model_id": "PULSE-7B", "sec": 4.1}
+{"question_id": "ptb-xl-14131", "text": "PVC(Premature ventricular contraction)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "ptb-xl-3022", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-19571", "text": "AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-3122", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-11727", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-1280", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-14400", "text": "I-AVB(First-degree atrioventricular block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "ptb-xl-3740", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-1311", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-2270", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-1993", "text": "PAC(Premature atrial contraction)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-1757", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-15796", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-12521", "text": "PVC(Premature ventricular contraction); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.9}
+{"question_id": "ptb-xl-15101", "text": "LBBB(Left bundle branch block); AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.9}
+{"question_id": "ptb-xl-1416", "text": "PVC(Premature ventricular contraction)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "ptb-xl-3855", "text": "I-AVB(First-degree atrioventricular block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "ptb-xl-12679", "text": "I-AVB(First-degree atrioventricular block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "ptb-xl-2433", "text": "RBBB(Right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "ptb-xl-12328", "text": "PAC(Premature atrial contraction)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "ptb-xl-12147", "text": "AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "ptb-xl-21818", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-1780", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-15180", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-364", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-12074", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-9303", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-8147", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-19929", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-4295", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-4614", "text": "I-AVB(First-degree atrioventricular block); LBBB(Left bundle branch block)", "model_id": "PULSE-7B", "sec": 4.4}
+{"question_id": "ptb-xl-17621", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-12126", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "ptb-xl-18752", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "ptb-xl-9410", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-6235", "text": "NORM(Normal ECG)", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "ptb-xl-14177", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-6352", "text": "AF(Atrial fibrillation); I-AVB(First-degree atrioventricular block); LBBB(Left bundle branch block)", "model_id": "PULSE-7B", "sec": 5.4}
+{"question_id": "ptb-xl-13035", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-14224", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "ptb-xl-8507", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "ptb-xl-12646", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "ptb-xl-6465", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-5117", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-271", "text": "PAC(Premature atrial contraction); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "ptb-xl-10691", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-19231", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-504", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-12620", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-5777", "text": "AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-1287", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-8246", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-15526", "text": "RBBB(Right bundle branch block)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-619", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-19723", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-15203", "text": "AF(Atrial fibrillation); RBBB(Right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "ptb-xl-4239", "text": "MI(Myocardial infarction)", "model_id": "PULSE-7B", "sec": 3.2}
+{"question_id": "ptb-xl-848", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-2694", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-8902", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-12576", "text": "PVC(Premature ventricular contraction)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "ptb-xl-9689", "text": "NORM(Normal ECG)", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "ptb-xl-4576", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-3112", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-4079", "text": "PAC(Premature atrial contraction)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-6227", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-2767", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-17290", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-18365", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-6126", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "ptb-xl-1351", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-16572", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-3215", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "ptb-xl-1843", "text": "NORM(Normal ECG)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-15221", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-1101", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-17919", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-20241", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-15575", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-8133", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-10666", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-6208", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-2785", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-8541", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-13879", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-16566", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "ptb-xl-611", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-12702", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-1864", "text": "AF(Atrial fibrillation); PVC(Premature ventricular contraction)", "model_id": "PULSE-7B", "sec": 4.0}
+{"question_id": "ptb-xl-3986", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-4609", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-8504", "text": "RBBB(Right bundle branch block)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-10238", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-2551", "text": "PAC(Premature atrial contraction)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-14004", "text": "AF(Atrial fibrillation); LBBB(Left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "ptb-xl-7530", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-2605", "text": "PVC(Premature ventricular contraction)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "ptb-xl-1705", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-5126", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-4785", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "ptb-xl-2848", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-8126", "text": "I-AVB(First-degree atrioventricular block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "ptb-xl-10950", "text": "LBBB(Left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "ptb-xl-5331", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-6210", "text": "STE(ST-segment elevated)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-5182", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-17176", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-6151", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-1458", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-5743", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-18671", "text": "AF(Atrial fibrillation); RBBB(Right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "ptb-xl-121", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-334", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-20902", "text": "RBBB(Right bundle branch block)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-17623", "text": "NORM(Normal ECG)", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "ptb-xl-14944", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-9865", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-5336", "text": "NORM(Normal ECG)", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "ptb-xl-8844", "text": "NORM(Normal ECG)", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "ptb-xl-2153", "text": "AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-12925", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-8496", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-10589", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-13642", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-16499", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-17748", "text": "PAC(Premature atrial contraction)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-12835", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-10214", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-3248", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-7414", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-12336", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-19466", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-6852", "text": "I-AVB(First-degree atrioventricular block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "ptb-xl-3515", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-16205", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-21093", "text": "LBBB(Left bundle branch block); AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "ptb-xl-17711", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-7258", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-17169", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-13014", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-15797", "text": "LBBB(Left bundle branch block); AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "ptb-xl-14184", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-14375", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-3103", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-14145", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-2192", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-7007", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-12585", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-5566", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-5835", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-8410", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-15958", "text": "AF(Atrial fibrillation); LBBB(Left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "ptb-xl-8277", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-7597", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-7170", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-3414", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-15279", "text": "AF(Atrial fibrillation); LBBB(Left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "ptb-xl-2055", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.9}
+{"question_id": "ptb-xl-19990", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.9}
+{"question_id": "ptb-xl-17937", "text": "I-AVB(First-degree atrioventricular block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "ptb-xl-10061", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "ptb-xl-694", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-318", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "ptb-xl-4167", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-2839", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-4747", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-18742", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-19376", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-14220", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-8727", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-17192", "text": "I-AVB(First-degree atrioventricular block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "ptb-xl-17676", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-5946", "text": "MI(myocardial infarction)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-4025", "text": "PAC(Premature atrial contraction)", "model_id": "PULSE-7B", "sec": 3.1}
+{"question_id": "ptb-xl-16792", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-18761", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-3863", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-20280", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-6666", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "ptb-xl-11739", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-16591", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "ptb-xl-6592", "text": "I-AVB(First-degree atrioventricular block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "ptb-xl-8645", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-12276", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-274", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-1175", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-10151", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-10489", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-11934", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-18638", "text": "RBBB(Right bundle branch block)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-10585", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-18232", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-10431", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-75", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-18175", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-112", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-3755", "text": "I-AVB(First-degree atrioventricular block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "ptb-xl-14097", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-584", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-19955", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-16465", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-13895", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-241", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-9582", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-7348", "text": "NORM(Normal ECG)", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "ptb-xl-12999", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-21431", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "ptb-xl-5343", "text": "PVC(Premature ventricular contraction)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "ptb-xl-10177", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "ptb-xl-3926", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-17700", "text": "NORM(Normal ECG)", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "ptb-xl-397", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-7961", "text": "LBBB(Left bundle branch block)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-21622", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-5824", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-11932", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-2942", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-3635", "text": "NORM(Normal ECG)", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "ptb-xl-18548", "text": "LBBB(Left bundle branch block); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "ptb-xl-20402", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-2427", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-6437", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-935", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-12221", "text": "I-AVB(First-degree atrioventricular block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "ptb-xl-6046", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-2854", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-4059", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-5885", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "ptb-xl-201", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-10596", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-5351", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "ptb-xl-13954", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.9}
+{"question_id": "ptb-xl-3479", "text": "LBBB(Left bundle branch block); AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.9}
+{"question_id": "ptb-xl-3060", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-15141", "text": "AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-685", "text": "LBBB(Left bundle branch block); AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "ptb-xl-8041", "text": "AF(Atrial fibrillation); RBBB(Right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.9}
+{"question_id": "ptb-xl-2317", "text": "PAC(Premature atrial contraction); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 4.0}
+{"question_id": "ptb-xl-15988", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-7905", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-1093", "text": "RBBB(Right bundle branch block); AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "ptb-xl-13212", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-1353", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-17983", "text": "PAC(Premature atrial contraction)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-6672", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-582", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-1850", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-1812", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-8712", "text": "RBBB(Right bundle branch block)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-569", "text": "AF(Atrial fibrillation); RBBB(Right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "ptb-xl-2103", "text": "PAC(Premature atrial contraction)", "model_id": "PULSE-7B", "sec": 3.2}
+{"question_id": "ptb-xl-17539", "text": "AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "ptb-xl-16355", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-10261", "text": "PAC(Premature atrial contraction)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-3299", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-14670", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "ptb-xl-14923", "text": "PAC(Premature atrial contraction)", "model_id": "PULSE-7B", "sec": 3.1}
+{"question_id": "ptb-xl-4719", "text": "NORM(Normal ECG)", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "ptb-xl-9953", "text": "MI(Myocardial infarction)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "ptb-xl-4676", "text": "LBBB(Left bundle branch block)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-7003", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "ptb-xl-15959", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-14205", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-5600", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-2941", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-1078", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-8873", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-1899", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-12172", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-1133", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-20674", "text": "RBBB(Right bundle branch block)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-13120", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-12545", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "ptb-xl-19695", "text": "PAC(Premature atrial contraction)", "model_id": "PULSE-7B", "sec": 3.1}
+{"question_id": "ptb-xl-20214", "text": "PAC(Premature atrial contraction)", "model_id": "PULSE-7B", "sec": 3.1}
+{"question_id": "ptb-xl-14814", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-6924", "text": "PAC(Premature atrial contraction)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-132", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-4097", "text": "PAC(Premature atrial contraction)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-3073", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-18519", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-7534", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "ptb-xl-129", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-7328", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-4432", "text": "LBBB(Left bundle branch block)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-14170", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-12345", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-16537", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-13630", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-20401", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-17007", "text": "AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-11843", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-16975", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-2476", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-17431", "text": "MI(Myocardial infarction); I-AVB(First-degree atrioventricular block)", "model_id": "PULSE-7B", "sec": 4.6}
+{"question_id": "ptb-xl-7054", "text": "AF(Atrial fibrillation); PVC(Premature ventricular contraction)", "model_id": "PULSE-7B", "sec": 4.2}
+{"question_id": "ptb-xl-3669", "text": "PVC(Premature ventricular contraction)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "ptb-xl-6751", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-17577", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-5738", "text": "AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-16815", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-3892", "text": "NORM(Normal ECG)", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "ptb-xl-19942", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-4786", "text": "PVC(Premature ventricular contraction)", "model_id": "PULSE-7B", "sec": 3.1}
+{"question_id": "ptb-xl-17021", "text": "PVC(Premature ventricular contraction)", "model_id": "PULSE-7B", "sec": 3.2}
+{"question_id": "ptb-xl-13092", "text": "NORM(Normal ECG)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-732", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-208", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-17202", "text": "PVC(Premature ventricular contraction)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "ptb-xl-3320", "text": "AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "ptb-xl-13786", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-1169", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-13717", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-3009", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "ptb-xl-16782", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.9}
+{"question_id": "ptb-xl-3522", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-726", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-16260", "text": "LBBB(Left bundle branch block); PAC(Premature atrial contraction)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "ptb-xl-6295", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-16920", "text": "LBBB(Left bundle branch block); AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "ptb-xl-2910", "text": "PVC(Premature ventricular contraction)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "ptb-xl-9753", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-9301", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "ptb-xl-14192", "text": "RBBB(Right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "ptb-xl-12991", "text": "AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "ptb-xl-20224", "text": "PAC(Premature atrial contraction)", "model_id": "PULSE-7B", "sec": 3.1}
+{"question_id": "ptb-xl-9981", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-6056", "text": "RBBB(Right bundle branch block)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-764", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-440", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-9929", "text": "AF(Atrial fibrillation); RBBB(Right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "ptb-xl-21673", "text": "AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.1}
+{"question_id": "ptb-xl-14194", "text": "I-AVB(First-degree atrioventricular block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "ptb-xl-2819", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-14382", "text": "AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-18639", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-5172", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-16908", "text": "PAC(Premature atrial contraction); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "ptb-xl-16883", "text": "LBBB(Left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "ptb-xl-917", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-13314", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-16288", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-14938", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-5163", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "ptb-xl-18673", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-19867", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-1746", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-8981", "text": "PVC(Premature ventricular contraction)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "ptb-xl-20198", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-1320", "text": "LBBB(Left bundle branch block)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-19858", "text": "LBBB(Left bundle branch block)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-7797", "text": "NORM(Normal ECG)", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "ptb-xl-4822", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-3235", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-14731", "text": "AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-3281", "text": "I-AVB(First-degree atrioventricular block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "ptb-xl-12216", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-10152", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-6911", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-9732", "text": "AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-10755", "text": "PVC(Premature ventricular contraction)", "model_id": "PULSE-7B", "sec": 3.2}
+{"question_id": "ptb-xl-19077", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-19959", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-5384", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "ptb-xl-12355", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-12552", "text": "RBBB(Right bundle branch block)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-1479", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-9616", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-16637", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-16511", "text": "NORM(Normal ECG)", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "ptb-xl-18656", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-20387", "text": "PVC(Premature ventricular contraction)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "ptb-xl-12480", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-16563", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-15900", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-952", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-18644", "text": "PVC(Premature ventricular contraction)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "ptb-xl-20084", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "ptb-xl-7079", "text": "I-AVB(First-degree atrioventricular block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "ptb-xl-15638", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-3043", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-19042", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-16035", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-3937", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-5837", "text": "NORM(Normal ECG)", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "ptb-xl-1061", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-10255", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-6728", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-16261", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-10181", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-12475", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-20730", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-11686", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "ptb-xl-2455", "text": "PAC(Premature atrial contraction)", "model_id": "PULSE-7B", "sec": 3.2}
+{"question_id": "ptb-xl-11474", "text": "LBBB(Left bundle branch block)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-3128", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-9133", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-1655", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-2722", "text": "AF(Atrial fibrillation); LBBB(Left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "ptb-xl-17865", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-6000", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-4805", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-5276", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-1961", "text": "LBBB(Left bundle branch block)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-9979", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-598", "text": "AF(Atrial fibrillation); LBBB(Left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "ptb-xl-11853", "text": "AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.1}
+{"question_id": "ptb-xl-478", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-8116", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-16046", "text": "AF(Atrial fibrillation); LBBB(Left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "ptb-xl-15954", "text": "RBBB(Right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "ptb-xl-2386", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-19848", "text": "I-AVB(First-degree atrioventricular block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "ptb-xl-19669", "text": "NORM(Normal ECG)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-17401", "text": "MI(Myocardial infarction)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "ptb-xl-16596", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-2871", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-18256", "text": "AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-6341", "text": "NORM(Normal ECG)", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "ptb-xl-11372", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-2449", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-1617", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-5947", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-3585", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-2935", "text": "NORM(Normal ECG)", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "ptb-xl-9144", "text": "AF(Atrial fibrillation); I-AVB(First-degree atrioventricular block)", "model_id": "PULSE-7B", "sec": 4.6}
+{"question_id": "ptb-xl-2802", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "ptb-xl-1113", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-16876", "text": "AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-10484", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-15757", "text": "I-AVB(First-degree atrioventricular block); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 4.4}
+{"question_id": "ptb-xl-20037", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-9850", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-57", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-2764", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-12936", "text": "I-AVB(First-degree atrioventricular block); RBBB(Right bundle branch block)", "model_id": "PULSE-7B", "sec": 4.4}
+{"question_id": "ptb-xl-958", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-968", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "ptb-xl-11530", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-4175", "text": "I-AVB(First-degree atrioventricular block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "ptb-xl-9752", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-14448", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-18882", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-20966", "text": "LBBB(Left bundle branch block); AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "ptb-xl-6050", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.5}
+{"question_id": "ptb-xl-3657", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-3275", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-7053", "text": "I-AVB(First-degree atrioventricular block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "ptb-xl-2963", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-1468", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-9174", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-19097", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "ptb-xl-7848", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-13499", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "ptb-xl-2905", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-6131", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-5275", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-1571", "text": "MI(MI)", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-2939", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-5916", "text": "NORM(Normal ECG)", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "ptb-xl-16609", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-2267", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-8609", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-13267", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-6471", "text": "PAC(Premature atrial contraction)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "ptb-xl-7217", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-6670", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-13006", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-10731", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-14021", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-21163", "text": "LBBB(Left bundle branch block)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-472", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-2929", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-16425", "text": "PAC(Premature atrial contraction)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-2920", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-15015", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-11418", "text": "LBBB(Left bundle branch block); PAC(Premature atrial contraction)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "ptb-xl-3984", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-3164", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-14138", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-2579", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-14071", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-11711", "text": "PVC(Premature ventricular contraction)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "ptb-xl-1147", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-1958", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-20313", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-6180", "text": "PAC(Premature atrial contraction)", "model_id": "PULSE-7B", "sec": 3.1}
+{"question_id": "ptb-xl-14580", "text": "NORM(Normal ECG)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-13712", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-115", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-5304", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-12886", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-9995", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-14781", "text": "I-AVB(First-degree atrioventricular block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "ptb-xl-2341", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-7213", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-18756", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "ptb-xl-15732", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-3712", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-5737", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-5151", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-12711", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-21036", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-19703", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-20624", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-12529", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-3537", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-2193", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-18710", "text": "AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-14746", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-13400", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-8963", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-11319", "text": "PVC(Premature ventricular contraction)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "ptb-xl-13777", "text": "NORM(Normal ECG)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-17719", "text": "LBBB(Left bundle branch block); AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "ptb-xl-18762", "text": "AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.1}
+{"question_id": "ptb-xl-4072", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "ptb-xl-1056", "text": "LBBB(Left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "ptb-xl-6103", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-12919", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-1031", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-2379", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-8663", "text": "NORM(Normal ECG)", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "ptb-xl-5975", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-8138", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-10358", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-347", "text": "LBBB(Left bundle branch block)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-2786", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-1054", "text": "NORM(Normal ECG)", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "ptb-xl-11126", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-21205", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "ptb-xl-11802", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-8261", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-861", "text": "PAC(Premature atrial contraction)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-16463", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "ptb-xl-4354", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-10250", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-19370", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "ptb-xl-12223", "text": "AF(Atrial fibrillation); PVC(Premature ventricular contraction); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 5.1}
+{"question_id": "ptb-xl-13853", "text": "RBBB(Right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "ptb-xl-5992", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-13887", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-3665", "text": "PAC(Premature atrial contraction)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "ptb-xl-11489", "text": "NORM(Normal ECG)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-5298", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-9286", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-19605", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-15377", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-19432", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-1589", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-9982", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-15674", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-3947", "text": "AF(Atrial fibrillation); RBBB(Right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "ptb-xl-13370", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-16187", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-16898", "text": "Mobitz I(Wenckebach); PAC(Premature atrial contraction)", "model_id": "PULSE-7B", "sec": 4.0}
+{"question_id": "ptb-xl-5395", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-1246", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-6154", "text": "LBBB(Left bundle branch block)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-10029", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-5383", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-18592", "text": "AF(Atrial fibrillation); PVC(Premature ventricular contraction)", "model_id": "PULSE-7B", "sec": 4.0}
+{"question_id": "ptb-xl-18266", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-17780", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-6224", "text": "PAC(Premature atrial contraction); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "ptb-xl-16944", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-9803", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-14005", "text": "I-AVB(First-degree atrioventricular block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "ptb-xl-15737", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-20893", "text": "LBBB(Left bundle branch block)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-21444", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-6577", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-16214", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-19254", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-687", "text": "PAC(Premature atrial contraction)", "model_id": "PULSE-7B", "sec": 3.1}
+{"question_id": "ptb-xl-11152", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-8178", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-8922", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-7950", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "ptb-xl-9002", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-1315", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-17536", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "ptb-xl-8140", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-12254", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-11077", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-3384", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-13516", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "ptb-xl-15897", "text": "NORM(Normal ECG)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-20943", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-3027", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-15677", "text": "NORM(Normal ECG)", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "ptb-xl-6132", "text": "PVC(Premature ventricular contraction)", "model_id": "PULSE-7B", "sec": 3.1}
+{"question_id": "ptb-xl-11139", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "ptb-xl-3618", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-512", "text": "AF(Atrial fibrillation); RBBB(Right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "ptb-xl-12230", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "ptb-xl-5831", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-13918", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-13349", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-19305", "text": "AF(Atrial fibrillation); I-AVB(First-degree atrioventricular block); LBBB(Left bundle branch block)", "model_id": "PULSE-7B", "sec": 5.4}
+{"question_id": "ptb-xl-9860", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "ptb-xl-7080", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-14771", "text": "STE(ST-segment elevated)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-6312", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-19884", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-2928", "text": "NORM(Normal ECG)", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "ptb-xl-8218", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "ptb-xl-12619", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-2909", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-19956", "text": "AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-5918", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-13268", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "ptb-xl-15798", "text": "LBBB(Left bundle branch block)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-12220", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-7619", "text": "I-AVB(First-degree atrioventricular block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "ptb-xl-9791", "text": "STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "ptb-xl-18055", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-12277", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-1564", "text": "LBBB(Left bundle branch block); AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "ptb-xl-13058", "text": "AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.1}
+{"question_id": "ptb-xl-13849", "text": "RBBB(Right bundle branch block)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-9282", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "ptb-xl-17970", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-16147", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-12451", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-775", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-6201", "text": "AF(Atrial fibrillation); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "ptb-xl-16955", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "ptb-xl-15723", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "ptb-xl-1186", "text": "LBBB(Left bundle branch block)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-21363", "text": "AF(Atrial fibrillation); PVC(Premature ventricular contraction); STD(ST-segment depression)", "model_id": "PULSE-7B", "sec": 5.0}
+{"question_id": "ptb-xl-18172", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}

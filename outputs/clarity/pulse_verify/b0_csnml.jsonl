@@ -1,0 +1,15 @@
+{"question_id": "csn-JS33126", "text": "NSR(sinus rhythm)", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "csn-JS20544", "text": "TAb(t wave abnormal); NSR(sinus rhythm); SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 4.3}
+{"question_id": "csn-JS31741", "text": "NSR(sinus rhythm)", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "csn-JS06703", "text": "AF(atrial fibrillation); AFL(atrial flutter); TAb(t wave abnormal); LAD(left axis deviation)", "model_id": "PULSE-7B", "sec": 5.1}
+{"question_id": "csn-JS11908", "text": "TAb(t wave abnormal); NSR(sinus rhythm)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "csn-JS33393", "text": "TAb(t wave abnormal); LAD(left axis deviation); NSR(sinus rhythm)", "model_id": "PULSE-7B", "sec": 4.4}
+{"question_id": "csn-JS36939", "text": "NSR(sinus rhythm)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "csn-JS25621", "text": "TAb(t wave abnormal); LAD(left axis deviation); SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 4.4}
+{"question_id": "csn-JS26790", "text": "NSR(sinus rhythm)", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "csn-JS28612", "text": "SB(sinus bradycardia); NSR(sinus rhythm)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "csn-JS01803", "text": "NSR(sinus rhythm)", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "csn-JS27865", "text": "NSR(sinus rhythm)", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "csn-JS44887", "text": "NSR(sinus rhythm); STach(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "csn-JS16915", "text": "AF(atrial fibrillation); TAb(t wave abnormal)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "csn-JS32259", "text": "TAb(t wave abnormal); NSR(sinus rhythm); SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 4.3}

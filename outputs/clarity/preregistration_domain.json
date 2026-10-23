@@ -1,0 +1,578 @@
+{
+ "critiques": [
+  {
+   "confounds": [
+    {
+     "name": "Case mix / label prevalence (label shift), including which classes act as confusers",
+     "why_it_matters": "Most of S1's CPSC gain comes from combining logits across labels, not from moving thresholds. Out-of-fold multivariate AUC minus univariate AUC on CPSC: I-AVB +15.0, STD +17.3, STE +25.2, PAC +7.4. The coefficients are suppressor terms built on CPSC's dominant classes: I-AVB gets -2.70 x RBBB-logit, STD gets -1.54 x I-AVB, STE gets -1.27 x STD. The cause is the RBBB->I-AVB confusion: mean P(I-AVB) on RBBB records is 0.30 in CPSC and 0.47 in PTB, so the model makes this error in-domain too. That error only costs much when RBBB is common (27.5% in CPSC vs 3.8% in the PTB subset; NORM is 68% in PTB vs 13% in CPSC). On the unweighted PTB subset the multivariate lift is about 0 (I-AVB +0.0, STD +0.7). When PTB is reweighted to CPSC's label-combination mix (ESS 282), it comes back: I-AVB +13.9, STD +12.1, STE +33.8. So an unweighted PTB arm will show a smaller gain even if image domain has no effect.",
+     "how_to_control_or_measure": "Use importance weights w_i = f_CPSC(labelset_i)/f_PTB(labelset_i), dropping combinations that never occur in CPSC (e.g., NORM+PVC). Apply them to the LR fit (sample_weight), to OOF threshold selection (weighted F1) and to test metrics (weighted TP/FP/FN per label). As a sanity check, do the reverse (CPSC reweighted to PTB's mix). Report ESS and per-label results; PAC has only 8 single-label PTB records and is unstable (weight 12.9).",
+     "feasible_with_existing_data": true
+    },
+    {
+     "name": "Prompt nativeness, i.e. how strong B0 is relative to the yes/no probe",
+     "why_it_matters": "On CODE-15 the native prompt makes B0's operating point lie far above B1's ROC. TPR_B1 at B0's FPR minus TPR_B0: 1dAVb -0.45, ST -0.38, SB -0.28, AF -0.24, LBBB -0.09. Meanwhile B1 univariate AUCs on CODE-15 are similar to CPSC (AF 97.7 vs 98.6, LBBB 99.0 vs 99.4, 1dAVb 85.4 vs 82.0). On CPSC, B0's points sit on B1's ROC (AF +0.00, RBBB +0.01, PAC +0.00, NORM -0.03). So 'S1 never beats B0 on CODE-15' says the generative pathway is strong under a trained prompt and the probe is the bottleneck. It says nothing about whether calibration fails in-domain. CODE-15 vs CPSC is therefore confounded with prompt nativeness.",
+     "how_to_control_or_measure": "Run a shared-label 2x2 (image source x prompt), described in proposed_analyses. With current data, compute the per-label operating-point gap in every arm and test whether it alone predicts the per-label gain.",
+     "feasible_with_existing_data": false
+    },
+    {
+     "name": "Label set / concept difficulty",
+     "why_it_matters": "The CPSC gain sits on labels where the yes/no probe is weak (univariate AUC: STE 0.52, STD 0.73, PAC 0.81, I-AVB 0.82). Per-label Delta(S1-B0) at n=600: STD +27.3, I-AVB +17.7, PAC +13.5, PVC +8.3, STE +7.3, but only +4..6 for AF/LBBB/RBBB. CODE-15 has no ST or ectopy labels. If you restrict PTB to records without NORM, its univariate AUCs for the same hard labels are CPSC-like (I-AVB 78.5, STD 74.3, STE 58.6). The probe weakness belongs to the concept, not the domain.",
+     "how_to_control_or_measure": "Compare arms only on the shared labels {AF, I-AVB/1dAVb, LBBB, RBBB}, plus per-label Delta with bootstrap CIs. Add label fixed effects in any cross-arm regression.",
+     "feasible_with_existing_data": true
+    },
+    {
+     "name": "Label definition / SCP->CPSC mapping error (concept shift)",
+     "why_it_matters": "(a) STE in PTB is 31/34 injury/MI codes; only 3 are true STE_. A domain classifier within the STE class reaches AUC 0.985, and S1 learns STE as -2.04 x NORM. S1 fits the mapping's quirks and B0 cannot, which favours S1 in the PTB arm for reasons unrelated to domain. (b) RBBB: the PTB mapping uses only CRBBB (P(RBBB) 0.99), while mean P(RBBB) is 0.81 for CPSC RBBB records and 0.42 for PTB IRBBB records. Adding IRBBB to the PTB RBBB definition moves the probe AUC from 99.5 to 95.2, exactly CPSC's 95.2. This suggests, without proving it, that CPSC RBBB includes incomplete RBBB. (c) NORM in PTB co-occurs with PVC/PAC/STD in 43 records, which never happens in CPSC. 65 PTB NORM codes have likelihood <=50, and STD_/PAC/AFIB codes carry likelihood 0. Class-conditional domain-classifier AUCs (9 B1 logits): STD 0.886, RBBB 0.806, AF 0.778, NORM 0.725, I-AVB 0.719, PVC 0.659, LBBB 0.588. The shift concentrates on labels with definitional differences.",
+     "how_to_control_or_measure": "Run sensitivity arms: drop STE; RBBB := CRBBB or IRBBB; drop records with NORM+X; NORM only at likelihood 100. Recompute the class-conditional domain AUCs and the PTB Delta under each.",
+     "feasible_with_existing_data": true
+    },
+    {
+     "name": "Image information content: printed metadata and machine measurements on PTB images",
+     "why_it_matters": "Many ECGBench PTB-XL renderings print Sex/Age/Height/Weight, and some also print Rate, RR, PR, QRS duration, QT/QTc and axes. In top-band crops I counted about 11/20 PTB images with text and about 5/20 with interval measurements (and 7/8 and 3/8 in a second sample). I saw none in 20 CPSC and none in 20 CODE-15 images. A printed PR value gives I-AVB away, and QRS duration does the same for BBB. 'In-domain image' therefore also means 'extra readable evidence', which can change B0, B1 and the gain differently.",
+     "how_to_control_or_measure": "Tag every PTB image with OCR (clarity/lead_locate.py:ocr) using regexes for 'PR:', 'QRS duration', 'Rate:'. Stratify all PTB analyses by tag. Optionally re-run B0/B1 on PTB images with the header band masked.",
+     "feasible_with_existing_data": true
+    },
+    {
+     "name": "Label-window correspondence (record length)",
+     "why_it_matters": "CPSC 2018 records are 6-60 s long but are rendered as one ~10 s 12-lead page. Episodic labels (PAC, PVC, possibly STD/STE) can be off-screen, which caps achievable F1 and gives S1 room to learn prevalence-driven guesses. PTB-XL and CODE-15 records are about 10 s, so their labels match what is shown.",
+     "how_to_control_or_measure": "Get CPSC record lengths (REFERENCE.csv plus .hea). Stratify per-label B0, B1 and S1 by length <=10 s vs >10 s. If episodic-label gains shrink in the <=10 s stratum, the gain partly reflects label noise, not domain.",
+     "feasible_with_existing_data": false
+    },
+    {
+     "name": "Headroom / ceiling and metric structure",
+     "why_it_matters": "B0 is 85.2 on CODE-15 and 57.6 on CPSC, so the room to improve differs. CODE-15's metric mixes a binary NORM/ABNORMAL task (B1 NORM AUC only 75.5, B0 accuracy 68.9) with the multi-label task, and its n is split n/2 per task. PTB macro-F1 over 9 labels is dominated by rare labels: about 25 PAC and 23 STE test positives in a patient-grouped split. In my quick B1-only run on PTB, the S1 vs THR difference came almost entirely from PAC (+24.6) and STE (+20.5), and S1@600 reached about 70.1 vs THR 66.1.",
+     "how_to_control_or_measure": "Express the gain as a fraction of the closable gap: (S1 - B0)/(oracle S1 - B0), where oracle S1 = CV calibrator fitted on the test set. Report shared-label macro-F1 and per-label Delta with bootstrap CIs. Index learning curves by positives per label, not by total records.",
+     "feasible_with_existing_data": true
+    },
+    {
+     "name": "Prompt-template familiarity and prompt x image interaction",
+     "why_it_matters": "The CPSC prompt uses the same template as the PTB-XL superclass training prompt ('Please classify the ECG image into the following diagnostic statement classes ... Directly output the class name and separate with a semicolon'). Only the label list is new. B0 leaks PTB-superclass vocabulary (MI/CD/HYP/'STC') in 17/1461 CPSC test answers and co-mentions STD with AF (P(STD | gold AF without STD) = 0.19 on CPSC; 0.36 on interim PTB, n=14). PTB images paired with a PTB-style template may trigger these priors more strongly. So 'same prompt' does not mean 'equally novel prompt' across image sources.",
+     "how_to_control_or_measure": "For each gold class and arm, compute rates of out-of-vocabulary tokens, AF->STD co-mention, B0 NORM given an abnormal class, and B0 label cardinality. Standardise to CPSC's class mix before comparing.",
+     "feasible_with_existing_data": true
+    },
+    {
+     "name": "Patient clustering in PTB",
+     "why_it_matters": "The 1357 PTB records come from 1218 patients; 115 patients have 2 or more records (254 records). Random pool/test or inner-CV splits leak patient-specific morphology into the calibrator. That inflates S1 in the PTB arm only (CPSC has no patient IDs).",
+     "how_to_control_or_measure": "Use GroupShuffleSplit for pool/test and StratifiedGroupKFold for the inner OOF, grouping by patient_id (data/ptbxl_meta/ptbxl_database.csv). Report grouped and random splits side by side.",
+     "feasible_with_existing_data": true
+    },
+    {
+     "name": "Selection by mapped labels in PTB (closed-world subset)",
+     "why_it_matters": "725 of the 2082 PTB images are dropped because none of their codes map to the 9 labels. Those include hard look-alike negatives (IRBBB 107 overall, LAFB 156, IVCD 77, MI/LVH). Dropping them inflates specificity and AUC for RBBB, LBBB and I-AVB. It also changes what NORM is contrasted against.",
+     "how_to_control_or_measure": "Sensitivity check with B1 on all 2082 images: add the excluded records as 'none of the 9' and measure how AUCs and S1 lift change. If B0 is extended, include them with the at-least-one rule switched off.",
+     "feasible_with_existing_data": true
+    },
+    {
+     "name": "Prior shift relative to the training distribution (implicit B0 prior)",
+     "why_it_matters": "B0 predicts NORM for 362/1461 CPSC test records against 187 gold, and its abnormal->NORM rate is 0.16 on CPSC vs 0.06 on interim PTB. PTB's NORM-heavy mix matches the training prior. Part of the calibration gain is plain label-shift correction. That is one component of 'domain', separate from changes in image appearance.",
+     "how_to_control_or_measure": "Estimate the target prior from unlabeled data with EM (as already done in transfer.py), apply it to B1, and see how much of S1's gain a prior-only correction recovers in each arm. Also compare class-conditional B0 rates (P(B0 says NORM | gold c)) across arms.",
+     "feasible_with_existing_data": true
+    }
+   ],
+   "proposed_analyses": [
+    {
+     "analysis": "A1 (primary). Case-mix standardised PTB learning curve: S1 vs B0 on PTB reweighted to CPSC's label-combination distribution",
+     "exact_computation": "Labels L = 9 CPSC labels from data/derived/ptbxl_cpsc9.json, parsed by substring (do NOT split on ';' because values are 'I-AVB; LBBB'). Weights w_i = (count_CPSC(S_i)/2061)/(count_PTB(S_i)/1357) over exact label sets S_i, set to 0 when S_i never occurs in CPSC; this keeps 1290 records with ESS about 282. Split by patient with GroupShuffleSplit into pool about 600 and test about 750. For n in {25,50,100,200,300,400,600} and 20 reps: draw n from the pool; per label, fit LogisticRegression(C=1) on the 9 logits with sample_weight=w; take k-fold OOF probabilities (StratifiedGroupKFold by patient_id); choose the threshold maximising weighted F1 (f1_score(..., sample_weight=w)); apply the at-least-one rule. On test, F1_L = 2*sum(w*TP)/(2*sum(w*TP)+sum(w*FP)+sum(w*FN)); macro over labels. Delta_std(n) = F1w(S1) - F1w(B0). Also compute unweighted Delta_raw(n). Patient-cluster bootstrap with 2000 resamples for CIs.",
+     "prediction_if_domain_explains": "Delta_std(600) is close to Delta_raw(600) and both are <=1-2 points. Even at CPSC's case mix, in-domain images leave nothing for S1 to fix, far below CPSC's +11.2 (68.8 vs 57.6).",
+     "prediction_if_task_or_other_explains": "Delta_std(600) is much larger than Delta_raw(600) and approaches CPSC's gain (for example 6 points or more, CI excluding 0), with the same per-label pattern (I-AVB, STD, PAC largest). The B1-only part already points this way: under CPSC weights the multivariate AUC lift is I-AVB +13.9 and STD +12.1, vs +15.0 and +17.3 on CPSC."
+    },
+    {
+     "analysis": "A2. Kitagawa-Oaxaca decomposition of the CPSC-PTB gain difference",
+     "exact_computation": "Delta_CPSC = 68.8-57.6 = +11.2 (S1@600). Decompose Delta_CPSC - Delta_PTB,raw = [Delta_PTB,std - Delta_PTB,raw] (case-mix part) + [Delta_CPSC - Delta_PTB,std] (residual = image source + label definitions + text overlay + record window). Repeat the residual after each sensitivity edit from A5/A8 (drop STE; RBBB := CRBBB or IRBBB; exclude NORM+X; text-free PTB images only). Bootstrap CPSC records and PTB patients jointly for CIs on each part.",
+     "prediction_if_domain_explains": "The residual is most of the difference, its CI excludes 0, and it stays stable under the label-definition and overlay edits.",
+     "prediction_if_task_or_other_explains": "The case-mix part dominates, and the residual shrinks toward 0 once STE is dropped, RBBB includes IRBBB, and text-overlay images are removed."
+    },
+    {
+     "analysis": "A3. Operating-point dominance as the mediator (pooled per-label regression across all arms)",
+     "exact_computation": "For each arm a and label L: take B0's (TPR, FPR) on test. Take the ROC of the S1@600 test score. gap_aL = TPR_S1(FPR_B0) - TPR_B0, with np.interp on roc_curve. Delta_aL = F1_S1 - F1_B0. Fit OLS Delta_aL ~ gap_aL + OOD_dummy + label fixed effects (shared labels only), with a bootstrap over records. Current univariate-B1 gaps: CODE-15 1dAVb -0.45, ST -0.38, SB -0.28, AF -0.24; CPSC AF +0.00, RBBB +0.01, PAC +0.00, NORM -0.03, I-AVB -0.28, PVC -0.23. After A3, ask what drives the gap: regress gap_aL on OOD_dummy + prompt_native_dummy using the A4 cells.",
+     "prediction_if_domain_explains": "OOD_dummy keeps a large, significant coefficient after conditioning on gap, or the gap is itself explained by the OOD dummy in the A4 cells.",
+     "prediction_if_task_or_other_explains": "Gap alone accounts for Delta across arms (OOD coefficient about 0), and the gap is explained by prompt nativeness: CODE-15's native prompt puts B0 far above the probe, while CPSC-prompt B0 sits on or below the S1 ROC on both CPSC and PTB images."
+    },
+    {
+     "analysis": "A4 (needs new B0 runs, no training). Shared-label 2x3 factorial: image source {CODE-15, PTB, CPSC} x prompt {CODE-15 6-label 'Determine the appropriate class... Answer: $CLASS', CPSC 9-label}",
+     "exact_computation": "Keep records whose gold labels are a subset of {AF, I-AVB/1dAVb, LBBB, RBBB}: CPSC 1064 and CODE-15 multi 467 already identified; for PTB use AFIB/1AVB/CLBBB/CRBBB. New runs: B0 with the CODE-15 prompt on CPSC and PTB images, and B0 with the CPSC prompt on CODE-15 images. Parse with each prompt's official parser. B1 already exists for all images (naming differs slightly; ideally probe both namings everywhere). In every cell, reweight to a common prevalence (e.g., the pooled mix), run the A1 learning-curve protocol on the 4 labels, and get Delta per cell. Two-way decomposition with cluster bootstrap: image main effect, prompt main effect, interaction. Existing matched-composition evidence: B1 AUC CPSC vs CODE-15 is AF 98.9/97.4 and LBBB 99.0/98.6 (equal), I-AVB 72.5/80.7 and RBBB 93.2/99.5 (lower on CPSC). B0 F1 is AF 91.9/94.1, LBBB 90.9/89.6, I-AVB 60.6/85.3, RBBB 82.5/97.8. CPSC-prompt B0 emits labels outside the 4 in 27% of these records vs 2.4% on CODE-15.",
+     "prediction_if_domain_explains": "Image main effect: Delta(CPSC images) > Delta(CODE-15 or PTB images) under BOTH prompts, and no prompt main effect. Native-prompt B0 on CPSC images still falls below the S1 ROC.",
+     "prediction_if_task_or_other_explains": "Prompt main effect: Delta(CPSC prompt) > Delta(CODE-15 prompt) on ALL image sources, with CODE-15-prompt B0 on CPSC images beating S1. Any remaining image effect is confined to RBBB and I-AVB, consistent with label definition, while AF and LBBB, where B1 AUCs are equal, show none."
+    },
+    {
+     "analysis": "A5. Class-conditional invariance tests: label shift vs conditional (covariate or concept) shift",
+     "exact_computation": "For each gold single-label class c with at least 15 PTB records: X = 9 B1 logits; y = 1 for PTB, 0 for CPSC; LogisticRegression(class_weight='balanced'), 5-fold OOF, AUC_c. Current: NORM .725, AF .778, I-AVB .719, LBBB .588, RBBB .806, PVC .659, STD .886, STE .985. Recompute under: (i) PTB RBBB := CRBBB or IRBBB; (ii) NORM at likelihood 100 only; (iii) PTB images without OCR-detected text; (iv) CPSC records of 10 s or less, if lengths are obtained. Run the same test on B0 once PTB finishes: compare the class-conditional distribution of predicted label sets with a chi-square test or a domain classifier on one-hot B0 outputs.",
+     "prediction_if_domain_explains": "Shift is broad, similar across morphologically unambiguous classes (LBBB and AF about as large as STD), and survives redefinitions (i)-(iv). B0's class-conditional outputs differ across sources in the same way.",
+     "prediction_if_task_or_other_explains": "Shift concentrates on labels with definitional differences (STE, STD, RBBB) and shrinks under (i)-(iii). LBBB is already the smallest (0.588), and the IRBBB redefinition already moves PTB's RBBB probe AUC from 99.5 to 95.2, matching CPSC's 95.2."
+    },
+    {
+     "analysis": "A6. Text-overlay natural experiment inside PTB",
+     "exact_computation": "OCR all 1357 PTB images with clarity/lead_locate.ocr. Flags: has_measure (regex 'PR:|QRS duration|QT:|Rate:') and has_demo ('Sex:|Age:'). Parse the PR value when present. Per stratum: B1 I-AVB AUC, B0 I-AVB recall/precision, BBB metrics, and Delta(S1@n - B0) with the A1 protocol (case-mix weighted). Also an oracle: rule 'PR>200 ms' for I-AVB in has_measure images. Run a stratum x label interaction in the bootstrap.",
+     "prediction_if_domain_explains": "No difference between strata. Performance and Delta are the same with or without printed measurements, so source appearance, not extra evidence, drives in-domain behaviour.",
+     "prediction_if_task_or_other_explains": "has_measure images show higher I-AVB/BBB B0 and B1 performance and smaller Delta. Then part of any 'in-domain' advantage is a text shortcut that CPSC and CODE-15 images lack, and PTB is not a clean 'domain only' contrast."
+    },
+    {
+     "analysis": "A7. B0 error signatures under the same CPSC prompt: PTB vs CPSC",
+     "exact_computation": "Once all 1357 B0 answers exist, compute per gold class c, standardised to CPSC's class mix: (a) OOV rate (no label matched, or MI/CD/HYP/STTC tokens); (b) P(B0 contains STD | gold AF without STD); (c) P(B0 contains NORM | gold c, c != NORM); (d) predicted cardinality distribution vs gold; (e) B0 (TPR, FPR) vs B1 ROC per label (gap as in A3). CPSC reference: OOV 1.1%, AF->STD 0.19, abnormal->NORM 0.16, cardinality-2 rate 12.5% vs 6.9% gold. Interim PTB (n=152; do not decide on it): OOV 0.7%, AF->STD 0.36 (n=14), abnormal->NORM 0.06.",
+     "prediction_if_domain_explains": "Prompt-induced artifacts (a, b, d) are clearly lower on PTB images, and PTB B0 points lie on or above the S1 ROC, as on CODE-15.",
+     "prediction_if_task_or_other_explains": "(a, b, d) are equal or higher on PTB; only (c) differs, and the class-standardised (c) gap shrinks. B0's gap on PTB is near 0 or positive for the hard labels, as on CPSC."
+    },
+    {
+     "analysis": "A8. Mapping and label-noise sensitivity of the PTB arm",
+     "exact_computation": "Recompute Delta_raw and Delta_std at n=600 for: (a) all 9 labels; (b) 8 labels without STE; (c) 7 labels without STE and PAC; (d) excluding the 43 NORM+X records and NORM codes with likelihood <100; (e) RBBB := CRBBB or IRBBB, adding those records back from the 725 excluded. Report per-label Delta with patient-bootstrap CIs. Reference from a B1-only quick run (grouped split, 756 test): S1@600 70.1 vs THR@600 66.1 vs B1@0.5 62.3; the S1-THR gain is mostly PAC (+24.6) and STE (+20.5).",
+     "prediction_if_domain_explains": "Conclusions are stable across (a)-(e), with in-domain Delta small everywhere.",
+     "prediction_if_task_or_other_explains": "Any PTB gain comes mainly from STE and PAC (mapping artifacts and tiny counts) and disappears in (c). Or the gain grows in (e), showing that label definition, not image source, drives it. Either way, the raw 9-label PTB number is not evidence about domain."
+    },
+    {
+     "analysis": "A9. Prior-only correction vs full S1 (how much of the gain is pure label shift)",
+     "exact_computation": "In each arm: (1) EM prior adjustment (transfer.py:em_prior) of B1 probabilities using unlabeled target images, with thresholds from the PTB fit split. (2) The same plus target-prevalence thresholds from n labels (THR). (3) S1. Report the share of (S1 - B0) recovered by (1) and (2). CPSC already shows THR at 57.2, roughly B0, so prior and threshold alone recover about 0 of +11.2 there.",
+     "prediction_if_domain_explains": "In-domain arms gain nothing from any step. The CPSC gain needs S1's cross-label terms, which compensate for OOD-specific confusions that do not occur in-domain.",
+     "prediction_if_task_or_other_explains": "The same cross-label terms (I-AVB on RBBB, STD on I-AVB/AF, STE on STD) are learned in the case-mix-weighted PTB arm with similar signs and sizes. Compare standardised coefficients across arms with a bootstrap. The confusion structure is model- and concept-level, not CPSC-specific."
+    },
+    {
+     "analysis": "A10. Pre-registered falsification rule for 'domain causes the gain'",
+     "exact_computation": "Fix before reading the PTB B0 results; I have already looked at 152 interim records, for error signatures only. Primary estimand: shared-label (AF, I-AVB, LBBB, RBBB) plus STD macro-F1, case-mix standardised to CPSC, patient-grouped, n=600, 20 reps, 2000-sample cluster bootstrap. Compute R = Delta_PTB,std / Delta_CPSC on the same label subset.",
+     "prediction_if_domain_explains": "Domain supported if R <= 0.3 with the upper CI below 0.5, AND native-prompt B0 on CPSC images (A4) is still beaten by S1.",
+     "prediction_if_task_or_other_explains": "Domain falsified as the main cause if R >= 0.6 with the lower CI above 0.3, OR if CODE-15-prompt B0 on CPSC images beats S1 (prompt is the driver), OR if the gain on CPSC is confined to labels whose definitions differ (STE, STD, RBBB) and vanishes under redefinitions."
+    }
+   ],
+   "design_flaws": [
+    "Only three arms, and each differs from the others on several axes at once. CODE-15 differs from CPSC in image source, prompt nativeness, label set (no ST or ectopy labels), metric (binary plus multi-label, n split n/2), and B1 question set. The PTB arm holds the prompt fixed but changes case mix (NORM 68% vs 13%, RBBB 3.8% vs 27.5%), label definitions (mapped SCP codes) and image content (printed measurements). No single pairwise contrast identifies 'domain'. With n = 1 dataset per cell, a dataset-level effect cannot be separated from dataset idiosyncrasy. A second OOD source with CPSC-like labels (e.g., Georgia/G12EC from PhysioNet 2020) and a second native-prompt in-domain arm (PTB-XL superclass ptb-test with B0 plus 5 superclass probes) would help.",
+    "'Domain' is underspecified. It bundles label (prior) shift, covariate or appearance shift, concept (label-definition) shift, and task (prompt) shift. These need different fixes, and the current comparisons mix them. Existing evidence already separates some of them. Class-conditional domain AUCs are largest for STE (0.985, mapping artifact), STD (0.886) and RBBB (0.806, which disappears once IRBBB counts as RBBB), and smallest for LBBB (0.588). That pattern points to concept shift more than appearance shift.",
+    "An unweighted PTB arm is biased toward 'no gain' even with zero domain effect. S1's mechanism on CPSC is cross-label suppression that only pays off when the confuser classes are common. On unweighted PTB the multivariate AUC lift is about 0, and under CPSC weights it reproduces the CPSC pattern (I-AVB +13.9 vs +15.0, STD +12.1 vs +17.3). So 'no gain on PTB' must not be read as evidence for domain.",
+    "The same prompt does not mean equal prompt novelty. The CPSC prompt reuses the PTB-XL superclass training template, so on PTB images it may cue PTB-superclass priors (MI/CD/HYP leakage; AF->STD co-mention 0.36 interim vs 0.19 on CPSC). The PTB arm measures domain x template-familiarity, not domain alone.",
+    "Label mapping makes S1 and B0 targets asymmetric in the PTB arm. B0 is asked for 'STE' or 'RBBB' as concepts, while the gold labels are injury/MI codes (31/34 of STE) and complete-RBBB-only. S1 can learn the mapping from labels and B0 cannot, which inflates Delta for reasons unrelated to domain. NORM+X co-occurrence (43 records) and NORM likelihood <100 add to this.",
+    "PTB images often carry printed demographics and machine measurements (PR, QRS duration, rate, QT/QTc, axes). I saw these in roughly a quarter to a half of sampled PTB images and in none of the sampled CPSC or CODE-15 images. 'In-domain image' is confounded with extra readable evidence.",
+    "PTB has patient clustering (115 patients with 2 or more of the 1357 records) and needs patient-grouped splits and inner CV. CPSC's learning curve had no grouping, so for the two arms to be comparable this must be stated and handled.",
+    "The PTB subset is closed by selection: 725 images without any mapped label are dropped, including IRBBB, LAFB, IVCD, MI and LVH, which are hard look-alike negatives. That inflates specificity and AUCs relative to a natural population.",
+    "PTB macro-F1 is underpowered for rare labels: about 23-25 test positives for PAC and STE, where per-label F1 SE is roughly 8-10 points. A null PTB result is uninformative unless a minimum detectable effect is set in advance. Use shared-label or per-label estimands with cluster bootstrap CIs, and index learning curves by positives per label rather than records.",
+    "CPSC records of 6-60 s are rendered as ~10 s images, so episodic labels (PAC, PVC, STD) may not be visible. That lowers the ceiling for B0 and S1 on CPSC alone and changes the headroom, independent of image domain. Record lengths are needed to stratify.",
+    "The CODE-15 null result tests the B1 probe more than calibration. B0's operating points sit 0.24-0.45 TPR above B1's ROC at equal FPR for AF, 1dAVb, SB and ST, so no recalibration of B1 features can win. The S1B0 variant was added post hoc (exploratory) and should not be treated as confirmatory.",
+    "Forking paths and optional stopping. The PTB experiment and its estimand are being chosen after seeing CPSC and CODE-15. Pre-register the primary estimand (A10), weights, label subset, grouping and decision thresholds before the PTB B0 run finishes. Pipeline details also differ between scripts (fallback threshold: PTB zero-shot thresholds in learning_curve.py vs 0.5 in code15_curve.py) and should be unified."
+   ]
+  },
+  {
+   "confounds": [
+    {
+     "name": "Headroom / B0-readout deficit, not an S1 benefit",
+     "why_it_matters": "The B0->S1 gain is the difference between two readouts. If B0 degrades out of domain while S1's ranking stays the same, the gain grows OOD even though calibration itself is not domain-specific. I checked existing files, and the S1 ranking is close to identical across domains: for I-AVB/1dAVb, S1 TPR at B0's FPR is 0.68 on CPSC and 0.69 on CODE-15, while B0 TPR is 0.49 on CPSC and 0.79 on CODE-15. On CODE-15, B0 per-label F1 (6 multi labels, mean 91.0) beats both S1-oracle (89.1) and own-label-oracle (81.2).",
+     "how_to_control_or_measure": "Compare at matched operating points without using priors: Delta_rank_L = TPR_S1(FPR_B0,L) - TPR_B0,L per label and per dataset. Report B0, own-B1 oracle and S1 oracle side by side rather than one absolute gain.",
+     "feasible_with_existing_data": true
+    },
+    {
+     "name": "Label prior shift (prevalence profile)",
+     "why_it_matters": "NORM prevalence is 12.8% on CPSC-test and 68.2% on PTB-1357. RBBB is 27.5% vs 3.8%, PAC 8.6% vs 2.9%. F1 and the F1-optimal threshold both depend on prevalence. B0 has one fixed operating point, set by the model's implicit training prior, and cannot be re-thresholded. S1 re-estimates intercepts. Intercepts fitted on PTB vs CPSC differ a lot (RBBB -10.5 vs -3.0, LBBB -8.8 vs -2.9, I-AVB -2.0 vs -6.4). Part of any domain difference in gain could just be prior mismatch.",
+     "how_to_control_or_measure": "(1) Use prior-free metrics: ROC dominance and per-label AUC. (2) Reweight PTB test (and the dev draws) to CPSC label-set marginals and the reverse, using sample_weight in f1_score, LR fits and threshold search; report effective sample size. (3) Report log(rate_B0/prev) per label.",
+     "feasible_with_existing_data": true
+    },
+    {
+     "name": "Prompt/task novelty of the B0 readout",
+     "why_it_matters": "CODE-15 B0 uses prompts PULSE was trained on, while the CPSC 9-label prompt is new. CODE-15 vs CPSC therefore confounds image domain with prompt familiarity, label set, and task mix (half of CODE-15 is a NORM/ABNORMAL binary task, scored with a combined 8-class metric). The B1 Yes/No question is new in every dataset, so B1 is never fully in-domain.",
+     "how_to_control_or_measure": "The PTB-XL run with the CPSC prompt holds the prompt fixed. Better is a fully crossed prompt x image design on shared labels (I-AVB/1dAVb, RBBB, LBBB, AF): run the CODE-15 multi-label prompt on CPSC images and the CPSC prompt on CODE-15 multi images, with the same images and gold in each comparison.",
+     "feasible_with_existing_data": false
+    },
+    {
+     "name": "Image-level response-bias factor (nuisance common factor in P(yes))",
+     "why_it_matters": "This is a candidate mechanism for most of the CPSC gain. A per-image tendency to answer 'yes' adds noise to each label's own logit, and S1 removes it by subtracting the other labels' logits (all its cross-label coefficients are negative). On CPSC, a 2-feature model (own logit + mean of the other 8) recovers most of S1's AUC gain: I-AVB 0.814 -> 0.936 (S1 0.965), STD 0.728 -> 0.884 (0.901), PVC 0.888 -> 0.928 (0.926), STE 0.520 -> 0.695 (0.772). On PTB-1357 it adds almost nothing: I-AVB 0.918 -> 0.926, STD 0.913 -> 0.923. The labels explain less of the row-mean logit m on CPSC (R2 0.54) than on PTB (0.76). It is not purely OOD, though: CODE-15 1dAVb also gains from the contrast feature (0.854 -> 0.907).",
+     "how_to_control_or_measure": "Per dataset and label, compute AUC of own, own+mean(others) and S1, plus R2(m ~ gold label indicators). Check whether the residual factor follows rendering covariates: within each dataset, Spearman correlation with width/height/aspect is |rho| < 0.06, so it does not.",
+     "feasible_with_existing_data": true
+    },
+    {
+     "name": "Label-definition / annotation shift (concept shift)",
+     "why_it_matters": "The PTB labels come from an SCP mapping. STE: 31 of 34 positives come from injury codes (only 3 STE_). STD uses STD_ only, so ISC_ records with visible ST depression count as negatives. PTB NORM co-occurs with PVC/PAC (18 NORM;PVC, 10 NORM;PAC), whereas CPSC NORM is exclusive (0 co-occurrences). CPSC labels describe records up to 60 s, but the image shows a strip: median aspect 1.38 vs 1.15 on PTB, so rendering differs, and episodic PAC/PVC may not be visible. S1 learns target annotation conventions from target labels. B0 and zero-shot transfer cannot.",
+     "how_to_control_or_measure": "Sensitivity variants on PTB: macro over 8 labels without STE, STE_strict, STD = STD_ plus ISC_*, and NORM made exclusive (drop NORM where another mapped label exists). Report per-label results so that STE/PAC (34 and 39 positives) do not drive the macro score.",
+     "feasible_with_existing_data": true
+    },
+    {
+     "name": "Cross-label co-occurrence and exclusivity conventions",
+     "why_it_matters": "S1's cross-label coefficients can encode CPSC conventions (93% single-label, exclusive NORM) as well as the image-bias factor. Cosine similarity between PTB-fit and CPSC-fit coefficient vectors is 0.47 for NORM, 0.54 for LBBB/RBBB and -0.24 for STE. The transferred PTB S1 reaches I-AVB AUC 0.873 on CPSC vs 0.965 when fit on CPSC, STD 0.788 vs 0.901, and STE 0.378 vs 0.772.",
+     "how_to_control_or_measure": "Refit the transfer on PTB-1357 (the same >=1-label selection as CPSC), not on all 2082. Compare intercept/scale-only adaptation with full S1 at the same n. Run the transfer in both directions.",
+     "feasible_with_existing_data": true
+    },
+    {
+     "name": "Small positive counts, fallback regime, and noise in PTB",
+     "why_it_matters": "PTB-1357 positives: PAC 39, STE 34, RBBB 52, LBBB 53, I-AVB 77. A 600/757 split leaves about 15-25 test positives for these labels, so per-label F1 SE is around 0.05-0.08 and macro SE about 2 points. At n <= 100, several labels will have fewer than 2 positives and fall back to zero-shot more often than on CPSC, which changes the regime of the learning curve.",
+     "how_to_control_or_measure": "Report positives per label in each draw and fallback counts. Use label-stratified draws. Compare datasets at an n where every label has at least 5 positives, and add bootstrap CIs over test records.",
+     "feasible_with_existing_data": true
+    },
+    {
+     "name": "Patient clustering in PTB-XL fold 10",
+     "why_it_matters": "The 1357 records come from 1218 patients, and 254 records share a patient with another record. A random dev/test split puts the same patient on both sides. The leakage is mild for a 9-feature LR but inflates S1, and it makes bootstrap CIs too narrow.",
+     "how_to_control_or_measure": "Split by patient_id from data/ptbxl_meta/ptbxl_database.csv (GroupShuffleSplit, stratified by primary label). Bootstrap by patient.",
+     "feasible_with_existing_data": true
+    },
+    {
+     "name": "Fallback-threshold leakage",
+     "why_it_matters": "learning_curve.py takes its zero-shot fallback thresholds (ZS_THR) from the PTB-XL fit split, and 950 of the 1357 PTB records are in that split. Reusing this code with PTB as the target leaks target labels into the low-n arms.",
+     "how_to_control_or_measure": "For PTB use a fallback threshold of 0.5, or thresholds chosen on CPSC. Make sure no PTB test id is used for any threshold.",
+     "feasible_with_existing_data": true
+    },
+    {
+     "name": "In-domain is not the same as unseen-but-same-source",
+     "why_it_matters": "PTB-XL fold 10 / ECGBench ptb-test is supposed to be held out from ECGInstruct, but PTB-XL concepts and report templates (1AVB, CRBBB, NORM, MI) were trained. B0 on PTB images outputs out-of-set 'MI(...)' in 3.5% of the first 200 records vs 1.0% on CPSC, which suggests the trained PTB vocabulary leaks into the new prompt.",
+     "how_to_control_or_measure": "Count out-of-label-set outputs and empty parses per dataset. If possible, confirm with the ECGInstruct id list that fold-10 ecg_ids are absent.",
+     "feasible_with_existing_data": false
+    },
+    {
+     "name": "Metric and aggregation artifacts",
+     "why_it_matters": "compute_f1_auc fits MultiLabelBinarizer on gold, so labels missing from a small test subset drop out of the macro score. Its 'AUC' is computed on binary predictions. The CODE-15 metric mixes two tasks and 8 classes. The at-least-one rule binds for 11.2% of CPSC records but only 6.5% of PTB records at P >= 0.5.",
+     "how_to_control_or_measure": "Report per-label F1 and probability AUC, macro with and without the at-least-one rule, and on CODE-15 the 6 multi labels separately.",
+     "feasible_with_existing_data": true
+    }
+   ],
+   "proposed_analyses": [
+    {
+     "analysis": "A1. Additive decomposition of the B0 -> S1 gain into own-probability ranking (a), cross-label ranking (c), operating point/prior (b), and finite-n estimation",
+     "exact_computation": "Per dataset and label, on the test split, with S1 fit on the full dev pool (LR C=1 on the logits of all labels; threshold from 5-fold OOF on dev, grid 0.02-0.96). k_L = number of B0 positives. F1_B0; F1_own@B0rate = F1 of the own B1 prob thresholded at its k_L-th largest value; F1_S1@B0rate likewise; F1_S1@OOFthr; F1_S1(n, at-least-one) from the learning curve. Then (a) = own@B0rate - B0, (c) = S1@B0rate - own@B0rate, (b) = S1@OOFthr - S1@B0rate, estimation = S1(n) - S1@OOFthr. Macro over labels, bootstrap over test records (patient-grouped for PTB). Already computed for CPSC-test: 57.6 -> 53.7 -> 63.2 -> 67.8, and 68.8 at n=600 with the rule, so (a) = -3.9, (c) = +9.5, (b) = +4.6. CODE-15 multi, approximate (OOF over 700 records): B0 91.0, own-oracle 81.2, S1-oracle 89.1, so B0 dominates. PTB, preliminary on the first 200 B0 records with S1 fit on the other 1157 (very noisy; STE has 5 positives): 63.6 -> 57.5 -> 68.0 -> 68.8. Freeze this plan before the full B0 run finishes, because I have already seen 200 records.",
+     "prediction_if_domain_explains": "PTB looks like CODE-15: (c) is about 0 or small, (b) is small because B0's operating point fits in-domain priors, and S1@600 - B0 is at most about 2. The CPSC-specific part is (c), driven by the nuisance factor.",
+     "prediction_if_task_or_other_explains": "PTB looks like CPSC: a total gain of several points even on in-domain images. If it comes mainly from (b), B0's operating point under the new prompt is miscalibrated (prompt novelty plus prior). If (c) is also large, the cross-label structure is task-driven. The preliminary 200 records lean toward a (b)-dominated gain of about +5 (AF, LBBB, PVC thresholds), but the CI is wide."
+    },
+    {
+     "analysis": "A2. ROC dominance test without priors: does S1 rank better than B0 at B0's own operating point?",
+     "exact_computation": "Delta_rank_L = interp(FPR_B0,L; ROC of S1 test scores) - TPR_B0,L. Do the same with the own B1 prob in place of S1. Bootstrap 2000x over test records (patient groups for PTB), and summarise across labels by the median plus the count of labels with CI > 0. Existing values, CPSC: NORM +.07, AF +.02, I-AVB +.19, LBBB +.05, RBBB +.05, PAC +.17, PVC +.07, STD +.32, STE -.05. CODE-15: 1dAVb -.10, RBBB +.01, LBBB 0, SB -.07, ST -.04, AF -.12.",
+     "prediction_if_domain_explains": "PTB Delta_rank is about 0 or negative for most labels, as on CODE-15. On the shared labels (I-AVB, RBBB, LBBB, AF), B0 TPR at fixed FPR falls from in-domain to CPSC while S1 TPR stays the same; I-AVB already shows 0.79 -> 0.49 vs 0.69 -> 0.68.",
+     "prediction_if_task_or_other_explains": "PTB Delta_rank > 0 for I-AVB, STD and PAC, as on CPSC, even though the images are in-domain. That would mean the new CPSC prompt makes B0 a worse ranker regardless of image source."
+    },
+    {
+     "analysis": "A3. B0 operating-point / implicit-prior mismatch and its F1 regret",
+     "exact_computation": "Per label: r_L = log(rate_B0 / prevalence), regret_L = F1_S1@OOFthr - F1_S1@B0rate. Report mean |r_L| per dataset, both raw and after A5 reweighting. Existing values: CPSC NORM .248 vs .128, AF .233 vs .175, RBBB .211 vs .275, I-AVB .070 vs .105, PVC .063 vs .112, STE .007 vs .029. CODE-15: all labels within 0.015 of prevalence. PTB preliminary (n=200): AF .130 vs .094, STD .109 vs .057, PAC .042 vs .016, I-AVB .047 vs .089, STE 0 vs .026.",
+     "prediction_if_domain_explains": "On PTB, B0's rates track prevalence (mean |r| about as small as CODE-15's), so regret_L is about 0.",
+     "prediction_if_task_or_other_explains": "On PTB, B0 over- and under-calls the same labels as on CPSC (AF and STD overcalled; I-AVB, PVC and STE undercalled), and the label-wise pattern of r_L correlates across CPSC and PTB (Spearman > 0.5). That would point to a prompt-specific bias, not an image-domain one."
+    },
+    {
+     "analysis": "A4. Test for a nuisance common factor (instance-level response bias)",
+     "exact_computation": "Per dataset: X = logits of all label probs; m = row mean. Report R2 of the regression of m on gold indicators and PC1 variance share (existing: CPSC 0.45, PTB 0.63, CODE-15 multi 0.30). Per label, compute 5-fold OOF AUC of (i) own logit, (ii) LR on [own, mean of the other logits], (iii) full S1, and frac = (ii - i) / (iii - i). Existing: CPSC I-AVB .814/.936/.965, STD .728/.884/.901, STE .520/.695/.772; PTB I-AVB .918/.926/.922, STD .913/.923/.920; R2 CPSC .54 vs PTB .76. Then repeat on CODE-15 (contrast already helps 1dAVb .854 -> .907) and, with new B1 runs, on G12/CSN images.",
+     "prediction_if_domain_explains": "The nuisance factor (low R2, large frac) appears on every OOD image source (CPSC, G12, CSN) and is absent or small on PTB and CODE-15. A 2-feature calibrator then matches S1 on OOD data with far fewer labels.",
+     "prediction_if_task_or_other_explains": "The nuisance factor shows up just as much in-domain (CODE-15 1dAVb already does), or it is limited to particular labels or questions (for example, the I-AVB Yes/No wording) whatever the source. That would make it a property of the B1 readout or prompt, not of the domain."
+    },
+    {
+     "analysis": "A5. Prevalence-matched reweighting to isolate image domain from label prior",
+     "exact_computation": "Assign each record a stratum c = its label set, collapsing multi-label sets to the primary non-NORM label. Weights w_i = pi_CPSC(c_i) / pi_PTB(c_i), normalised; ESS = (sum w)^2 / sum w^2. Rerun the learning curve on PTB with the weights in LR sample_weight, OOF threshold search and the test F1 (f1_score(sample_weight=w)); compute B0 F1 with the same weights. Do the reverse on CPSC (weight to PTB marginals). Report ESS: RBBB weight is about 7, NORM about 0.19.",
+     "prediction_if_domain_explains": "After matching priors, the PTB gain stays far below CPSC's (gap > 5 points), and CPSC weighted to PTB priors still shows a gain.",
+     "prediction_if_task_or_other_explains": "After prior matching, the two gains converge. The CPSC-vs-PTB difference then comes from label prior / operating point, not image appearance."
+    },
+    {
+     "analysis": "A6. Structure transfer vs intercept-only adaptation",
+     "exact_computation": "Fit S1 per label on PTB-1357 (not the 2082 used in transfer.py, which includes records with no mapped label). Score CPSC-test and report per-label AUC, which ignores thresholds. Then, for n in SIZES, use n CPSC dev labels to refit only a Platt (a, b) on the transferred logit, plus an OOF threshold, and compare with full S1 at the same n (same draws and seeds). Repeat in the other direction (CPSC -> PTB). Existing (PTB-2082 -> CPSC) AUCs: I-AVB .873 vs .965 (CPSC-fit), STD .788 vs .901, PAC .843 vs .876, STE .378 vs .772; coefficient cosines .47-.96, STE -.24.",
+     "prediction_if_domain_explains": "Intercept-only adaptation stays well below full S1 on CPSC because the ranking structure is domain-specific; its transferred AUC sits below CPSC-fit AUC with non-overlapping bootstrap CIs.",
+     "prediction_if_task_or_other_explains": "Transferred AUC is close to target-fit AUC once both selections match, and intercept-only adaptation recovers most of the gain. The earlier transfer failure was then a prior/threshold problem, or an artifact of training on the 2082-record population."
+    },
+    {
+     "analysis": "A7. Monotone calibration vs re-ranking (is the effect calibration at all?)",
+     "exact_computation": "Per dataset: the THR learning curve, the test-oracle per-label threshold F1 for the own B1 prob (CPSC: 58.5-58.9, which caps any monotone recalibration), and the S1 oracle (CPSC 70.5-71.4). Reliability: 10-bin quantile ECE and mean P vs prevalence per label. Existing ECE, CPSC vs PTB: NORM .162 vs .082, PAC .156 vs .115, PVC .120 vs .044, STD .104 vs .098.",
+     "prediction_if_domain_explains": "OOD B1 is worse calibrated (higher ECE), but F1 cannot gain from monotone recalibration (THR is about B0 on CPSC). The domain effect shows up only through re-ranking (c) and is absent on PTB.",
+     "prediction_if_task_or_other_explains": "If THR reaches about S1 on PTB, the PTB gain is pure threshold/prior adaptation of a new readout, and this happens regardless of domain."
+    },
+    {
+     "analysis": "A8. Agreement between the two readouts (B0 vs own B1 at matched rate)",
+     "exact_computation": "Per label: Cohen's kappa between B0 decisions and own-B1 decisions at B0's predicted-positive rate. Report the 2x2 discordance and which readout is right in the discordant cells. In preliminary PTB, F1_own@B0rate equals F1_B0 for NORM, AF, LBBB, RBBB and PVC, which suggests high agreement.",
+     "prediction_if_domain_explains": "Kappa is clearly lower on CPSC than on PTB and CODE-15 for the same labels, because the generative and Yes/No readouts disagree more on OOD images.",
+     "prediction_if_task_or_other_explains": "Kappa is similar on PTB and CPSC with the CPSC prompt, and differs only between the CODE-15 trained prompt and the new prompt."
+    },
+    {
+     "analysis": "A9. Fully crossed prompt x image design on shared labels (needs new B0 generation, no new B1)",
+     "exact_computation": "Shared labels: I-AVB (= 1dAVb), RBBB, LBBB, AF. Run B0 with the CODE-15 multi-label prompt on the 2061 CPSC images, and with the CPSC 9-label prompt on the 700 CODE-15 multi images. Per label, compute F1, Delta_rank vs S1 and r_L for all four cells: {CODE-15, CPSC images} x {trained, new prompt}. Fit a two-way model of Delta_rank (or of S1 minus B0 per label) on image source, prompt and their interaction, with bootstrap CIs.",
+     "prediction_if_domain_explains": "The image main effect dominates: the gain is large on CPSC images with either prompt and small on CODE-15 images with either prompt.",
+     "prediction_if_task_or_other_explains": "The prompt main effect dominates: the new CPSC prompt gives a gain on CODE-15 images too, and the trained CODE-15 prompt removes the gain on CPSC images."
+    },
+    {
+     "analysis": "A10. Label-definition sensitivity and a fixed PTB protocol",
+     "exact_computation": "PTB learning curve: patient-grouped split (dev pool 600, test about 757), fallback threshold 0.5, the same SIZES and 20 repeats, and positives and fallback counts recorded per draw. Report the full 9-label macro plus variants: 8-label macro without STE, STE_strict (drop STE), NORM made exclusive, and STD = STD_ plus ISC_*. Use the same 8-label macro on CPSC for comparability.",
+     "prediction_if_domain_explains": "The small PTB gain holds across all label variants.",
+     "prediction_if_task_or_other_explains": "The PTB gain depends on STE, PAC or NORM definitions, so it is driven by annotation or concept shift rather than image domain."
+    }
+   ],
+   "design_flaws": [
+    "Each domain-by-prompt cell has one dataset: CODE-15 (in-domain image, trained prompt), PTB-1357 (in-domain image, new prompt), CPSC (OOD image, new prompt). The OOD-image + trained-prompt cell is missing, and nothing is replicated, so any contrast can be a dataset quirk (labels, priors, annotation). A domain claim needs at least a second OOD source (G12 or CSN images exist in data/ECGBench/images) and the crossed prompt design in A9.",
+    "CODE-15 cannot be compared with CPSC for gain: different labels, a trained prompt, half the score from a NORM/ABNORMAL task where the B1 'NORM' question is a different concept, a combined 8-class metric, and the S1B0 variant added after seeing results. Its 'no gain' therefore cannot be attributed to domain.",
+    "Absolute gain (S1 - B0) mixes B0's deficit with S1's ceiling. Existing numbers show S1's ranking for shared labels is roughly domain-invariant while B0 degrades. Report the decomposition (A1) and the prior-free dominance test (A2), not one macro-F1 difference.",
+    "Calling the effect 'calibration' is misleading. Monotone recalibration (THR) cannot exceed the own-label oracle (about 58.5-58.9 on CPSC). The gain comes from cross-label re-ranking (+9.5) and operating-point/prior adaptation (+4.6), and ECE differences are irrelevant to F1 once thresholds are tuned.",
+    "The PTB subset and CPSC have very different priors (NORM 68% vs 13%, RBBB 3.8% vs 27.5%), and F1 depends on prevalence. Without prior-matched reweighting (A5), a PTB-vs-CPSC difference in gain cannot be attributed to image domain.",
+    "PTB learning-curve setup: random splits ignore patient_id (254 records share a patient); the fallback thresholds in learning_curve.py (ZS_THR) come from the PTB-XL fit split, which contains 950 of the 1357 records, so they leak; PAC and STE have only 39 and 34 positives, which causes frequent fallback at small n and macro-F1 SE of about 2 points.",
+    "STE on PTB is mostly the injury-code proxy (31 of 34 positives, only 3 strict STE_). STD excludes ISC_ codes, and NORM co-occurs with PVC/PAC in PTB but never in CPSC. The label semantics are not the same as CPSC's, so 'same task' is only approximately true.",
+    "transfer.py fits on the 2082-record PTB population, including records with none of the 9 labels, while every CPSC record has at least one label. Its negative population therefore differs, and its failure does not show that cross-label structure fails to transfer. Refit on PTB-1357 (A6).",
+    "Holding the prompt fixed does not hold concept familiarity fixed. PTB-XL SCP concepts and vocabulary were trained, and B0 on PTB images outputs out-of-set 'MI(...)' about 3.5% of the time vs 1.0% on CPSC; these outputs are silently dropped by the substring parser.",
+    "B1's Yes/No prompt is new in every dataset, so B1/S1 is never an in-domain readout. The design compares a trained-format readout (B0) with a new-format readout (B1) and does not isolate image domain.",
+    "Analysis plan not yet frozen: I already looked at B0 on the first 200 PTB records (macro 63.6 vs S1 68.8, mostly from the operating point). Fix the predictions and analyses in A1-A10 before the full 1357 run finishes."
+   ]
+  },
+  {
+   "confounds": [
+    {
+     "name": "Case mix and prevalence differ between the arms",
+     "why_it_matters": "PTB arm: NORM 68%, RBBB 3.8%, PAC 2.9%. CPSC: NORM 12.8%, RBBB 27.5%, PAC 8.7%. F1 and the cost of any model confusion both scale with prevalence. Example: the model says I-AVB=yes on RBBB-only records in both datasets (CPSC 19%, PTB 44%, n=32). That costs a lot of I-AVB precision on CPSC, where RBBB is 27.5%, and almost nothing on PTB. The CPSC I-AVB stacker weights the RBBB logit at -2.7. Raw B1 ranking also looks better on PTB mainly because PTB negatives are easy normals. Macro-AUC is 94.9 on PTB vs 84.3 on CPSC, but with NORM-only records removed the 8-label gap shrinks to 86.2 vs 81.9.",
+     "how_to_control_or_measure": "Report AUC and stacking lift with abnormal-only negatives. Report class-conditional response matrices, which do not depend on prevalence. Re-weight each test set to the other arm's label-combination mix (w = pi_target/pi_source per stratum, used in both threshold tuning and F1). Use 8-label macro-F1 (no STE) as the primary metric.",
+     "feasible_with_existing_data": true
+    },
+    {
+     "name": "PTB->CPSC label mapping changes what the labels mean (STE, STD, NORM)",
+     "why_it_matters": "STE: 31 of 34 STE positives come from INJAS/INJAL/INJIN/INJLA/INJIL. scp_statements.csv defines these as 'subendocardial injury', which clinically means ST depression. Data agree: on INJ* records mean P(STD)=0.655 vs P(STE)=0.180, and P(STD) separates INJ* records better (AUC 0.905) than P(STE) (0.836). The PTB STE stacker gives its own logit +0.2, NORM -2.0 and STD +0.8, so it learns 'abnormal and ST-depressed'. Only 3 records are STE_ (strict). STD: maps only STD_. 75 of 142 PTB AF records carry unmapped ST-T codes (DIG/ISC_/NST_/NDT), and 8 of 11 partial-B0 'AF; STD' calls fall on such records, so they score as false positives. NORM: counted at any likelihood (230 of 925 below 100, 8 at 15/35), and it co-occurs with PVC/PAC/STD in about 40 records; CPSC has 0 NORM co-occurrences. 207 NORM-only records also carry unmapped codes (ABQRS, SARRH, SBRAD, IRBBB, STACH, IVCD). Incomplete BBB, AFLT, BIGU/TRIGU and SVARR are unmapped. S1 learns from labels, so it can absorb these mapping quirks. B0 cannot. Any S1 gain on PTB can therefore partly reflect the mapping rather than the domain.",
+     "how_to_control_or_measure": "Primary: 8-label macro-F1 with STE dropped. Sensitivity table of G_PTB = S1-B0 under: STE_strict only; INJ*->STD; STD_broad = STD_ plus ISC*/DIG/NST_/INJ*; NORM positive only at likelihood 100 and only when exclusive; records with ambiguous codes dropped from the affected label's evaluation.",
+     "feasible_with_existing_data": true
+    },
+    {
+     "name": "Spectrum or severity shift vs image (covariate) shift vs annotation convention",
+     "why_it_matters": "Class-conditional B1 responses on single-label records: CPSC STD-only records get NORM>=0.5 in 45% vs 7% on PTB, and STD>=0.5 in only 35% vs 70%. STE-only: NORM 47% (CPSC) vs 0% (PTB). I-AVB: 36% vs 17%. PAC: 29% vs 0% (PTB n=8). So on CPSC, subtle findings are read as normal. This can come from three things the images alone cannot separate: (a) image/device/population shift (true domain), (b) CPSC annotating milder ST/PR deviations (spectrum), (c) different annotation conventions. 'In-domain' PTB also includes PTB-XL annotation conventions the model learned in training.",
+     "how_to_control_or_measure": "Measure ST deviation (J+60 ms) and PR interval from the raw waveforms (PTB-XL+ features, CPSC .mat via neurokit2). Fit P(B1 label) against the measured amplitude/interval in each dataset. If the two curves overlap, the shift is spectrum; if CPSC is shifted at equal amplitude, it is domain.",
+     "feasible_with_existing_data": false
+    },
+    {
+     "name": "Prompt familiarity of the comparator B0",
+     "why_it_matters": "The gain is S1 minus B0, so B0's strength matters. On both novel-prompt arms, B0 roughly equals B1@0.5: CPSC 57.6 vs 57.6; PTB partial (n=182) exact-match 0.747 vs 0.714. On native CODE-15, B0 is far above B1@0.5 (85.2 vs 73.2). So 'no gain on CODE-15' may mean B0 is strong on its native prompt, not that in-domain images need no calibration: on CODE-15, S1 still beats B1@0.5 by about 9 and THR by 4.2. B0 also carries training priors that do not depend on the domain. It emits PTB-superclass vocabulary (MI 17 times on CPSC and 4 of 182 on PTB, plus HYP and STC), all parsed as empty. It also emits the 'AF; STD' template: 102 of 486 CPSC AF calls add STD with only 10 gold STD, and 11 PTB calls with 2 gold STD.",
+     "how_to_control_or_measure": "Split the gain into G = [B1@0.5 - B0] + [THR - B1@0.5] + [S1 - THR] in every arm. Report B0 with an at-least-one fallback and with out-of-vocabulary answers mapped, as sensitivity checks.",
+     "feasible_with_existing_data": true
+    },
+    {
+     "name": "CODE-15% is not a clean 'in-domain image + native prompt' control",
+     "why_it_matters": "It differs from the CPSC/PTB arms in label set (6 labels plus NORM/ABNORMAL), task structure (binary task plus multi-label task on separate images), how the metric pools classes, budget split (n/2 per task), test size (800), and the wording of the B1 questions ('1st degree av block (1dAVb)'). The 2x2 has no cell for an OOD image with a native prompt. So prompt nativeness is entangled with the label set and the metric.",
+     "how_to_control_or_measure": "Build a common-label factorial on {I-AVB/1dAVb, RBBB, LBBB, AF}, which have gold labels in CPSC, PTB-XL (1AVB/CRBBB/CLBBB/AFIB) and CODE-15. Cross the 3 image sources with 2 prompts (CPSC-9 and CODE-15-6). B1 already exists for all three sources. The cross-prompt B0 runs need GPU generation.",
+     "feasible_with_existing_data": false
+    },
+    {
+     "name": "Prior exposure or memorisation of PTB-XL fold 10",
+     "why_it_matters": "All 1357 records are strat_fold 10 and validated_by_human=True. PTB-XL folds are patient-disjoint. ECGInstruct sources are PTB-XL, MIMIC-IV-ECG, CODE-15% and ECG-QA (ECG-QA is itself built on PTB-XL), and the paper does not state that fold 10 was excluded. Current evidence argues against image memorisation: abnormal-only raw AUCs on PTB are I-AVB 78.5, STD 74.3, PAC 87.6, and partial B0 exact-match is 0.75. Memorisation would still bias the PTB arm toward a strong B0 and a strong B1, shrinking G_PTB and exaggerating the domain effect.",
+     "how_to_control_or_measure": "Intersect fold-10 ecg_ids (from image names 'ptb-xl/<id>_hr-0.png') with the image paths in ECGInstruct and the ECG-QA train split. This needs the HF index file, and downloading it needs permission. Proxy check: run B0 on the native ptb-test (missing from outputs/pulse7b) and compare with the paper's PTB-XL Super numbers. Near-perfect scores would indicate memorisation.",
+     "feasible_with_existing_data": false
+    },
+    {
+     "name": "Repeated records from the same patient in PTB",
+     "why_it_matters": "1357 records come from 1218 patients; 115 patients have 2-4 records (254 records). A record-level pool/test split, or record-level OOF folds, lets S1 learn patient-specific appearance. B0 cannot benefit from this. The leak inflates G_PTB, which biases the result against the domain hypothesis. CPSC has no patient IDs in ECGBench, so the same check is impossible there.",
+     "how_to_control_or_measure": "Use GroupShuffleSplit on patient_id for the 600-record pool and the test set, and StratifiedGroupKFold for OOF thresholds inside each n-sample. Report grouped vs ungrouped G_PTB.",
+     "feasible_with_existing_data": true
+    },
+    {
+     "name": "Fallback thresholds leak PTB test data",
+     "why_it_matters": "In clarity/learning_curve.py (lines 40-51), labels with fewer than 2 positives or negatives fall back to ZS_THR. ZS_THR is tuned on data/splits/ptbxl.json['fit'], which is 70% of all 2082 fold-10 images and so contains about 70% of any PTB test set. At n=25-100 the PTB arm falls back often. Expected positives at n=25: PAC 0.7, STE 0.6, LBBB 1.0, RBBB 1.0, I-AVB 1.4. At n=100: PAC 2.9, STE 2.5, RBBB 3.8. The small-n part of the PTB curve would therefore use thresholds tuned on its own test set.",
+     "how_to_control_or_measure": "Use a fallback threshold of 0.5 in both arms, or thresholds tuned on the other domain. Log fallback counts per label and per n.",
+     "feasible_with_existing_data": true
+    }
+   ],
+   "proposed_analyses": [
+    {
+     "analysis": "A1 (run now, existing B1 only): per-label ranking lift from cross-label stacking, overall and with abnormal-only negatives",
+     "exact_computation": "For each label L: AUC of the raw logit P_L vs AUC of 5-fold OOF LogisticRegression(C=1) on all 9 logits (StratifiedGroupKFold by patient for PTB). Repeat after removing NORM-only records. Results: CPSC macro 84.3 -> 92.4 (+8.1); abnormal-only 81.9 -> 92.8 (+10.9); largest lifts STE +25.2, STD +17.3, I-AVB +15.0, PAC +7.4. PTB 94.9 -> 95.8 (+0.9); abnormal-only 86.2 -> 90.2 (+4.0), mostly STE (+21.5, mapping artifact) and STD (+7.7). Next: bootstrap CI of the lift difference, resampling patients for PTB and records for CPSC.",
+     "prediction_if_domain_explains": "Lift is large on CPSC and near zero on PTB, even with abnormal-only negatives and with STE excluded.",
+     "prediction_if_task_or_other_explains": "Lifts are similar once case mix and STE are controlled. The lift is a property of 9-way yes/no probing plus label exclusivity. Current data: CPSC +10.9 vs PTB +4.0 (abnormal-only), so domain is partly supported. Most of the PTB lift is the STE mapping artifact."
+    },
+    {
+     "analysis": "A2 (run now): class-conditional B1 response matrices, which do not depend on prevalence",
+     "exact_computation": "For single-label records with gold B: R[B,A] = mean(1[P_A >= 0.5]), also as mean logit. Compute dR = R_CPSC - R_PTB with bootstrap 95% CIs. Results: STD row: NORM +0.38, STD diagonal -0.36. STE row: NORM +0.47. I-AVB row: NORM +0.20. PAC row: NORM +0.29 (PTB n=8). RBBB row: I-AVB -0.25 (the confusion is stronger on PTB). Mean |off-diagonal dR| = 0.074.",
+     "prediction_if_domain_explains": "Large dR concentrated in CPSC-specific errors. Observed: on CPSC, subtle abnormalities are read as normal. Once A6 is controlled, these explain the CPSC gain on STD, I-AVB and PAC (per-label S1-B0 on CPSC: STD +27.3, I-AVB +17.7, PAC +13.5).",
+     "prediction_if_task_or_other_explains": "R is similar across datasets, and gains differ only because prevalence changes the cost of the same confusions. Observed for RBBB -> I-AVB: present in both, costly only under CPSC's RBBB prevalence."
+    },
+    {
+     "analysis": "A3: prevalence transport (counterfactual case mix)",
+     "exact_computation": "Strata = gold label sets; merge strata with fewer than 5 records and cap weights at 10. w_i = pi_target(stratum)/pi_source(stratum). On the PTB test, weighted to CPSC composition: fit S1 with sample_weight=w, tune thresholds on weighted OOF F1, and score B0, B1@0.5, THR and S1 with f1_score(sample_weight=w). Do the same for CPSC weighted to PTB composition. Compare G = S1-B0 between the original and transported versions, with bootstrap CIs.",
+     "prediction_if_domain_explains": "G_PTB stays small at CPSC composition, and G_CPSC stays large at PTB composition.",
+     "prediction_if_task_or_other_explains": "G follows the label mix: G_PTB at CPSC mix approaches about 11, and G_CPSC at PTB mix shrinks toward G_PTB. Then case mix, not image domain, drives the gain."
+    },
+    {
+     "analysis": "A4: primary difference-in-differences at n=600, with the gain split into components",
+     "exact_computation": "In each arm, with a 600-record pool and patient-grouped splits for PTB: G = [B1@0.5-B0] + [THR-B1@0.5] + [S1-THR], using 8-label macro-F1 (primary) and 9-label (secondary). Run 50 Monte-Carlo splits per arm. Subsample the CPSC test set to the PTB test size (~750) so CIs are comparable. Within each split, paired bootstrap over test units (B=1000), with patients as units for PTB. DiD = G_CPSC - G_PTB; CI from the split x bootstrap distribution. Preliminary (one grouped split, fallback 0.5, B1 only): PTB B1@0.5 62.0, THR 67.9, S1 70.4 (+0.9 SD over CV seeds). CPSC: B1@0.5 57.6, THR 57.2, S1 68.8. B0 is 57.6 on CPSC and, on PTB, partially (182 records) close to B1@0.5. Bootstrap SD of macro-F1: about 1.5 on 746 PTB records, 1.2 on 1461 CPSC records.",
+     "prediction_if_domain_explains": "G_PTB about 0 (CI includes 0), and DiD >= about 8 with CI excluding 0.",
+     "prediction_if_task_or_other_explains": "G_PTB is clearly positive because B0 is weak on the novel prompt in both arms, and DiD is small. Expected from preliminary numbers: G_PTB about +5 to +8 and DiD about +3 to +6, i.e. a partial domain effect."
+    },
+    {
+     "analysis": "A5: what kind of fix the gain needs (thresholds vs re-ranking)",
+     "exact_computation": "From A4, the shares (THR-B1@0.5)/G and (S1-THR)/G per arm and per label. Preliminary: CPSC THR -0.4, stacking +11.6. PTB THR +5.9 (LBBB, RBBB, PAC, STE), stacking +2.5. CODE-15: THR +4.8 over B1@0.5, stacking +4.2, B0 still higher.",
+     "prediction_if_domain_explains": "In-domain gain comes from thresholds (prior or calibration offset). OOD gain needs cross-label re-ranking (concept or covariate shift).",
+     "prediction_if_task_or_other_explains": "Similar decomposition in all arms."
+    },
+    {
+     "analysis": "A6: transporting the stacker and intercept-only adaptation",
+     "exact_computation": "(i) Fit S1 on the CPSC dev set (600), apply it to the PTB test set, and compare with the reverse direction (PTB -> CPSC already gives 55.5 < B0 57.6). (ii) Keep the source-domain coefficients, refit only the per-label intercepts and thresholds on n target labels (n in {50,100,200,600}), and compare with full S1 at the same n. (iii) Compare standardized coefficient matrices with the off-diagonal/diagonal L1 ratio. Already computed: CPSC I-AVB 2.04 (RBBB -2.7), STD 2.18, STE 2.50 (STD -1.3). PTB STE 29 (own logit +0.2), which is the mapping artifact.",
+     "prediction_if_domain_explains": "Intercept-only adaptation recovers little of the CPSC gain, so a full refit is needed. Stackers fail in both directions.",
+     "prediction_if_task_or_other_explains": "Intercept-only adaptation recovers most of the gain (prior shift or case mix), and stackers transfer after re-fitting the intercept."
+    },
+    {
+     "analysis": "A7: mapping-sensitivity table for the PTB arm",
+     "exact_computation": "Recompute G_PTB at n=600 (A4 protocol) under: STE excluded; STE_strict; INJ*->STD; STD_broad = STD_ plus ISC*/DIG/NST_/INJ*; NORM only at likelihood 100 and exclusive (drop records whose only label is a NORM below 100); ambiguous ST-T records excluded from STD scoring. Report per-label S1-B0.",
+     "prediction_if_domain_explains": "G_PTB stays small and stable across mappings.",
+     "prediction_if_task_or_other_explains": "G_PTB depends on the mapping and is concentrated in STE/STD/NORM. Then the PTB arm measures label-convention learning, not image domain."
+    },
+    {
+     "analysis": "A8: learning curves on comparable information axes",
+     "exact_computation": "Plot G against the median number of positives per label in the sample, not n. Also run matched-positive sampling: for each CPSC n, draw PTB samples by label-stratified sampling to match CPSC per-label positives where the PTB pool allows (PTB pool caps: PAC ~17, STE ~15, LBBB/RBBB ~23). Report n* where S1 first beats B0, using the lower 95% bound over 50 grouped splits x bootstrap. Preliminary: PTB S1@100 is 60.1+-4.3, below THR@100 at 63.7; on CPSC, S1@100 is 63.4 vs THR 56.3.",
+     "prediction_if_domain_explains": "PTB curve flat around B0 at every matched-positive level.",
+     "prediction_if_task_or_other_explains": "Once positives are matched, the PTB curve rises like CPSC, delayed only by the scarcity of rare-class labels."
+    },
+    {
+     "analysis": "A9: factorial of 3 image sources x 2 prompts on a common label set (needs new B0 generation)",
+     "exact_computation": "Labels {I-AVB/1dAVb, RBBB, LBBB, AF}. B0 under the CPSC-9 prompt and the CODE-15-6 prompt on CPSC images, PTB fold-10 images and CODE-15 multi-task images. Ignore SB/ST and other outputs. S1 restricted to the 4 labels; B1 exists everywhere. Fit G ~ image_source + prompt + interaction with cluster bootstrap. Optional same-image check: PTB fold 10 with the native superclass prompt (ptb-test B0 is missing locally).",
+     "prediction_if_domain_explains": "Main effect of image source (CPSC > PTB ≈ CODE) and no prompt effect.",
+     "prediction_if_task_or_other_explains": "Main effect of prompt: G about 0 under the native CODE-15 prompt and G > 0 under the CPSC-9 prompt, whatever the image source."
+    }
+   ],
+   "design_flaws": [
+    "The 2x2 is incomplete and confounded. CODE-15 differs from the CPSC/PTB arms in label set, task structure (binary NORM/ABNORMAL plus multi-label), metric pooling, budget split and B1 question wording, and there is no OOD-image + native-prompt cell. 'No gain on CODE-15' cannot be attributed to the image domain.",
+    "The fallback in clarity/learning_curve.py (lines 40-51) uses ZS_THR tuned on data/splits/ptbxl.json['fit'], which is 70% of all PTB fold-10 images. Reusing the script for the PTB arm leaks test labels into every label that falls back. In the PTB arm that means PAC, STE, LBBB, RBBB and I-AVB at n<=100.",
+    "The STE mapping is semantically wrong. 31 of 34 STE positives are 'subendocardial injury' codes (ST-depression semantics; B1 P(STD)=0.655 vs P(STE)=0.180 on these records), and only 3 are STE_. STE must be excluded from the primary PTB metric. STD = STD_ only, which turns visible ST depression from DIG/ISC_/NST_ into false positives. NORM is counted at any likelihood (down to 15) and co-occurs with PVC/PAC/STD in about 40 records, which never happens in CPSC.",
+    "The split ignores patients: 1218 patients for 1357 records, 115 with repeats. Pool/test and OOF folds must be grouped by patient_id, otherwise S1 (but not B0) benefits from within-patient leakage.",
+    "Not comparable at equal n: per-label positives differ by an order of magnitude (n=100: PTB PAC 2.9, STE 2.5, RBBB 3.8 vs CPSC RBBB 27.5, PAC 8.7). With a 600 pool, the PTB rare labels have about 15-23 positives (fewer than 3 events per variable for a 9-feature LR) and the PTB test has about 18-30 positives (per-label F1 SE about +-8-10).",
+    "Variance is understated. CPSC uses one fixed split. At n=600 the 20 'draws' are the same 600 records and vary only the CV folds (SD 0.5), while the test-sampling SD of macro-F1 is about 1.2 (CPSC) and 1.5 (PTB). '20/20 draws beat B0' is not a significance statement. Use repeated grouped splits and paired bootstrap over test units, and compare arms only through a CI on the DiD.",
+    "Multiplicity and analyst degrees of freedom: there are THR/S1/S3/S4/S1B0/EM/M4 variants, 3 datasets and 7 n values, and S1B0 was added post hoc. The partial PTB B0 outputs have already been inspected (also during this review: 182 records). Pre-register one primary contrast before B0 finishes: DiD of S1-B0 at n=600 on 8-label macro-F1 without STE. Make per-label DiDs secondary with Holm correction (8 tests), treat curves as descriptive, and label all other variants exploratory.",
+    "The comparison is asymmetric between B0 and S1. S1 always gets the at-least-one rule, while B0 outputs that parse to nothing count as no label. These include out-of-vocabulary answers such as 'MI(...)', 'HYP', 'STC(...)': 23 empty parses on CPSC, and 3 of 182 so far on PTB. Report B0 with the same fallback as a sensitivity check.",
+    "The 'AUC' returned by compute_f1_auc is computed on binary predictions (a balanced-accuracy-like quantity), not on scores. The AUC columns in learning_curve.json and code15_curve.json cannot serve as ranking evidence. Use probability AUCs (as in A1).",
+    "'In-domain' bundles image/device/population shift with PTB-XL annotation conventions and with the severity spectrum (on CPSC, STD-only records are called NORM 45% of the time vs 7% on PTB). Images alone cannot separate these. A null difference between arms would not rule out label-convention effects, and a positive one would not prove covariate shift.",
+    "Exclusion of PTB fold 10 from ECGInstruct (including ECG-QA, which is built on PTB-XL) has not been verified locally. Current indicators argue against memorisation (abnormal-only AUC: I-AVB 78.5, STD 74.3; partial B0 exact-match 0.75), and the native ptb-test B0 that would serve as a proxy check is missing from outputs/pulse7b."
+   ]
+  }
+ ],
+ "plan": {
+  "hypotheses": [
+   {
+    "id": "H0_framing",
+    "statement": "Estimand. G_a(n) = macroF1(S1@n) - macroF1(B0) in arm a, at the same test records. Arms: CPSC = out-of-domain (OOD) image + new CPSC-9 prompt. PTB = PTB-XL fold-10 image + the same CPSC-9 prompt, n=1357. CODE-15 = in-domain image + native prompt; it is descriptive only because its labels, task and metric differ. The hypotheses below are not mutually exclusive. The plan estimates how much of the CPSC-PTB gain difference each one explains and decides with the rules in P1-P4. The plan was frozen while the PTB B0 run was about 320/1357 records in. Reviewers had already seen B0 error signatures on 152-200 interim records; no metric from them is used here."
+   },
+   {
+    "id": "H_dom",
+    "statement": "Image domain (covariate/appearance shift) causes the gain. On OOD images the yes/no probe picks up label-confusion structure, and the generative B0 readout degrades. On in-domain PTB images the same prompt and the same case mix leave little for S1 to fix. Prediction: G_PTB is small both raw and after reweighting PTB to CPSC's label-set mix, with R_std = G_PTB,std / G_CPSC <= 0.3. The cross-label re-ranking component (c) is large on CPSC and about 0 on PTB even at CPSC's case mix."
+   },
+   {
+    "id": "H_task",
+    "statement": "The new CPSC-9 prompt causes the gain. Under it, B0 has a miscalibrated operating point with prompt-specific over- and under-calling (AF->STD co-mention, PTB-superclass vocabulary leakage, abnormal->NORM). This holds on any image source; CODE-15 has no gain only because its prompt is native. Prediction: G_PTB,raw is clearly positive (>= 3 points, CI > 0). It comes mostly from the operating-point component (b), and the per-label sign pattern of B0 over/under-calling (r_L) agrees between CPSC and PTB."
+   },
+   {
+    "id": "H_head",
+    "statement": "Baseline headroom. The gain measures how weak B0 is relative to the probe ranking, not a benefit of calibration. S1's ranking is about the same across sources, and only B0's position relative to the S1 ROC changes. Prediction: across arms and labels, per-label gain follows the dominance gap (TPR_S1 at B0's FPR minus TPR_B0). Once that gap is conditioned on, the arm identity adds nothing."
+   },
+   {
+    "id": "H_prev",
+    "statement": "Prevalence / case-mix mismatch. The model makes the same confusions on both sources, e.g. RBBB->I-AVB 'yes' and subtle abnormal->NORM. They cost F1 only when the confuser classes are common, as in CPSC (RBBB 27.5%, NORM 13%) and not PTB (RBBB 3.8%, NORM 68%). S1's cross-label suppression terms repair them. Prediction: G_PTB,std - G_PTB,raw >= 3 points with CI > 0, R_std >= 0.6, and the reverse holds too: CPSC reweighted to PTB's mix loses most of its gain."
+   },
+   {
+    "id": "H_label",
+    "statement": "Label structure / concept difficulty or definition. The gain sits on labels where the yes/no probe is weak whatever the domain (STD, I-AVB, PAC, STE), or on label-definition quirks: STE built from injury codes, CRBBB-only RBBB, non-exclusive NORM. Prediction: per-label gains are concordant across arms (Spearman >= 0.6 between per-label G_CPSC and G_PTB,std over the 8 primary labels) and inversely related to univariate B1 AUC in both arms. The PTB result moves materially under mapping edits."
+   }
+  ],
+  "primary_analyses": [
+   {
+    "id": "P0_prereq",
+    "computation": "Integrity and equivalence checks, run before any PTB B0 metric is read. (1) B0 PTB file outputs/pulse7b/ptbxl-cpsc9/answers.jsonl must have 1357 unique question_ids matching data/derived/ptbxl_cpsc9.json; otherwise list the missing ids and stop. (2) Parser is identical to clarity/learning_curve.py for both arms: gold = [L for L in LABELS if L in conversations[1].value], B0 = [L for L in LABELS if L in text]. (3) The weighted macro-F1 implementation with w == 1 reproduces scripts/score_ecgbench.py compute_f1_auc to 1e-9 on CPSC B0 (57.6). (4) Fallback threshold set to 0.5 in BOTH arms. ZS_THR is not used because it is tuned on data/splits/ptbxl.json['fit'], which overlaps the PTB test. Re-run the CPSC arm under this exact protocol; earlier CPSC numbers are kept only for continuity. (5) Log, per arm, the empty-parse and out-of-vocabulary counts for B0 (MI/CD/HYP/STTC/STC tokens).",
+    "decision_rule": "Any failure blocks P1-P4. No PTB B0 metric is computed until this script and the P1-P4 code are committed, with an md5 hash recorded alongside the plan."
+   },
+   {
+    "id": "P1_raw_DiD",
+    "computation": "Primary label set L8 = {NORM, AF, I-AVB, LBBB, RBBB, PAC, PVC, STD}. STE is excluded from scoring in both arms because 31/34 PTB STE positives are injury codes; S1 still uses all 9 B1 logits as features, and the at-least-one rule is applied over all 9 labels before STE is dropped. Metric: compute_f1_auc(pred, gold) with STE removed from gold and pred lists, so the macro is over L8; the 9-label official score is reported alongside. Split protocol (identical in both arms): for r in 0..19, partition into pool=600 and test (PTB: GroupShuffleSplit by patient_id from data/ptbxl_meta/ptbxl_database.csv, test about 757; CPSC: random over the 2061 cpsc-test records, test=1461, each record its own group). Reject and redraw (seed r*1000+k, log k) until every L8 label has >= 10 positives in both pool and test. Within partition r, for n in {25,50,100,200,300,400,600}: draw n records from the pool (seed 100*r+n; at n=600 the whole pool). Per label, LogisticRegression(C=1, max_iter=2000) on the 9 B1 logits (clip 1e-4). Threshold = argmax F1 on grid 0.02..0.96 step 0.01 over out-of-fold probabilities from StratifiedGroupKFold(k=min(5,pos,neg), groups=patient_id; CPSC groups=record). A label with < 2 positives or < 2 negatives falls back to raw P(yes) >= 0.5. At-least-one rule: if no label passes, take argmax P_L/thr_L. B0 is scored on the same test records. G_a,r(n) = F1(S1) - F1(B0). Uncertainty: in each partition, paired cluster bootstrap over test units (patients for PTB, records for CPSC), B=200, recomputing F1(S1) and F1(B0) on the same resample. Pool the 20x200 replicates per arm. DiD(600) = G_CPSC(600) - G_PTB,raw(600), with replicates paired across arms by index after an independent shuffle. 95% percentile CI. This is conservative because between-partition variance partly double-counts test sampling.",
+    "decision_rule": "Report G_CPSC(600), G_PTB,raw(600) and DiD with 95% CIs. Smallest effect of interest: 3 macro-F1 points; differences below that are 'no material difference'. P1 alone does not identify domain, because raw PTB differs in case mix. It feeds the P2 decomposition. If G_PTB,raw lower CI >= 3 points, H_dom cannot be the sole cause, since the in-domain image with the same prompt still gains: supports H_task and/or H_label. If G_PTB,raw upper CI < 3 and DiD lower CI > 3, go to P2 to tell H_dom from H_prev. Also report n* per arm: the smallest n at which the 2.5th percentile of the pooled G_a(n) replicates is > 0."
+   },
+   {
+    "id": "P2_casemix_standardized",
+    "computation": "Importance weights over exact 9-label gold sets S: w_i = (count_CPSC(S_i)/2061) / (count_PTB(S_i)/1357), computed once from all records. w = 0 for PTB label sets that never occur in CPSC (e.g. NORM+PVC). No cap in the primary analysis; sensitivity with cap 10 and with strata of < 5 PTB records merged into the record's primary non-NORM label. Report kept records and ESS = (sum w)^2 / sum w^2, overall and in the test fold. Run the full P1 protocol on PTB with w in LogisticRegression sample_weight, in OOF threshold selection (f1_score(..., sample_weight=w)), and in test scoring. Weighted macro-F1 over L8 = mean_L 2*sum(w*TP)/(2*sum(w*TP)+sum(w*FP)+sum(w*FN)); the same weights apply to B0. This gives G_PTB,std(600). Reverse transport: CPSC weighted to PTB's label-set distribution, restricted to label sets present in both, gives G_CPSC->PTBmix(600). Decomposition: G_CPSC - G_PTB,raw = [G_PTB,std - G_PTB,raw] (case-mix part) + [G_CPSC - G_PTB,std] (residual = image source + label definitions + overlay text + record window). R_std = G_PTB,std / G_CPSC on L8. Same bootstrap as P1; weights stay fixed within resamples.",
+    "decision_rule": "H_dom supported as the main cause if R_std <= 0.3 with upper CI < 0.5, AND G_CPSC->PTBmix stays >= 0.6*G_CPSC. H_prev supported as the main cause if G_PTB,std - G_PTB,raw >= 3 with CI > 0, R_std >= 0.6 with lower CI > 0.3, AND G_CPSC->PTBmix <= 0.5*G_CPSC. Partial (both contribute) if 0.3 < R_std < 0.6, or the CIs straddle these bounds; then report the case-mix and residual shares with CIs and do not claim a single cause. If test-fold ESS < 100, or the R_std CI width > 0.8, declare P2 inconclusive rather than reading a null as evidence."
+   },
+   {
+    "id": "P3_mechanism_decomposition",
+    "computation": "Per arm (CPSC, PTB raw, PTB weighted; CODE-15 on its 6 multi-label labels, descriptive), per L8 label. S1 is fit on the full 600 pool in each of the 20 partitions; the test split is scored. k_L = number of B0 positives on test. (a) readout = F1(own B1 prob thresholded at its top-k_L) - F1(B0). (c) re-ranking = F1(S1 score at top-k_L) - F1(own at top-k_L). (b) operating point = F1(S1 at OOF threshold) - F1(S1 at top-k_L). (e) rule/estimation = F1(S1 with at-least-one rule) - F1(S1 at OOF threshold). These sum to G per label, and macro to G. Prior-free dominance: Delta_rank_L = TPR_S1(FPR_B0,L) - TPR_B0,L via np.interp on roc_curve(S1 test score), plus the same with the own B1 prob. B0 calling bias: r_L = log(rate_B0,L / prevalence_L). Bootstrap as in P1. Report each component's macro mean and CI per arm; reference values on CPSC are a=-3.9, c=+9.5, b=+4.6.",
+    "decision_rule": "Assign components to hypotheses. (i) H_dom: (c) on CPSC exceeds (c) on PTB-weighted by >= 3 points (CI > 0), AND Delta_rank on PTB <= 0.02 for >= 5 of 8 labels, i.e. B0 sits on or above the S1 ROC as on CODE-15. (ii) H_prev: (c) on PTB-weighted >= 0.6 x (c) on CPSC, while (c) on PTB-raw is about 0. (iii) H_task: (b) on PTB-raw >= 3 points (CI > 0), AND Spearman(r_L,CPSC, r_L,PTB) over L8 >= 0.5 with matching signs for AF, STD (over-called) and I-AVB, PVC (under-called). This is directional only (8 labels). (iv) H_head: (a) > 0 in an arm, i.e. B0 is worse than its own probe at equal rate. CPSC is already -3.9, so H_head is supported only if PTB (a) differs from CPSC (a) by >= 3 points AND explains the DiD; otherwise H_head is rejected for the CPSC-PTB contrast, and it is noted only as the explanation of CODE-15's null (B0 far above the probe ROC)."
+   },
+   {
+    "id": "P4_label_concordance_and_mapping_robustness",
+    "computation": "Per-label gains G_L(600) with CIs in CPSC, PTB-raw and PTB-weighted (from P1/P2). Compute (1) Spearman(G_L,CPSC, G_L,PTB,std) over L8; (2) in each arm, Spearman(G_L, univariate OOF B1 AUC_L), with AUC computed on probabilities, not compute_f1_auc's binary AUC; (3) mapping-sensitivity reruns of G_PTB,raw and G_PTB,std at n=600, using scp_codes from ptbxl_database.csv and records within the 1357 only (B0 exists only there): (a) L8 primary; (b) L9 with STE as mapped; (c) L7 without STE and PAC; (d) NORM strict: positive only at likelihood 100 and exclusive, records with NORM+X dropped from evaluation; (e) RBBB := CRBBB or IRBBB for records among the 1357 carrying IRBBB; (f) STD broad = STD_ + ISC* + NST_ + DIG + INJ*. Weights are recomputed for each variant.",
+    "decision_rule": "H_label (concept difficulty) supported if Spearman(1) >= 0.6, the same labels (from STD, I-AVB, PAC) are among the top 3 gains in both arms, and Spearman(2) <= -0.5 in both arms. H_dom predicts a gain spread across labels on CPSC, including morphologically clear ones (AF, LBBB), with no PTB counterpart. Mapping artifact: if the PTB conclusion from P1/P2 changes category (as defined in P2) between variants (a) and (c)-(f), the PTB arm is declared mapping-sensitive. The domain conclusion is then limited to the labels where it is stable, and the label-definition (concept-shift) part of H_label is reported as not separable from domain."
+   }
+  ],
+  "secondary_analyses": [
+   {
+    "id": "S1_crosslabel_AUC_lift",
+    "computation": "Per label and arm: univariate AUC of the own logit vs 5-fold OOF LR on the 9 logits (StratifiedGroupKFold by patient for PTB). Computed overall, with abnormal-only negatives (NORM-only records removed), and with P2 weights. Also a 2-feature model [own logit, mean of other 8 logits], the share frac = (2feat - own)/(S1 - own), and R2 of the row-mean logit on gold indicators.",
+    "purpose": "Uses B1 only and does not depend on B0. Shows whether the cross-label suppression structure, and a per-image 'yes-bias' nuisance factor, exist in PTB once case mix matches CPSC. It separates H_prev from H_dom for component (c)."
+   },
+   {
+    "id": "S2_class_conditional_responses",
+    "computation": "For single-label records of gold class c: B1 response matrix R[c,A] = mean 1[P_A >= 0.5] and B0 response matrix Q[c,A] = mean 1[A in B0]. Report dR = R_CPSC - R_PTB and dQ with bootstrap CIs. For B0 also: OOV/empty rate, P(STD in B0 | gold AF without STD), P(NORM in B0 | gold abnormal), and predicted vs gold cardinality, each standardised to CPSC's class mix. Plus a domain classifier (y = PTB vs CPSC) on the 9 B1 logits within each gold class, balanced LR with 5-fold OOF AUC, recomputed under the P4 mapping variants.",
+    "purpose": "Prevalence-free view of where the two sources differ. H_task predicts equal or larger prompt artifacts on PTB images. H_dom predicts broad class-conditional shift, including on LBBB and AF. Concept shift predicts shift concentrated on STD, STE and RBBB that shrinks under redefinition."
+   },
+   {
+    "id": "S3_threshold_vs_reranking_curve",
+    "computation": "For each arm and n, compute THR (per-label OOF threshold on raw P(yes), fallback 0.5) and B1@0.5 alongside S1. Split G = [B1@0.5 - B0] + [THR - B1@0.5] + [S1 - THR]. Also index the learning curves by median positives per label in the draw, and log fallback counts per label and n.",
+    "purpose": "Shows whether in-domain gains need only re-thresholding, which would point to an operating-point or prior effect (H_task/H_prev), or need re-ranking. It also makes the curves comparable when rare-label positives differ by about 10x between arms."
+   },
+   {
+    "id": "S4_structure_transfer",
+    "computation": "Fit S1 coefficients on the CPSC pool (600) and apply them to the PTB test, then the reverse direction (PTB pool -> CPSC test). For n in {50,100,200,600}, use the target's n labels to refit only the per-label intercept and threshold (or a Platt a,b fit on the transferred score), and compare with full S1 on the same draws. Report per-label test AUC of the transferred score, and the cosine similarity of standardized coefficient vectors.",
+    "purpose": "If intercept-only adaptation of the source structure recovers most of the gain, the cross-label structure is model- or concept-level and the shift is prior-like (against H_dom). If only a full refit works, the structure is domain-specific."
+   },
+   {
+    "id": "S5_text_overlay_strata",
+    "computation": "Run OCR with clarity/lead_locate.py:ocr (Apple Vision on CPU, not model inference) on all 1357 PTB images. Flags: has_measure (regex 'PR:|QRS|QT|Rate:') and has_demo ('Sex:|Age:'). Within PTB, for the strata with and without measurements: B1 per-label AUC, B0 F1 for I-AVB/LBBB/RBBB, and G_PTB(600) under the P1 protocol with a stratum x label bootstrap interaction. Also run the same checks on a random 50 CPSC images to confirm they carry no printed measurements.",
+    "purpose": "Checks whether 'in-domain image' really means printed PR/QRS values that the model can read. If so, part of the PTB advantage is a text shortcut rather than appearance familiarity."
+   },
+   {
+    "id": "S6_grouped_vs_random_split",
+    "computation": "Repeat P1 on PTB with a record-level random split and record-level inner CV. Report G_PTB(grouped) - G_PTB(random) with a CI.",
+    "purpose": "Measures patient-leakage inflation of S1 in the PTB arm; CPSC has no patient IDs, so this cannot be checked there."
+   },
+   {
+    "id": "S7_prior_only_correction",
+    "computation": "Apply EM prior adjustment (clarity/transfer.py em_prior) to B1 using unlabeled target images in each arm, then threshold at 0.5, and also with THR thresholds from n labels. Report the share of G each recovers in CPSC, PTB-raw and PTB-weighted.",
+    "purpose": "Measures the pure label-shift share of the gain (H_prev in its simplest form)."
+   },
+   {
+    "id": "S8_pooled_gap_regression",
+    "computation": "Pool per-label rows: CPSC L8, PTB L8 (raw and weighted, kept separate) and CODE-15's 6 multi-label labels. Fit OLS G_aL ~ Delta_rank_aL + OOD_dummy + native_prompt_dummy + label fixed effects (shared labels AF, I-AVB/1dAVb, LBBB, RBBB), with a record-cluster bootstrap. Descriptive only: about 22 rows and one dataset per cell.",
+    "purpose": "A cross-arm check of H_head. If Delta_rank alone accounts for G and the dummies are about 0, the arm differences run through B0's position relative to the probe ROC."
+   },
+   {
+    "id": "S9_B0_parse_sensitivity",
+    "computation": "Rescore B0 in each arm (a) with empty/OOV parses dropped from the evaluation and (b) with OOV superclass tokens mapped (MI/STTC -> STD/STE as appropriate, flagged as ad hoc). Report how much G changes.",
+    "purpose": "Checks that B0's silent empty parses, which get no at-least-one rule unlike S1, do not drive G or the DiD."
+   },
+   {
+    "id": "S10_continuity_9label",
+    "computation": "Report the 9-label official compute_f1_auc for B0, THR, S1@n and S1B0 (exploratory) in both arms, plus CPSC results under the old ZS_THR fallback, next to the new protocol.",
+    "purpose": "Continuity with previously reported numbers (CPSC 57.6 / 68.8) and transparency about the protocol change."
+   }
+  ],
+  "protocol_details": [
+   "Freeze: commit the analysis code (P0-P4 plus secondary analyses) and this plan, and record md5 hashes before computing any metric that uses PTB B0. Do not read outputs/pulse7b/ptbxl-cpsc9/answers.jsonl, except for a line count, until then. Disclose that reviewers saw 152-200 interim B0 answers, for error signatures only.",
+   "Data: PTB = 1357 records in data/derived/ptbxl_cpsc9.json, B1 = outputs/clarity/b1_ptbxl_all.jsonl, B0 = outputs/pulse7b/ptbxl-cpsc9/answers.jsonl, patient_id and scp_codes from data/ptbxl_meta/ptbxl_database.csv (ecg_id = number in the 'ptb-xl-<id>' record id). CPSC = all 2061 records of cpsc-test (data/splits/cpsc.json dev+test), B1 = b1_cpsc_dev/test.jsonl, B0 = outputs/pulse7b/cpsc-test/answers.jsonl.",
+   "Gold and B0 parsing: substring match over LABELS = [NORM, AF, I-AVB, LBBB, RBBB, PAC, PVC, STD, STE], exactly as in clarity/learning_curve.py. Do not split on ';'.",
+   "Primary metric: macro-F1 from scripts/score_ecgbench.py compute_f1_auc, with STE removed from gold and prediction lists (L8). Its returned 'AUC' is computed on binary predictions and is not used as ranking evidence; ranking AUCs use sklearn roc_auc_score on probabilities. Weighted analyses use a re-implementation checked against compute_f1_auc at w=1. Every L8 label must be present in each test fold, so the MultiLabelBinarizer macro does not silently drop a label.",
+   "Splits: 20 outer partitions per arm (seeds 0..19). PTB uses GroupShuffleSplit by patient_id: pool 600 records (patients added until 600 is reached), test = the remaining ~757. CPSC uses a random 600/1461 split. Redraw until every L8 label has >= 10 positives in pool and test; log the number of redraws.",
+   "n grid {25, 50, 100, 200, 300, 400, 600}, with one draw per partition per n (seed 100*r + n). That gives 20 values per n per arm; at n=600 the draw is the whole pool.",
+   "Calibrator: per label, LogisticRegression(C=1.0, max_iter=2000) on the 9 B1 logits clipped at 1e-4. Threshold: F1-max over grid 0.02..0.96 step 0.01 on OOF probabilities from StratifiedGroupKFold(k=min(5,pos,neg), shuffle, random_state=r), grouped by patient for PTB. Fallback when pos<2 or neg<2: raw P(yes) >= 0.5 in both arms. ZS_THR is not used.",
+   "At-least-one rule: S1, THR and B1@0.5 always predict at least one label (argmax P_L/thr_L over all 9 labels), applied before STE is dropped. B0 is scored as generated (empty parse = no label); S9 gives a sensitivity check.",
+   "Case-mix weights (P2): fixed once from full-arm exact 9-label-set frequencies, with w=0 for PTB sets unseen in CPSC. Report ESS overall and per test fold. Sensitivity: cap 10, and merged strata.",
+   "Uncertainty: in each partition, a paired cluster bootstrap over test units (patients for PTB, records for CPSC), B=200, so 4000 pooled replicates per arm. Cross-arm contrasts pair replicates by shuffled index. Report 95% percentile CIs, the mean and SD across the 20 partitions, and the 2.5/97.5 percentiles of the partition distribution. Do not report counts of draws that beat B0 as significance.",
+   "Smallest effect of interest: 3 macro-F1 points. Decision thresholds as in P1-P4 (R_std <= 0.3 with upper CI < 0.5 for domain; R_std >= 0.6 with lower CI > 0.3 for case mix; otherwise partial or inconclusive). Per-label contrasts are secondary, with Holm correction over the 8 labels.",
+   "Confirmatory set = P1-P4 only. S1B0, S3 (evidence features), EM, CODE-15 cross-arm regression, OCR strata and all mapping variants are exploratory or sensitivity analyses and are labelled as such.",
+   "Compute: CPU only, read-only on existing outputs, plus the in-progress PTB B0 run. No other model inference. OCR with Apple Vision (lead_locate.ocr) is allowed because it is not model inference; S5 is dropped if it is unavailable."
+  ],
+  "limitations_to_state": [
+   "One dataset per cell: CPSC (OOD image, new prompt), PTB (in-domain image, new prompt), CODE-15 (in-domain image, native prompt). There is no OOD-image + native-prompt cell, and nothing is replicated, so a dataset-specific quirk cannot be fully separated from 'domain'. The crossed prompt x image design and a second OOD source (G12/CSN) need new GPU generation and are out of scope.",
+   "'In-domain' PTB bundles several things: image appearance, PTB-XL annotation conventions and severity spectrum, the trained SCP vocabulary, and printed demographics or measurements on many renderings. With images alone, the PTB arm cannot separate covariate shift from concept or spectrum shift. Waveform measurements (ST amplitude, PR) are not used.",
+   "The CPSC-9 prompt reuses the PTB-XL superclass training template, so 'same prompt' does not mean equal novelty across image sources. The B1 yes/no probe is a new format in every arm, so S1 is never an in-domain readout.",
+   "PTB labels are mapped from SCP codes. STE is mostly injury codes (excluded from the primary metric). STD uses STD_ only, RBBB is CRBBB only, and NORM is non-exclusive and admits low likelihood. The 1357-record subset excludes 725 records with no mapped label, which removes look-alike negatives (IRBBB, LAFB, IVCD). Mapping variants are limited to records that have B0.",
+   "Case-mix reweighting relies on exact label-set strata with low ESS (about 280 overall, fewer in the test fold). PAC and other rare strata carry large weights, so P2 can be underpowered; a null there is reported as inconclusive, not as support for domain.",
+   "Rare labels are small in PTB: about 15-25 test positives for PAC, LBBB and RBBB, so per-label F1 SE is about 8-10 points. Learning curves at small n hit the fallback often, and cross-arm comparisons at equal n are not at equal positives per label.",
+   "CPSC records are 6-60 s but are rendered as one ~10 s page, so episodic labels (PAC, PVC, ST changes) may be off-screen. Record lengths are not available locally, so this headroom difference is not controlled.",
+   "Exclusion of PTB-XL fold 10 from ECGInstruct (including ECG-QA, which is built on PTB-XL) is not verified locally. If fold 10 was trained on, B0 and B1 on PTB are inflated and the domain effect is overstated.",
+   "CPSC has no patient IDs, so the CPSC arm cannot be patient-grouped. The previous CPSC learning curve used one fixed split and ZS_THR fallbacks tuned partly on PTB, so the protocol was changed. New CPSC numbers may differ slightly from 57.6/68.8.",
+   "The comparison is asymmetric by design: S1 always gets the at-least-one rule and target-label fitting, and B0 gets neither. 'Calibration gain' mixes readout quality, operating-point/prior adaptation and cross-label re-ranking; P3 reports these separately. Monotone recalibration alone (THR) did not help on CPSC.",
+   "Forking paths: the PTB experiment and estimand were chosen after seeing the CPSC and CODE-15 results, and interim B0 records were inspected. S1B0 was added post hoc and is exploratory. CODE-15's null mainly reflects that B0 is strong under its native prompt; it cannot by itself show that calibration fails in-domain."
+  ]
+ },
+ "_saved_at": "2026-10-12T23:40:14",
+ "_ptbxl_b0_rows_at_save": 385,
+ "_freeze": {
+  "frozen_at": "2026-10-12T23:45:22",
+  "ptbxl_b0_rows_at_freeze": 487,
+  "md5": {
+   "clarity/domain_analysis.py": "a6b7ce534dcf489569e03bc4d89029b8",
+   "data/derived/ptbxl_cpsc9.json": "29cf68b56d8e01516af0432942b2eb08",
+   "clarity/label_prob.py": "2c770487eeb229d01fdf420c3f6fe837",
+   "scripts/score_ecgbench.py": "f79557965b6ddf81a6b98e4c30d6bb8d"
+  },
+  "implemented": [
+   "P0",
+   "P1",
+   "P2",
+   "P3",
+   "P4",
+   "S9",
+   "S10"
+  ],
+  "not_implemented": [
+   "S1-S8 secondary",
+   "CODE-15 descriptive P3 arm"
+  ],
+  "disclosure": "Design reviewers saw ~150-200 interim PTB B0 answers (error signatures only). Analysis code was dry-run end-to-end on a DUMMY PTB B0 (all NORM) only; real PTB B0 answers were not read before this freeze.",
+  "deviation": "Fallback threshold 0.5 in both arms per P0(4); CPSC arm is re-run under the new 20-partition protocol (earlier CPSC numbers kept for continuity only)."
+ }
+}

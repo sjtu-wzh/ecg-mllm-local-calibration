@@ -1,0 +1,33 @@
+{
+ "frozen_at": "2026-10-22T16:50:01",
+ "md5": {
+  "docs/prereg_robustness.md": "f6bf5102b1f1ea9089d18b3732b1cef0",
+  "clarity/robust_setup.py": "a2d18e83089d1d83a5fb5aa4341691f1",
+  "clarity/robust_prob.py": "088d7c10e32e71100b2bbf2d0c352309",
+  "clarity/robust_eval.py": "4709cc2a9930d3bb9c5801099c6a97bb",
+  "scripts/infer_mps.py": "b5160f166a47d09206104a49d9e982ee",
+  "scripts/score_ecgbench.py": "c1cb8b769162021fe57b3c6c8e61ecd9",
+  "data/splits/sph_robust.json": "e262f74511b3841dfe3f77ee75ad950a",
+  "data/derived/sph_robust_prompts.json": "528d5aa0fd9528d5344a0c21aed73a0b",
+  "data/derived/sph_robust_test_questions.json": "c2923b15486659bda1e75863095d5a18",
+  "data/derived/sph_robust_P1_questions.json": "f1d054877325edc43fcdde23b050fbb4",
+  "data/derived/sph_ml.json": "6ef5aaf87b682e12ccce0c32d62c17dc"
+ },
+ "perturbed_images": {
+  "ROT": {
+   "n": 1100,
+   "md5_of_md5s": "7d7e70a6e677e5ea68b1f17bb72e345f"
+  },
+  "PHOTO": {
+   "n": 1100,
+   "md5_of_md5s": "7735d2ed4d2b5866ecffe95d5282e9a6"
+  },
+  "SCAN": {
+   "n": 1100,
+   "md5_of_md5s": "25d7c31fe728cc603047af4095131ba1"
+  }
+ },
+ "robust_model_outputs_existing_at_freeze": [],
+ "note": "Before the freeze: (1) one preview record (sph-A00106) was viewed in all three conditions to check that perturbations were realistic and readable; (2) a smoke test on clean images with original prompts (3 B1 records, 2 B0 records) reproduced the existing SPH outputs exactly (max |dP| 0, B0 text identical); (3) robust_eval.py was dry-run with every arm reading the CLEAN outputs (ROBUST_DRYRUN), which shows only the CLEAN-subset S1 - B0 that is implied by existing outputs. No perturbed or paraphrased model output existed.",
+ "deviations": []
+}

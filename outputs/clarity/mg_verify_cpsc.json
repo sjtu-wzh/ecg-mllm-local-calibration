@@ -1,0 +1,107 @@
+{
+ "n": 20,
+ "b1_max_abs_diff": 0.2174580693244934,
+ "b0_identical": 18,
+ "rows": [
+  {
+   "id": "cpsc-A5349",
+   "b1_max_abs_diff": 0.019709467887878418,
+   "b0_same": true
+  },
+  {
+   "id": "cpsc-A5812",
+   "b1_max_abs_diff": 0.012861073017120361,
+   "b0_same": true
+  },
+  {
+   "id": "cpsc-A0548",
+   "b1_max_abs_diff": 0.00936746597290039,
+   "b0_same": true
+  },
+  {
+   "id": "cpsc-A3536",
+   "b1_max_abs_diff": 0.028662562370300293,
+   "b0_same": true
+  },
+  {
+   "id": "cpsc-A6713",
+   "b1_max_abs_diff": 0.00951164960861206,
+   "b0_same": true
+  },
+  {
+   "id": "cpsc-A5607",
+   "b1_max_abs_diff": 0.00939631462097168,
+   "b0_same": true
+  },
+  {
+   "id": "cpsc-A4202",
+   "b1_max_abs_diff": 0.01757723093032837,
+   "b0_same": true
+  },
+  {
+   "id": "cpsc-A6594",
+   "b1_max_abs_diff": 0.0006309300661087036,
+   "b0_same": true
+  },
+  {
+   "id": "cpsc-A4985",
+   "b1_max_abs_diff": 4.5239925384521484e-05,
+   "b0_same": true
+  },
+  {
+   "id": "cpsc-A3005",
+   "b1_max_abs_diff": 0.04762387275695801,
+   "b0_same": false
+  },
+  {
+   "id": "cpsc-A1890",
+   "b1_max_abs_diff": 0.022235453128814697,
+   "b0_same": true
+  },
+  {
+   "id": "cpsc-A3900",
+   "b1_max_abs_diff": 0.005999624729156494,
+   "b0_same": true
+  },
+  {
+   "id": "cpsc-A1894",
+   "b1_max_abs_diff": 0.1032910943031311,
+   "b0_same": true
+  },
+  {
+   "id": "cpsc-A1313",
+   "b1_max_abs_diff": 0.0011869966983795166,
+   "b0_same": true
+  },
+  {
+   "id": "cpsc-A3427",
+   "b1_max_abs_diff": 0.01220405101776123,
+   "b0_same": true
+  },
+  {
+   "id": "cpsc-A2025",
+   "b1_max_abs_diff": 0.010721385478973389,
+   "b0_same": true
+  },
+  {
+   "id": "cpsc-A4282",
+   "b1_max_abs_diff": 0.11063161492347717,
+   "b0_same": false
+  },
+  {
+   "id": "cpsc-A1364",
+   "b1_max_abs_diff": 0.00404629111289978,
+   "b0_same": true
+  },
+  {
+   "id": "cpsc-A1009",
+   "b1_max_abs_diff": 0.2174580693244934,
+   "b0_same": true
+  },
+  {
+   "id": "cpsc-A4597",
+   "b1_max_abs_diff": 0.004899919033050537,
+   "b0_same": true
+  }
+ ]
+}

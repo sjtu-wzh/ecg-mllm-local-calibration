@@ -1,0 +1,16 @@
+PULSE/
+data/ECGBench/
+data/derived/*
+!data/derived/sph_*
+data/ptbxl_meta/
+data/sph_raw/
+data/sph_images/
+data/sph_images_robust/
+outputs/features/
+models/
+scripts/score_ecgbench.py
+release/
+__pycache__/
+*.pyc
+*.log
+.DS_Store

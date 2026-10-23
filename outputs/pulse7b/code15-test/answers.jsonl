@@ -1,0 +1,1400 @@
+{"question_id": "code15-1109348", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-944269", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.6}
+{"question_id": "code15-576019", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.5}
+{"question_id": "code15-1517409", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 1.9}
+{"question_id": "code15-2074857", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "code15-891510", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "code15-497493", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.6}
+{"question_id": "code15-3079188", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 1.9}
+{"question_id": "code15-2969246", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 1.9}
+{"question_id": "code15-1661875", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 1.9}
+{"question_id": "code15-695833", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "code15-2831972", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.6}
+{"question_id": "code15-2966620", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.5}
+{"question_id": "code15-3140371", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 1.9}
+{"question_id": "code15-366275", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.6}
+{"question_id": "code15-426842", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.6}
+{"question_id": "code15-1271302", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.6}
+{"question_id": "code15-3021833", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.6}
+{"question_id": "code15-3195038", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "code15-4202916", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "code15-294705", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "code15-442895", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "code15-1283018", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "code15-1758499", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "code15-1542576", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "code15-3071087", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "code15-2742221", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "code15-969968", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "code15-1428661", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "code15-1149786", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "code15-2008982", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.6}
+{"question_id": "code15-1227749", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "code15-610643", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "code15-597521", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.6}
+{"question_id": "code15-2749118", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "code15-1401931", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "code15-1131082", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "code15-458334", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "code15-697816", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "code15-3175010", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "code15-433043", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "code15-1772977", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "code15-2049998", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "code15-1386336", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "code15-1528202", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "code15-176170", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "code15-2671450", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "code15-997261", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "code15-1174213", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.5}
+{"question_id": "code15-2877665", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "code15-1510987", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "code15-842174", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "code15-2655131", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "code15-3027836", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "code15-1594165", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "code15-9978", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "code15-5036", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "code15-3622324", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "code15-2966613", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "code15-395340", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "code15-2942933", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "code15-1812481", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "code15-1595916", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "code15-153260", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "code15-1651419", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "code15-3125160", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.6}
+{"question_id": "code15-3215336", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "code15-2960337", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "code15-557743", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "code15-3398738", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "code15-1672799", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "code15-1622400", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "code15-2894444", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "code15-1255312", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "code15-598474", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "code15-2533622", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "code15-1095825", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "code15-1349995", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "code15-668902", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "code15-48261", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "code15-1328087", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "code15-316048", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "code15-2891740", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "code15-4256626", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "code15-1986007", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "code15-693914", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.8}
+{"question_id": "code15-3210636", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.8}
+{"question_id": "code15-1012596", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "code15-3205123", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "code15-1549547", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "code15-2873923", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "code15-2888364", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "code15-2668498", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.8}
+{"question_id": "code15-85088", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.8}
+{"question_id": "code15-1541834", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.8}
+{"question_id": "code15-1984615", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.8}
+{"question_id": "code15-2864111", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.8}
+{"question_id": "code15-1821059", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-796836", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.8}
+{"question_id": "code15-955509", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "code15-309955", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.8}
+{"question_id": "code15-1246462", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-1673980", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "code15-4254778", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.8}
+{"question_id": "code15-1106887", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.8}
+{"question_id": "code15-2658120", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.8}
+{"question_id": "code15-1379127", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.8}
+{"question_id": "code15-315783", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-2022940", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "code15-3036093", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.8}
+{"question_id": "code15-3006637", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.9}
+{"question_id": "code15-4199790", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.8}
+{"question_id": "code15-2841012", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.9}
+{"question_id": "code15-1772161", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.9}
+{"question_id": "code15-1190181", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-469980", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-1334935", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.9}
+{"question_id": "code15-369594", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.9}
+{"question_id": "code15-1050739", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.9}
+{"question_id": "code15-3110409", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-724381", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-1142376", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-377728", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.9}
+{"question_id": "code15-1718512", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-2731417", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.9}
+{"question_id": "code15-834974", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-1517585", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-353168", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.9}
+{"question_id": "code15-444793", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.9}
+{"question_id": "code15-3790606", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.9}
+{"question_id": "code15-2738141", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.9}
+{"question_id": "code15-470550", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.9}
+{"question_id": "code15-1868352", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-1169058", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.9}
+{"question_id": "code15-1196691", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.9}
+{"question_id": "code15-3077197", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.9}
+{"question_id": "code15-1054412", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.9}
+{"question_id": "code15-2757810", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.9}
+{"question_id": "code15-1084897", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.9}
+{"question_id": "code15-4264214", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.9}
+{"question_id": "code15-2687204", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.9}
+{"question_id": "code15-1511205", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.9}
+{"question_id": "code15-131077", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "code15-2732938", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "code15-1076186", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.9}
+{"question_id": "code15-824851", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-645444", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "code15-475570", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "code15-3197743", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "code15-4207210", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.9}
+{"question_id": "code15-3144358", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.9}
+{"question_id": "code15-466510", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "code15-460238", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.9}
+{"question_id": "code15-1653972", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.9}
+{"question_id": "code15-1531760", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.9}
+{"question_id": "code15-3201474", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-1287783", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.9}
+{"question_id": "code15-1313341", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-1784124", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "code15-1197175", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.9}
+{"question_id": "code15-360036", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.9}
+{"question_id": "code15-1679516", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.9}
+{"question_id": "code15-149239", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-3202022", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.9}
+{"question_id": "code15-239578", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-3101333", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-1011098", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-1171917", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "code15-1695667", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-1677548", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "code15-3397088", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.9}
+{"question_id": "code15-3395875", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.9}
+{"question_id": "code15-4388510", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.9}
+{"question_id": "code15-108548", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "code15-157520", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-850935", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.9}
+{"question_id": "code15-1811117", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "code15-577291", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-492190", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-1580723", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "code15-1200910", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-1337356", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-1183142", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-3093035", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "code15-1030611", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "code15-3011480", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-4237546", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "code15-1849220", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-445845", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-1610592", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-1759418", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.5}
+{"question_id": "code15-1512112", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.5}
+{"question_id": "code15-728730", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "code15-4239211", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "code15-314046", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-1040103", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "code15-184150", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "code15-448891", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "code15-154579", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.5}
+{"question_id": "code15-3099086", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "code15-1652023", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.5}
+{"question_id": "code15-3625494", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "code15-3799307", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "code15-4209462", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "code15-804496", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-450597", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "code15-684178", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "code15-2911585", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "code15-1512333", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "code15-503132", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "code15-931709", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "code15-607922", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "code15-1989159", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "code15-1812130", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "code15-192516", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "code15-1667879", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "code15-1395862", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "code15-2907165", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "code15-841641", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "code15-1262470", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.5}
+{"question_id": "code15-672536", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "code15-2942452", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "code15-3087526", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "code15-641326", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "code15-3628986", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "code15-277679", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "code15-882438", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "code15-3114286", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "code15-4213771", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "code15-642831", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "code15-835236", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "code15-3051874", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "code15-1314908", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "code15-2824618", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "code15-506672", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "code15-1455129", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "code15-1198605", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "code15-2043282", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "code15-812777", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "code15-1693447", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "code15-324627", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "code15-2822024", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "code15-2740480", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "code15-362769", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "code15-4211745", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "code15-970718", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "code15-3156107", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "code15-1698381", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "code15-2507544", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "code15-663325", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "code15-1576327", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.5}
+{"question_id": "code15-866251", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "code15-128452", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "code15-1720338", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "code15-746854", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "code15-319159", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-555717", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "code15-780531", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.5}
+{"question_id": "code15-1165983", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "code15-1329163", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "code15-266545", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.5}
+{"question_id": "code15-1400675", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "code15-468742", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "code15-1393064", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "code15-968783", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.5}
+{"question_id": "code15-2062817", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "code15-669631", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "code15-218353", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "code15-2849375", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.5}
+{"question_id": "code15-3155615", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-373900", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "code15-3184031", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "code15-1389187", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.5}
+{"question_id": "code15-1655691", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "code15-81911", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "code15-272565", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "code15-4407645", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "code15-152176", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "code15-1759290", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-1035368", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-1009102", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-1575025", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-2768393", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "code15-1616101", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "code15-1711837", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "code15-1095348", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "code15-508981", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "code15-566062", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-506539", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-2731201", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-1578724", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-4270247", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-1712387", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-3401787", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-3052833", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-3134198", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-1187857", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-1477102", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "code15-296925", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-1783064", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "code15-267979", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.5}
+{"question_id": "code15-856418", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "code15-212672", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "code15-1745941", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-2968971", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-2863010", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-2882232", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-3003408", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-1713784", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-1261215", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-48043", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-1032605", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-16575", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-3004115", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-844512", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-1964171", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-1972001", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-958911", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-957350", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-272244", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-3793111", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-2761035", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "code15-689149", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "code15-1142584", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-989053", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-379880", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-1300044", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-3620979", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-2736903", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "code15-758044", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-1654937", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "code15-1446949", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-1569641", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-182634", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "code15-1296363", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "code15-52052", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "code15-2661892", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "code15-935276", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.5}
+{"question_id": "code15-3800303", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-1895827", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-176524", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.5}
+{"question_id": "code15-2770751", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-3630287", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-1577123", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-851380", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-961821", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-4398127", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-3627350", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-1740123", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-1109951", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-814095", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-754053", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-954223", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.8}
+{"question_id": "code15-1806750", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-1061839", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.5}
+{"question_id": "code15-620883", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-3226874", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-3404924", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-236732", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-1126305", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "code15-1063693", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "code15-821395", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-2684751", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-5801", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-1674969", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "code15-3175181", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.5}
+{"question_id": "code15-2825731", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "code15-416460", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-3223201", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "code15-1655481", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "code15-1291310", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-2668368", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "code15-3625141", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "code15-1246012", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-572301", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "code15-2665918", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "code15-1477398", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-202745", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "code15-223403", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-1691793", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "code15-2783149", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-1754762", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "code15-1183532", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "code15-364244", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-1269862", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-116926", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-1689661", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "code15-260712", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-1383075", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-1452801", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-1009765", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-676225", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-1365233", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-727540", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-318537", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-482234", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-2841452", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "code15-1033164", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "code15-1447996", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.5}
+{"question_id": "code15-1025970", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "code15-4403021", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "code15-299401", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "code15-616862", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "code15-4272336", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-292351", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-2941497", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-3170223", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-433082", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "code15-350925", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-37734", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.5}
+{"question_id": "code15-1755451", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.5}
+{"question_id": "code15-1550094", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "code15-228487", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-325705", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "code15-742834", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "code15-1788009", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "code15-3015032", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-3016803", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "code15-1608376", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.5}
+{"question_id": "code15-2016021", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "code15-1447464", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "code15-1448654", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "code15-206223", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-354181", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-428322", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-17167", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-1396641", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-3619105", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "code15-2986217", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "code15-1684338", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "code15-653607", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-1725457", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "code15-2030535", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "code15-561476", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.5}
+{"question_id": "code15-2904816", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.5}
+{"question_id": "code15-251494", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "code15-1742512", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.5}
+{"question_id": "code15-398272", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "code15-1082296", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.5}
+{"question_id": "code15-1408379", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-2833603", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "code15-1126372", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "code15-1784295", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "code15-831324", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "code15-1107410", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "code15-1352705", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "code15-272581", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "code15-2981368", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.5}
+{"question_id": "code15-1217808", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "code15-1967118", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "code15-4261233", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "code15-1635589", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "code15-1970730", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.5}
+{"question_id": "code15-1853687", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-180911", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-790333", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "code15-1764949", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-638113", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.5}
+{"question_id": "code15-1345727", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "code15-1640710", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "code15-911284", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 3.1}
+{"question_id": "code15-1138831", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "code15-1599079", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "code15-3060501", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.5}
+{"question_id": "code15-904310", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-50563", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-1105820", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-3409225", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-191078", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-1386068", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-1712632", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-1816010", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-3012979", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "code15-1775872", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-1002069", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "code15-130147", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "code15-218917", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-2658664", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-1832048", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "code15-646098", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "code15-346191", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-349275", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-351296", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "code15-707345", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-1426877", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "code15-159349", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-1506426", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-3024219", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-2835712", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-518657", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-2725915", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "code15-3084137", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "code15-820408", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-624359", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-313311", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "code15-2939777", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-473087", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-1870326", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "code15-257614", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-1507682", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-1801076", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "code15-1257108", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-447705", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "code15-1732444", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-828987", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "code15-1364822", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "code15-1109772", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "code15-4390245", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-1593061", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "code15-3053888", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "code15-123580", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.5}
+{"question_id": "code15-1526218", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-817565", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.5}
+{"question_id": "code15-1000700", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "code15-1453695", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.5}
+{"question_id": "code15-3098851", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "code15-3408421", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "code15-927212", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "code15-431569", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-2670289", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "code15-388364", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.5}
+{"question_id": "code15-817206", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-384265", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "code15-742864", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "code15-3111453", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-1596279", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-283874", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-1825091", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-674414", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-723792", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-1628293", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-1402954", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-867481", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-1491319", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "code15-2788920", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-17253", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "code15-1030107", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "code15-599594", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-458046", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-3102852", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-993938", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-4390933", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "code15-802206", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-1712936", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "code15-773274", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "code15-1044351", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "code15-241590", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "code15-1017484", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "code15-373605", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "code15-800705", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "code15-1540185", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "code15-1995697", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "code15-180558", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "code15-2849801", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "code15-627279", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-377429", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-251712", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "code15-2839666", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-55911", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-599375", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-638835", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-425128", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "code15-1524338", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-1083291", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "code15-394775", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "code15-2984816", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-3189591", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-1810561", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-1415779", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-3396864", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "code15-1225479", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-2958524", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "code15-2058440", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-1115712", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-1103138", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-646432", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-1538524", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-6305", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-3104656", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-1764816", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-3115877", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-4208593", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-734563", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-1327180", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-844178", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "code15-3151536", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-1070796", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-1537532", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-243247", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-4389057", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-268092", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-1569644", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "code15-2996474", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "code15-1268301", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 3.1}
+{"question_id": "code15-4415028", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-142099", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "code15-1495959", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-1815337", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "code15-3172742", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "code15-526462", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "code15-243631", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-2732248", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "code15-1142378", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-1425780", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-1325350", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-255769", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "code15-1040609", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "code15-1873563", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-234809", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-2733569", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-1996832", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-1334560", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "code15-862758", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-1241568", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-430255", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-865651", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-1444384", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-480652", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-1974590", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-400818", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-422155", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-3189064", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-652718", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-2977857", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-376414", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-1223662", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-1181536", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "code15-2685197", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-2851633", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-1355285", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-448876", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-1990091", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-2778822", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-1951553", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-2063331", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-825005", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-1240588", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-1926847", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-2679349", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-1477751", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-2866173", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-682183", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-876784", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-885595", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-1282030", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-2885964", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "code15-1076001", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-2038599", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-3192659", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-1725549", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-1513756", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-1191755", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-780970", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-1436940", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-1445385", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-1305913", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-3148997", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-993362", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-2536614", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-68153", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-2774259", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-1156419", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-990856", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-1420147", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-1029260", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-3410527", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-2958988", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-3113044", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-857767", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-1604386", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-267075", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-4218790", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-1341785", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-338650", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-3622238", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-690538", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-3181924", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-907484", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-437462", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-3006217", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-1581573", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-3015819", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-204699", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-1301322", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.5}
+{"question_id": "code15-1101161", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "code15-1433814", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "code15-876043", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.5}
+{"question_id": "code15-1417116", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.5}
+{"question_id": "code15-794792", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "code15-3402195", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-206606", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-1599404", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "code15-724367", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 3.1}
+{"question_id": "code15-1765958", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-744624", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-520597", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-706077", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-2953021", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-2502029", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "code15-294399", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "code15-3073247", "text": "1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 4.1}
+{"question_id": "code15-817686", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 4.0}
+{"question_id": "code15-4276080", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-1539921", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-487410", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.9}
+{"question_id": "code15-902017", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-327522", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 4.0}
+{"question_id": "code15-469355", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.9}
+{"question_id": "code15-818249", "text": "AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "code15-28788", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-1746232", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-2021259", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-245941", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-1917629", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-3098110", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-3135120", "text": "Answer: 1dAVb(1st degree av block); RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 5.3}
+{"question_id": "code15-231114", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-4208491", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-1135495", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-1771518", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "code15-1866341", "text": "AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.2}
+{"question_id": "code15-3176193", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "code15-1080802", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-492274", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-979436", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "code15-2930506", "text": "ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.2}
+{"question_id": "code15-871901", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "code15-944242", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "code15-2684179", "text": "RBBB(right bundle branch block); AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 4.0}
+{"question_id": "code15-1459228", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-21796", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "code15-405121", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-322682", "text": "RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.2}
+{"question_id": "code15-2911820", "text": "Answer: 1dAVb(1st degree av block); LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 4.5}
+{"question_id": "code15-2932785", "text": "AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.2}
+{"question_id": "code15-1893258", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "code15-1121359", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-4401206", "text": "AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.2}
+{"question_id": "code15-3098501", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "code15-1180334", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-174779", "text": "AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.2}
+{"question_id": "code15-3120028", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "code15-876396", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-265098", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "code15-1675481", "text": "Answer: RBBB(right bundle branch block); AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 4.2}
+{"question_id": "code15-435686", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-1447069", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "code15-213643", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-1250103", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-262081", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "code15-461316", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "code15-674054", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-3785584", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-2894493", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "code15-687513", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "code15-424836", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "code15-2796323", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-2981182", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-4255047", "text": "Answer: RBBB(right bundle branch block); SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 4.5}
+{"question_id": "code15-2830084", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-490310", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "code15-40531", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-467189", "text": "1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-1901214", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-1229793", "text": "AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "code15-846237", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "code15-1124419", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-1039013", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-3398821", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-2673414", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-4411780", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-3017586", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-2877965", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-2966810", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-46043", "text": "AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "code15-1411107", "text": "ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-2001356", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-361480", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-248547", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-1206238", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-589503", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-1153622", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-415085", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-1862447", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-796028", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-3096039", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-1171965", "text": "Answer: RBBB(right bundle branch block); SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 4.5}
+{"question_id": "code15-3055082", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-960113", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-450129", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-117404", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-123721", "text": "1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-842600", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-2887920", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-168422", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-429259", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-1719873", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-2798970", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-4250461", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-2729109", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "code15-4262159", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-153920", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-1509529", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-926042", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-3074738", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-490659", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-3621477", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 4.0}
+{"question_id": "code15-1319393", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 4.0}
+{"question_id": "code15-2977621", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-647652", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-827453", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.9}
+{"question_id": "code15-4273028", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-165522", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.9}
+{"question_id": "code15-573102", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-3091374", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-3790457", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-691040", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.9}
+{"question_id": "code15-1133968", "text": "ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-397879", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-1901378", "text": "AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-3073812", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-200455", "text": "Answer: LBBB(left bundle branch block); AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 4.5}
+{"question_id": "code15-33917", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 4.0}
+{"question_id": "code15-503846", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.9}
+{"question_id": "code15-1520642", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-242891", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.9}
+{"question_id": "code15-3616785", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "code15-3406886", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "code15-4406563", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.9}
+{"question_id": "code15-841336", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "code15-1503343", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-877146", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "code15-1291534", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 4.1}
+{"question_id": "code15-2769985", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 4.0}
+{"question_id": "code15-2886282", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-771512", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "code15-2794226", "text": "Answer: RBBB(right bundle branch block); AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 4.6}
+{"question_id": "code15-618339", "text": "Answer: LBBB(left bundle branch block); AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 4.7}
+{"question_id": "code15-1652352", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-3121415", "text": "Answer: RBBB(right bundle branch block); AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 4.5}
+{"question_id": "code15-81076", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-970044", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-466836", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-1515942", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-3042791", "text": "AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-885918", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-4414438", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-560991", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "code15-1953490", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-2908093", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-1081426", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-40738", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.9}
+{"question_id": "code15-1764510", "text": "Answer: 1dAVb(1st degree av block); RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 5.1}
+{"question_id": "code15-180520", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "code15-3787862", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.9}
+{"question_id": "code15-944110", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 4.0}
+{"question_id": "code15-2885107", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-252914", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-689901", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-601044", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "code15-1869920", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "code15-1343349", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-1254958", "text": "1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-435728", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-524449", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-1694488", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-569934", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-781231", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-1558648", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-1773075", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-321125", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-3190926", "text": "AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-124421", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-2521430", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-6072", "text": "AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "code15-3394874", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "code15-206540", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-266946", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-1440274", "text": "ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-796412", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-587935", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-248884", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "code15-1249306", "text": "AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-522401", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-2754542", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-1102524", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.9}
+{"question_id": "code15-584104", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.9}
+{"question_id": "code15-3183580", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-623371", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-2930131", "text": "Answer: 1dAVb(1st degree av block); LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 5.1}
+{"question_id": "code15-304807", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-2676552", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-1241755", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-1853733", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-1033446", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-2760433", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "code15-880502", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-3796518", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-961992", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-1174178", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-24792", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-564669", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-1545436", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-2657669", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-826432", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-1163", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-1748840", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-554781", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-1654921", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-1160223", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-4210809", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-4241235", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-1552050", "text": "Answer: 1dAVb(1st degree av block); RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 4.9}
+{"question_id": "code15-1456626", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-739233", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "code15-4236045", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-2763818", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-4262996", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-444744", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-710168", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-284325", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-3793238", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-360992", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-267638", "text": "AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "code15-2895777", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-5743", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-93852", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.9}
+{"question_id": "code15-2888766", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-283481", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-1762335", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-2508689", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-2863317", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-1846761", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "code15-1397319", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-1265743", "text": "ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-1405392", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-385655", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-1253905", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-2796116", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-1539981", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-4414597", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-412439", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-4201687", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-1046251", "text": "Answer: RBBB(right bundle branch block); AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 4.5}
+{"question_id": "code15-1385842", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.9}
+{"question_id": "code15-422308", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-3397315", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-1161056", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.9}
+{"question_id": "code15-303739", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-1482770", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-2533692", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-3053817", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-2786501", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-118583", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-1555342", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-497096", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-2793527", "text": "ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-3187100", "text": "ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-487424", "text": "AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "code15-1021943", "text": "Answer: RBBB(right bundle branch block); AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 4.5}
+{"question_id": "code15-529541", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.9}
+{"question_id": "code15-2816512", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-3402622", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-529747", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.9}
+{"question_id": "code15-3184926", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-1476358", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-1110487", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-553751", "text": "Answer: LBBB(left bundle branch block); AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 4.5}
+{"question_id": "code15-340554", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-4410706", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-2747983", "text": "AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-1684691", "text": "AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-146356", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-1407337", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-3178170", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-1583130", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-1827402", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-2524473", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-434625", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "code15-955312", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-2751025", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-652089", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-2873601", "text": "AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "code15-372527", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-3398091", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-376894", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-7001", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-646765", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-339405", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-3631165", "text": "AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-2878587", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-1092537", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-769974", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.9}
+{"question_id": "code15-1073686", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-951283", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-565245", "text": "AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "code15-252642", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "code15-733408", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-1251518", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-1388346", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-1476547", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-1363188", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-738861", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-1376920", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-2927673", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-2975699", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.9}
+{"question_id": "code15-2918122", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-3084640", "text": "Answer: RBBB(right bundle branch block); AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 4.5}
+{"question_id": "code15-32023", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-4240642", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-81638", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-2519390", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-1512759", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-2841239", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-3223082", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-4260865", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-267480", "text": "AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-688648", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-3612738", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-1539088", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-975275", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.9}
+{"question_id": "code15-2985100", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-2777733", "text": "AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "code15-633562", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-792974", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-546497", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-245736", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-846709", "text": "AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-3089141", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-645932", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-564393", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-1829884", "text": "ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-3008638", "text": "AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-1082889", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-3094419", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-3179585", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-3003426", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-2540939", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-2034555", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-2825344", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-852757", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-4249405", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-1638049", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-2001973", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-2734967", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-201773", "text": "Answer: RBBB(right bundle branch block); AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 4.5}
+{"question_id": "code15-3115428", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-1546339", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 4.3}
+{"question_id": "code15-4202863", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "code15-788792", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "code15-27112", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-927611", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-788902", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-3181379", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-814733", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-1421995", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-1218836", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-497386", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-2522621", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-1143279", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-1860", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-345098", "text": "Answer: 1dAVb(1st degree av block); RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 4.7}
+{"question_id": "code15-847549", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-3083342", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-303202", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-3135049", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-1375465", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-974094", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-785642", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-1729656", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-226284", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-67270", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-3791338", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-1820326", "text": "ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-246003", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-2797690", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.9}
+{"question_id": "code15-1401978", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.9}
+{"question_id": "code15-3066831", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "code15-72119", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-2738716", "text": "LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "code15-1328500", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-3139315", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-2541325", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-426104", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-449955", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-2762753", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-1142828", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-1370693", "text": "AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.2}
+{"question_id": "code15-482173", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-1567639", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-791923", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-373169", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-3123900", "text": "AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "code15-1040955", "text": "Answer: RBBB(right bundle branch block); ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 4.5}
+{"question_id": "code15-318543", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-4269820", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-3043753", "text": "AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "code15-2853574", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-1463284", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-151769", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-1340894", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-2911227", "text": "Answer: 1dAVb(1st degree av block); RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 4.7}
+{"question_id": "code15-1851306", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-548011", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-1606331", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-229493", "text": "AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "code15-2930835", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-717757", "text": "AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.2}
+{"question_id": "code15-3407369", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-1199263", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "code15-2507803", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-1523453", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-16725", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-4257765", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-1580985", "text": "Answer: 1dAVb(1st degree av block); SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 4.9}
+{"question_id": "code15-2676052", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-105518", "text": "AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.2}
+{"question_id": "code15-1424929", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-415623", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-4411735", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-4250988", "text": "1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-1389716", "text": "1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-473427", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-448769", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-2821983", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-318150", "text": "1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-2912581", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "code15-69255", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-1258343", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-1210545", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-1922702", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-1221642", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-1999505", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-1041869", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-155806", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-1459756", "text": "Answer: RBBB(right bundle branch block); SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 4.5}
+{"question_id": "code15-662610", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-297001", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-2663229", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-1479762", "text": "AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.2}
+{"question_id": "code15-1109591", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-220777", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "code15-3624042", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-2765849", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-125545", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-2830582", "text": "Answer: LBBB(left bundle branch block); AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 4.4}
+{"question_id": "code15-534030", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-2843404", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-1635980", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-1926534", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-706874", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-1667062", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-311853", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-886104", "text": "1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-1085849", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-1850119", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-1375151", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-539687", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-4402107", "text": "AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.2}
+{"question_id": "code15-1850047", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-186982", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-1684102", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-2747244", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-2732161", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-1310090", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-3092276", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-1444469", "text": "AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "code15-2870205", "text": "Answer: RBBB(right bundle branch block); AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 4.3}
+{"question_id": "code15-359260", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-1985037", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-694222", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-84919", "text": "AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.2}
+{"question_id": "code15-4253600", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-794916", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-3629662", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-2905378", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-3630950", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-1365361", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-1409479", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-640140", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-656600", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-1795014", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-1214306", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-41355", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-1029415", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-1524006", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-800680", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-79387", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-1454611", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "code15-983548", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-3181895", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-1572500", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-3785574", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-1560495", "text": "AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.2}
+{"question_id": "code15-1032548", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-624109", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-2987669", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-3626646", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-678954", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-1662957", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-2741373", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-1783833", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-2997542", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-1344604", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-658954", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-178308", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-2724528", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-2749880", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-435051", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-3615038", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-303127", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-21158", "text": "AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.2}
+{"question_id": "code15-2790318", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-2901592", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "code15-181653", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-2936836", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-1924275", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-1756892", "text": "AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.2}
+{"question_id": "code15-295738", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-1366730", "text": "1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-1558311", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-548900", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-58385", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-3626083", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-420181", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-1164157", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-3791483", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-3411295", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-437983", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-824989", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-2930602", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-218716", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-955726", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-2025851", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-1141725", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-1520088", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-2875225", "text": "Answer: RBBB(right bundle branch block); AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 4.3}
+{"question_id": "code15-895782", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-1515617", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-1109066", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-255765", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-3182423", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-398430", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-1756562", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-4412084", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-1844174", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-251540", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-465445", "text": "Answer: LBBB(left bundle branch block); AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 4.4}
+{"question_id": "code15-1042193", "text": "AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.2}
+{"question_id": "code15-616470", "text": "AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.1}
+{"question_id": "code15-49834", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-673303", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-2833108", "text": "1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-2527983", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-4262236", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-459726", "text": "Answer: RBBB(right bundle branch block); AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 4.3}
+{"question_id": "code15-3142925", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-679130", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-616340", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-769038", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-902879", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-60589", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-114507", "text": "Answer: RBBB(right bundle branch block); AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 4.3}
+{"question_id": "code15-2902789", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-114258", "text": "Answer: 1dAVb(1st degree av block); RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 4.6}
+{"question_id": "code15-1368833", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-90650", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-961102", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-285146", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-168927", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-243359", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-4252791", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-4255389", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-1778506", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-1368051", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-1544216", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-1479402", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-552141", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-2531419", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-1781190", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-151362", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-4273865", "text": "1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-2678686", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "code15-4237878", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-1322831", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-2854427", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-1040731", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-2678120", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-491845", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-237201", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-2839873", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-858689", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-3626701", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-489889", "text": "Answer: LBBB(left bundle branch block); AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 4.4}
+{"question_id": "code15-4206352", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-1166362", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-1481193", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-1339659", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-4205640", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-2666437", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-1969327", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-761049", "text": "1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-1352545", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-1735223", "text": "Answer: RBBB(right bundle branch block); AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 4.4}
+{"question_id": "code15-482273", "text": "AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "code15-532728", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-1135754", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-787613", "text": "ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "code15-197097", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "code15-618091", "text": "Answer: RBBB(right bundle branch block); AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 4.2}
+{"question_id": "code15-1214840", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "code15-1847789", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-3080464", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-1334434", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-4217956", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-84368", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-704685", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-2040177", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-1672451", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-856386", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-1829272", "text": "Answer: 1dAVb(1st degree av block); RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 4.7}
+{"question_id": "code15-312296", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-3184564", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-2842140", "text": "Answer: RBBB(right bundle branch block); SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 4.5}
+{"question_id": "code15-1090230", "text": "Answer: LBBB(left bundle branch block); ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 4.5}
+{"question_id": "code15-1992807", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-221726", "text": "AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.2}
+{"question_id": "code15-817336", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-67269", "text": "AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.2}
+{"question_id": "code15-918773", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-42024", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-426836", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-1226314", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-376694", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-1482309", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-2955262", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-18184", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-1071266", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-3208163", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-571568", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-136013", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "code15-2514056", "text": "Answer: 1dAVb(1st degree av block); RBBB(right bundle branch block); SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 6.0}
+{"question_id": "code15-1664401", "text": "AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.2}
+{"question_id": "code15-1585356", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "code15-6071", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "code15-1401834", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-1130372", "text": "Answer: LBBB(left bundle branch block); AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 4.3}
+{"question_id": "code15-2760074", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-928290", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-2779620", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-1659920", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-3087469", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-3624053", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-1259159", "text": "1dAVb(1st degree av block); RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 4.5}
+{"question_id": "code15-689704", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-1004734", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-989586", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-2530973", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-144635", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-1516127", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-79746", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-2022879", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-4247895", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-1368255", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-1156715", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-1190625", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-84821", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-1231882", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-2525466", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-313104", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-3787795", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-1650358", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-1663918", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-1339277", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-2767581", "text": "Answer: 1dAVb(1st degree av block); RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 4.7}
+{"question_id": "code15-1881117", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-225942", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-916467", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-42383", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-1027064", "text": "AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.2}
+{"question_id": "code15-287699", "text": "1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-196415", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-1465201", "text": "AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "code15-1576482", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-1280353", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "code15-991952", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-2789597", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-3045560", "text": "Answer: 1dAVb(1st degree av block); RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 4.7}
+{"question_id": "code15-1583423", "text": "Answer: RBBB(right bundle branch block); AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 4.4}
+{"question_id": "code15-126260", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-1467678", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-2881243", "text": "Answer: RBBB(right bundle branch block); SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 4.4}
+{"question_id": "code15-1119779", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-3394025", "text": "Answer: RBBB(right bundle branch block); ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 4.4}
+{"question_id": "code15-160235", "text": "Answer: ST(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "code15-92212", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-86200", "text": "Answer: 1dAVb(1st degree av block); LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 4.6}
+{"question_id": "code15-4215366", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "code15-1157997", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-1523783", "text": "Answer: LBBB(left bundle branch block)", "model_id": "PULSE-7B", "sec": 3.4}

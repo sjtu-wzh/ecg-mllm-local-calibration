@@ -1,0 +1,10 @@
+cpsc_test (n=1461): macro-F1 difference vs B0, paired bootstrap B=1000
+  B1@src    +1.0  95% CI [-1.5, +3.4]  p~0.374
+  B1@0.5    -0.0  95% CI [-2.7, +2.6]  p~0.984
+  S1        -2.1  95% CI [-4.9, +0.5]  p~0.114
+  S3        -4.8  95% CI [-7.5, -2.3]  p~0.000
+cpsc_all (n=2061): macro-F1 difference vs B0, paired bootstrap B=1000
+  B1@src    +0.7  95% CI [-1.3, +2.6]  p~0.490
+  B1@0.5    -1.0  95% CI [-3.1, +1.1]  p~0.378
+  S1        -1.8  95% CI [-4.0, +0.3]  p~0.108
+  S3        -3.6  95% CI [-5.8, -1.4]  p~0.000

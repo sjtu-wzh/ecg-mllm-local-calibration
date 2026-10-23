@@ -1,0 +1,15 @@
+{"question_id": "ptb-xl-2355", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.8}
+{"question_id": "ptb-xl-4556", "text": "MI(Myocardial infarction)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "ptb-xl-1885", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.6}
+{"question_id": "ptb-xl-17658", "text": "AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "ptb-xl-7751", "text": "AF(Atrial fibrillation)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "ptb-xl-5370", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "ptb-xl-2839", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "ptb-xl-18232", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "ptb-xl-16355", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "ptb-xl-5600", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "ptb-xl-4786", "text": "PVC(Premature ventricular contraction)", "model_id": "PULSE-7B", "sec": 3.2}
+{"question_id": "ptb-xl-20730", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "ptb-xl-3128", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "ptb-xl-14021", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "ptb-xl-11126", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.0}

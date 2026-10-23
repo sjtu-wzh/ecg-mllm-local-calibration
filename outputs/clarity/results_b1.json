@@ -1,0 +1,95 @@
+{
+ "n_dev": 600,
+ "n_test": 1461,
+ "dev": {
+  "B0": {
+   "F1": 57.2,
+   "AUC": 77.0,
+   "HL": 8.5,
+   "per_label_F1": {
+    "NORM": 57.7,
+    "AF": 81.5,
+    "I-AVB": 54.2,
+    "LBBB": 89.5,
+    "RBBB": 85.4,
+    "PAC": 44.2,
+    "PVC": 58.8,
+    "STD": 43.2,
+    "STE": 0.0
+   }
+  },
+  "B1_variants_F1": {
+   "thr0.5": 53.7,
+   "thr0.5+atleast1": 54.1,
+   "thr_tuned": 59.7,
+   "thr_tuned+atleast1": 59.5
+  },
+  "B1_selected": "thr_tuned",
+  "thresholds": {
+   "NORM": 0.78,
+   "AF": 0.67,
+   "I-AVB": 0.65,
+   "LBBB": 0.8,
+   "RBBB": 0.46,
+   "PAC": 0.71,
+   "PVC": 0.92,
+   "STD": 0.21,
+   "STE": 0.05
+  },
+  "M4_gate": {
+   "0.05": {
+    "uncertain_frac": 0.64,
+    "errors_in_uncertain": 0.59,
+    "error_rate_uncertain": 0.79,
+    "error_rate_confident": 0.98
+   },
+   "0.1": {
+    "uncertain_frac": 0.87,
+    "errors_in_uncertain": 0.85,
+    "error_rate_uncertain": 0.84,
+    "error_rate_confident": 0.99
+   },
+   "0.2": {
+    "uncertain_frac": 0.98,
+    "errors_in_uncertain": 0.97,
+    "error_rate_uncertain": 0.85,
+    "error_rate_confident": 1.0
+   }
+  }
+ },
+ "test": {
+  "B0": {
+   "F1": 57.6,
+   "AUC": 76.8,
+   "HL": 8.7,
+   "per_label_F1": {
+    "NORM": 57.2,
+    "AF": 82.6,
+    "I-AVB": 58.6,
+    "LBBB": 84.4,
+    "RBBB": 81.1,
+    "PAC": 42.3,
+    "PVC": 64.1,
+    "STD": 36.5,
+    "STE": 11.5
+   }
+  },
+  "B1": {
+   "F1": 57.2,
+   "AUC": 77.0,
+   "HL": 18.2,
+   "per_label_F1": {
+    "NORM": 58.7,
+    "AF": 91.2,
+    "I-AVB": 34.5,
+    "LBBB": 91.8,
+    "RBBB": 84.2,
+    "PAC": 41.9,
+    "PVC": 71.5,
+    "STD": 35.4,
+    "STE": 5.8
+   },
+   "prob_macroAUC": 84.5
+  }
+ }
+}

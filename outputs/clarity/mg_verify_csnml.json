@@ -1,0 +1,107 @@
+{
+ "n": 20,
+ "b1_max_abs_diff": 0.9337452277541161,
+ "b0_identical": 2,
+ "rows": [
+  {
+   "id": "csn-JS30819",
+   "b1_max_abs_diff": 0.10962539911270142,
+   "b0_same": true
+  },
+  {
+   "id": "csn-JS33178",
+   "b1_max_abs_diff": 0.00026005879044532776,
+   "b0_same": true
+  },
+  {
+   "id": "csn-JS02256",
+   "b1_max_abs_diff": 0.5375178754329681,
+   "b0_same": false
+  },
+  {
+   "id": "csn-JS21206",
+   "b1_max_abs_diff": 0.6790024638175964,
+   "b0_same": false
+  },
+  {
+   "id": "csn-JS38296",
+   "b1_max_abs_diff": 0.9337452277541161,
+   "b0_same": false
+  },
+  {
+   "id": "csn-JS37050",
+   "b1_max_abs_diff": 0.7877117693424225,
+   "b0_same": false
+  },
+  {
+   "id": "csn-JS32185",
+   "b1_max_abs_diff": 0.9182968866080046,
+   "b0_same": false
+  },
+  {
+   "id": "csn-JS25692",
+   "b1_max_abs_diff": 0.8065180331468582,
+   "b0_same": false
+  },
+  {
+   "id": "csn-JS36491",
+   "b1_max_abs_diff": 0.8890783563256264,
+   "b0_same": false
+  },
+  {
+   "id": "csn-JS28855",
+   "b1_max_abs_diff": 0.8735464364290237,
+   "b0_same": false
+  },
+  {
+   "id": "csn-JS41806",
+   "b1_max_abs_diff": 0.8295845836400986,
+   "b0_same": false
+  },
+  {
+   "id": "csn-JS17095",
+   "b1_max_abs_diff": 0.6817845702171326,
+   "b0_same": false
+  },
+  {
+   "id": "csn-JS37868",
+   "b1_max_abs_diff": 0.9250603727996349,
+   "b0_same": false
+  },
+  {
+   "id": "csn-JS08290",
+   "b1_max_abs_diff": 0.818284809589386,
+   "b0_same": false
+  },
+  {
+   "id": "csn-JS24305",
+   "b1_max_abs_diff": 0.839575745165348,
+   "b0_same": false
+  },
+  {
+   "id": "csn-JS08311",
+   "b1_max_abs_diff": 0.6776463538408279,
+   "b0_same": false
+  },
+  {
+   "id": "csn-JS05469",
+   "b1_max_abs_diff": 0.8119258135557175,
+   "b0_same": false
+  },
+  {
+   "id": "csn-JS43924",
+   "b1_max_abs_diff": 0.7232280969619751,
+   "b0_same": false
+  },
+  {
+   "id": "csn-JS20418",
+   "b1_max_abs_diff": 0.7250272482633591,
+   "b0_same": false
+  },
+  {
+   "id": "csn-JS39215",
+   "b1_max_abs_diff": 0.7716799974441528,
+   "b0_same": false
+  }
+ ]
+}

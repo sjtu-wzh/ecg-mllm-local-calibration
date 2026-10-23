@@ -1,0 +1,15 @@
+{"question_id": "code15-1517409", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-1811117", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.6}
+{"question_id": "code15-3156107", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.9}
+{"question_id": "code15-2684751", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "code15-3015032", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "code15-206223", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "code15-4261233", "text": "ABNORMAL", "model_id": "PULSE-7B", "sec": 2.5}
+{"question_id": "code15-3098501", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "code15-424836", "text": "Answer: 1dAVb(1st degree av block)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "code15-618339", "text": "Answer: LBBB(left bundle branch block); AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 4.5}
+{"question_id": "code15-2524473", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.1}
+{"question_id": "code15-2905378", "text": "Answer: SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "code15-398430", "text": "Answer: AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "code15-114507", "text": "Answer: RBBB(right bundle branch block); AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "code15-3787795", "text": "Answer: RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 3.0}

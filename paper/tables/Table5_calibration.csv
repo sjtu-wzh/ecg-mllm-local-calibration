@@ -1,0 +1,7 @@
+Dataset,Probability,ECE (macro),Brier (macro),AUROC (macro)
+CPSC,Raw P(yes),0.090,0.0812,0.845
+CPSC,S1,0.014,0.0428,0.926
+CPSC,Hidden-state probe,0.018,0.0379,0.949
+SPH*,Raw P(yes),0.117,0.0855,0.893
+SPH*,S1,0.014,0.0384,0.927
+SPH*,Hidden-state probe,0.014,0.0364,0.936

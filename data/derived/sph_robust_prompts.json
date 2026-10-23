@@ -1,0 +1,5 @@
+{
+ "QA": "Based on this 12-lead ECG image, is {name} ({abbr}) present? Answer Yes or No.",
+ "QB": "Look at the ECG image. Would you diagnose {name} ({abbr})? Please answer with Yes or No.",
+ "P1": "This is a 12-lead ECG image. Which of the following diagnoses are present?\n{classes}\nList every class that applies, using the abbreviations only, separated by semicolons."
+}

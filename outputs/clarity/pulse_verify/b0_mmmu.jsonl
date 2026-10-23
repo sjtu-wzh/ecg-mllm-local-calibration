@@ -1,0 +1,15 @@
+{"question_id": "mmmu-ecg-29", "text": "Answer: C", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "mmmu-ecg-30", "text": "Answer: D", "model_id": "PULSE-7B", "sec": 1.3}
+{"question_id": "mmmu-ecg-35", "text": "Answer: D", "model_id": "PULSE-7B", "sec": 1.5}
+{"question_id": "mmmu-ecg-36", "text": "Answer: B", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "mmmu-ecg-53", "text": "The ECG shows a posterior infarct, which is a specific diagnosis that can be made based on the presence of Q waves in the posterior leads. This image indicates that the patient has had a myocardial infarction in the past, which has resulted in damage to the posterior wall of the heart.\n\nAnswer: C", "model_id": "PULSE-7B", "sec": 10.3}
+{"question_id": "mmmu-ecg-94", "text": "Answer: C", "model_id": "PULSE-7B", "sec": 2.5}
+{"question_id": "mmmu-ecg-108", "text": "Answer: B", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "mmmu-ecg-130", "text": "Answer: A", "model_id": "PULSE-7B", "sec": 1.9}
+{"question_id": "mmmu-ecg-149", "text": "Answer: C", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "mmmu-ecg-159", "text": "Answer: D", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "mmmu-ecg-169", "text": "Answer: B", "model_id": "PULSE-7B", "sec": 1.8}
+{"question_id": "mmmu-ecg-181", "text": "Answer: D", "model_id": "PULSE-7B", "sec": 1.8}
+{"question_id": "mmmu-ecg-188", "text": "Answer: B", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "mmmu-ecg-192", "text": "Answer: B", "model_id": "PULSE-7B", "sec": 1.8}
+{"question_id": "mmmu-ecg-196", "text": "Answer: A", "model_id": "PULSE-7B", "sec": 1.8}

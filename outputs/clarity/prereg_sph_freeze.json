@@ -1,0 +1,25 @@
+{
+ "frozen_at": "2026-10-20T00:37:29",
+ "md5": {
+  "docs/prereg_sph.md": "51a856bc28d7da958b2818a89fc14852",
+  "clarity/build_sph.py": "d60be4c7aba0db794111eaeab34a2f80",
+  "clarity/render_sph.py": "365b96e27c75b445762b134c7d3c40ec",
+  "data/derived/sph_ml.json": "6ef5aaf87b682e12ccce0c32d62c17dc",
+  "data/derived/sph_ml_questions.json": "9df206f30a058ca4d628e3cadf5e8737",
+  "data/splits/sph_ml.json": "5fa020d0ed6959decfe3e1028dc29730",
+  "clarity/label_prob.py": "bd68aa08776765ab48528d92176f17b3",
+  "scripts/infer_mps.py": "b5160f166a47d09206104a49d9e982ee",
+  "clarity/medgemma_run.py": "3e7413de8db0d43ecc82b81dbb2037e4",
+  "clarity/extract_features.py": "c0cf5a8c9dde03f4845bbea0238aa729",
+  "clarity/ml_curve.py": "e82a460921743da22b7a5b64c9eecad5",
+  "clarity/baselines.py": "897e3eab8d43d2f50e660fb30cefb19b",
+  "scripts/score_ecgbench.py": "c1cb8b769162021fe57b3c6c8e61ecd9"
+ },
+ "sph_images": {
+  "n": 2912,
+  "manifest_md5": "8d9132d3dca24e8fb1a28ad670e3db13"
+ },
+ "sph_model_outputs_existing_at_freeze": [],
+ "note": "Frozen before any SPH model output. Baseline framework was quick-tested on CPSC only (2 draws).",
+ "deviations": []
+}

@@ -1,0 +1,32 @@
+{
+ "cpsc-test": {
+  "n": 50,
+  "mean_leads_found": 0.62,
+  "all12_rate": 0.0,
+  ">=10_rate": 0.0
+ },
+ "mmmu-ecg": {
+  "n": 50,
+  "mean_leads_found": 1.44,
+  "all12_rate": 0.0,
+  ">=10_rate": 0.0
+ },
+ "ptb-test": {
+  "n": 50,
+  "mean_leads_found": 0.64,
+  "all12_rate": 0.0,
+  ">=10_rate": 0.0
+ },
+ "g12-test-no-cot": {
+  "n": 50,
+  "mean_leads_found": 0.54,
+  "all12_rate": 0.0,
+  ">=10_rate": 0.0
+ },
+ "csn-test-no-cot": {
+  "n": 50,
+  "mean_leads_found": 0.44,
+  "all12_rate": 0.0,
+  ">=10_rate": 0.0
+ }
+}

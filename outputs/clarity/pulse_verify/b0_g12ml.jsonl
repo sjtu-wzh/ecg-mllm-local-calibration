@@ -1,0 +1,15 @@
+{"question_id": "g12-E10246", "text": "NSR(sinus rhythm)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "g12-E02704", "text": "AF(atrial fibrillation); LIs(lateral ischaemia); STach(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 5.8}
+{"question_id": "g12-E05047", "text": "TAb(t wave abnormal); NSR(sinus rhythm)", "model_id": "PULSE-7B", "sec": 4.3}
+{"question_id": "g12-E05366", "text": "LAD(left axis deviation); SB(sinus bradycardia); NSR(sinus rhythm)", "model_id": "PULSE-7B", "sec": 4.8}
+{"question_id": "g12-E04397", "text": "TAb(t wave abnormal); NSR(sinus rhythm); STach(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 4.5}
+{"question_id": "g12-E04272", "text": "NSR(sinus rhythm)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "g12-E04109", "text": "LVH(left ventricular hypertrophy); QAb(qwave abnormal); TInv(t wave inversion); STach(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 5.8}
+{"question_id": "g12-E00404", "text": "LAD(left axis deviation); NSR(sinus rhythm); IRBBB(incomplete right bundle branch block)", "model_id": "PULSE-7B", "sec": 4.5}
+{"question_id": "g12-E08012", "text": "AF(atrial fibrillation); TAb(t wave abnormal); LQRSV(low qrs voltages)", "model_id": "PULSE-7B", "sec": 4.7}
+{"question_id": "g12-E08788", "text": "LVH(left ventricular hypertrophy); QAb(qwave abnormal); NSR(sinus rhythm); STIAb(st interval abnormal); TInv(t wave inversion)", "model_id": "PULSE-7B", "sec": 6.5}
+{"question_id": "g12-E08995", "text": "LAD(left axis deviation); NSR(sinus rhythm)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "g12-E08284", "text": "LVH(left ventricular hypertrophy); TAb(t wave abnormal); NSR(sinus rhythm)", "model_id": "PULSE-7B", "sec": 4.7}
+{"question_id": "g12-E03196", "text": "LAD(left axis deviation); NSR(sinus rhythm); RBBB(right bundle branch block)", "model_id": "PULSE-7B", "sec": 4.3}
+{"question_id": "g12-E09776", "text": "LQT(prolonged qt interval); TInv(t wave inversion)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "g12-E09470", "text": "TAb(t wave abnormal); STach(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.8}

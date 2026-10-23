@@ -1,0 +1,800 @@
+{"question_id": "sph-A00036", "text": "PAC(atrial premature complex(es)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "sph-A00038", "text": "NORM", "model_id": "PULSE-7B", "sec": 1.7}
+{"question_id": "sph-A00053", "text": "SB(sinus bradycardia); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 4.8}
+{"question_id": "sph-A00106", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A00110", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A00111", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "sph-A00129", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "sph-A00131", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "sph-A00171", "text": "PVC(ventricular premature complex(es); SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 5.2}
+{"question_id": "sph-A00201", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A00210", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A00254", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "sph-A00287", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "sph-A00294", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "sph-A00375", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "sph-A00412", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "sph-A00440", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "sph-A00476", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "sph-A00531", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "sph-A00538", "text": "SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "sph-A00557", "text": "SB(sinus bradycardia); STD(st deviation); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 5.0}
+{"question_id": "sph-A00582", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A00775", "text": "TAb(t-wave abnormality); STD(st deviation); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 5.7}
+{"question_id": "sph-A00832", "text": "TAb(t-wave abnormality); STD(st deviation)", "model_id": "PULSE-7B", "sec": 4.1}
+{"question_id": "sph-A00833", "text": "SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A00886", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "sph-A00916", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "sph-A00973", "text": "SB(sinus bradycardia); SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 4.3}
+{"question_id": "sph-A01034", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A01049", "text": "STAC(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A01138", "text": "SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "sph-A01188", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "sph-A01191", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A01297", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "sph-A01310", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A01323", "text": "SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "sph-A01324", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A01369", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A01382", "text": "AF(atrial fibrillation); STach(sinus tachycardia); STTC(st deviation); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 6.9}
+{"question_id": "sph-A01402", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "sph-A01408", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "sph-A01431", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "sph-A01452", "text": "HR(sinus rhythm); STAC(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 4.1}
+{"question_id": "sph-A01457", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A01512", "text": "SB(sinus bradycardia); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 4.8}
+{"question_id": "sph-A01567", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A01655", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A01710", "text": "SB(sinus bradycardia); AF(atrial fibrillation); RBBB(right bundle-branch block)", "model_id": "PULSE-7B", "sec": 5.6}
+{"question_id": "sph-A01741", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A01816", "text": "TAb(t-wave abnormality); STD(st deviation); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 4.5}
+{"question_id": "sph-A01842", "text": "TAb(t-wave abnormality); STD(st deviation); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 5.6}
+{"question_id": "sph-A01843", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A01925", "text": "RBBB(right bundle-branch block)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A01951", "text": "SB(sinus bradycardia); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 4.7}
+{"question_id": "sph-A01965", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A01967", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "sph-A02087", "text": "SB(sinus bradycardia); STC(st deviation)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "sph-A02107", "text": "PVC(ventricular premature complex(es); SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 4.7}
+{"question_id": "sph-A02130", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A02133", "text": "TAb(t-wave abnormality); STD(st deviation); STTC(st tachycardia)", "model_id": "PULSE-7B", "sec": 5.2}
+{"question_id": "sph-A02167", "text": "STAC(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A02190", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A02212", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A02224", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A02234", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "sph-A02297", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "sph-A02346", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A02385", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "sph-A02391", "text": "STach(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A02398", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "sph-A02400", "text": "IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A02407", "text": "STAC(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A02422", "text": "AF(atrial fibrillation); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 3.9}
+{"question_id": "sph-A02486", "text": "SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A02511", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "sph-A02550", "text": "IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A02619", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A02660", "text": "SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "sph-A02661", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A02666", "text": "AF(atrial fibrillation); PVC(ventricular premature complex(es)", "model_id": "PULSE-7B", "sec": 4.7}
+{"question_id": "sph-A02675", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A02698", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A02711", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "sph-A02725", "text": "AF(atrial fibrillation); TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A02771", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A02806", "text": "STD(st deviation); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 4.2}
+{"question_id": "sph-A02850", "text": "SB(sinus bradycardia); STC(st changes)", "model_id": "PULSE-7B", "sec": 4.2}
+{"question_id": "sph-A02851", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "sph-A02856", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A02881", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A02891", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A02898", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A02927", "text": "TAb(t-wave abnormality); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 4.0}
+{"question_id": "sph-A02944", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A02958", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "sph-A03024", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A03029", "text": "PVC(ventricular premature complex(es); SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 4.7}
+{"question_id": "sph-A03064", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A03068", "text": "SA(sinus arrhythmia); RBBB(right bundle-branch block)", "model_id": "PULSE-7B", "sec": 4.3}
+{"question_id": "sph-A03137", "text": "TAb(t-wave abnormality); STD(st deviation); SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 4.3}
+{"question_id": "sph-A03149", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "sph-A03177", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.5}
+{"question_id": "sph-A03230", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "sph-A03237", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "sph-A03315", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "sph-A03348", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "sph-A03361", "text": "SB(sinus bradycardia); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 4.5}
+{"question_id": "sph-A03378", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "sph-A03431", "text": "PVC(ventricular premature complex(es); TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 4.8}
+{"question_id": "sph-A03442", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "sph-A03446", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "sph-A03505", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "sph-A03527", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "sph-A03540", "text": "SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A03558", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A03631", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "sph-A03664", "text": "TAb(t-wave abnormality); SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A03701", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "sph-A03775", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "sph-A03786", "text": "PVC(ventricular premature complex(es); AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A03800", "text": "SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A03802", "text": "SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "sph-A03809", "text": "IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "sph-A03826", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "sph-A03849", "text": "SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "sph-A03857", "text": "SB(sinus bradycardia); SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 4.4}
+{"question_id": "sph-A03903", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A03953", "text": "IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "sph-A03972", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A03990", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "sph-A04011", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "sph-A04039", "text": "SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "sph-A04093", "text": "SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "sph-A04110", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "sph-A04155", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "sph-A04168", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "sph-A04212", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A04227", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A04261", "text": "AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "sph-A04265", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "sph-A04316", "text": "STD(st deviation); STTC(st deviation with t-wave change)", "model_id": "PULSE-7B", "sec": 4.1}
+{"question_id": "sph-A04327", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A04383", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "sph-A04516", "text": "AF(atrial fibrillation); RBBB(right bundle-branch block)", "model_id": "PULSE-7B", "sec": 4.3}
+{"question_id": "sph-A04530", "text": "SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A04581", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A04636", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A04694", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "sph-A04710", "text": "RBBB(right bundle-branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "sph-A04733", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "sph-A04746", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.5}
+{"question_id": "sph-A04747", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "sph-A04748", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A04815", "text": "SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "sph-A04891", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A04907", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A04966", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "sph-A04972", "text": "SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "sph-A05018", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "sph-A05034", "text": "SB(sinus bradycardia); STC(st changes)", "model_id": "PULSE-7B", "sec": 3.9}
+{"question_id": "sph-A05044", "text": "PAC(atrial premature complex(es); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 4.1}
+{"question_id": "sph-A05261", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.1}
+{"question_id": "sph-A05389", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A05404", "text": "TAb(t-wave abnormality); SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "sph-A05459", "text": "SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A05477", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "sph-A05507", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "sph-A05521", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A05555", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "sph-A05626", "text": "RBBB(right bundle-branch block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "sph-A05630", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "sph-A05633", "text": "PAC(atrial premature complex(es)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A05664", "text": "STAC(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A05670", "text": "SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A05676", "text": "STD(st deviation)", "model_id": "PULSE-7B", "sec": 3.1}
+{"question_id": "sph-A05677", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A05686", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "sph-A05716", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "sph-A05726", "text": "SB(sinus bradycardia); STD(st deviation); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 5.4}
+{"question_id": "sph-A05742", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A05768", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "sph-A05780", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "sph-A05803", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "sph-A05816", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "sph-A05830", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "sph-A05915", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "sph-A05925", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A05939", "text": "STD(st deviation)", "model_id": "PULSE-7B", "sec": 3.2}
+{"question_id": "sph-A06003", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "sph-A06014", "text": "SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A06074", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A06086", "text": "SB(sinus bradycardia); AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 4.4}
+{"question_id": "sph-A06094", "text": "SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A06110", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A06155", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "sph-A06179", "text": "STAC(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "sph-A06272", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "sph-A06313", "text": "SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 3.2}
+{"question_id": "sph-A06319", "text": "AF(atrial fibrillation); TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "sph-A06341", "text": "SA(sinus arrhythmia); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 4.0}
+{"question_id": "sph-A06363", "text": "TAb(t-wave abnormality); STD(st deviation)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A06401", "text": "SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A06431", "text": "STAC(st deviation); STTC(st deviation with t-wave change)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "sph-A06449", "text": "STC(st changes)", "model_id": "PULSE-7B", "sec": 3.2}
+{"question_id": "sph-A06483", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "sph-A06486", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "sph-A06513", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "sph-A06548", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "sph-A06584", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.5}
+{"question_id": "sph-A06631", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "sph-A06632", "text": "STAC(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "sph-A06675", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A06706", "text": "TAb(t-wave abnormality); SA(sinus arrhythmia); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 5.0}
+{"question_id": "sph-A06731", "text": "SB(sinus bradycardia); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 4.0}
+{"question_id": "sph-A06737", "text": "SB(sinus bradycardia); STD(st deviation)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A06840", "text": "IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "sph-A06928", "text": "STD(st deviation)", "model_id": "PULSE-7B", "sec": 3.2}
+{"question_id": "sph-A06931", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A06942", "text": "STach(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "sph-A07002", "text": "PVC(ventricular premature complex(es); SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 4.9}
+{"question_id": "sph-A07099", "text": "SB(sinus bradycardia); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 4.1}
+{"question_id": "sph-A07177", "text": "PVC(ventricular premature complex(es); AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 4.0}
+{"question_id": "sph-A07181", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "sph-A07197", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A07225", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A07231", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A07241", "text": "STD(st deviation)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A07290", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "sph-A07315", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "sph-A07327", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.5}
+{"question_id": "sph-A07365", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A07407", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "sph-A07424", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "sph-A07442", "text": "RBBB(right bundle-branch block)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "sph-A07445", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A07486", "text": "TAb(t-wave abnormality); SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 4.4}
+{"question_id": "sph-A07488", "text": "SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A07540", "text": "STD(st deviation)", "model_id": "PULSE-7B", "sec": 3.1}
+{"question_id": "sph-A07545", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A07585", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "sph-A07599", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.5}
+{"question_id": "sph-A07630", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "sph-A07649", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "sph-A07654", "text": "PAC(atrial premature complex(es); STD(st deviation)", "model_id": "PULSE-7B", "sec": 4.3}
+{"question_id": "sph-A07663", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A07683", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A07700", "text": "AF(atrial fibrillation); PVC(ventricular premature complex(es)", "model_id": "PULSE-7B", "sec": 4.7}
+{"question_id": "sph-A07717", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A07738", "text": "STAC(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "sph-A07756", "text": "SB(sinus bradycardia); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 4.0}
+{"question_id": "sph-A07769", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A07802", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A07832", "text": "PVC(ventricular premature complex(es); AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 4.7}
+{"question_id": "sph-A07849", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "sph-A07853", "text": "PAC(atrial premature complex(es)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A07860", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A07922", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A07986", "text": "AF(atrial fibrillation); TAb(t-wave abnormality); STD(st deviation)", "model_id": "PULSE-7B", "sec": 4.2}
+{"question_id": "sph-A07988", "text": "IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 3.1}
+{"question_id": "sph-A08000", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A08043", "text": "TAb(t-wave abnormality); SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "sph-A08101", "text": "SB(sinus bradycardia); SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "sph-A08113", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A08193", "text": "PVC(ventricular premature complex(es); STD(st deviation); STTC(st deviation with t-wave change)", "model_id": "PULSE-7B", "sec": 4.7}
+{"question_id": "sph-A08203", "text": "SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A08210", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "sph-A08241", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "sph-A08271", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A08276", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "sph-A08391", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "sph-A08408", "text": "SB(sinus bradycardia); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 4.0}
+{"question_id": "sph-A08428", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "sph-A08502", "text": "SB(sinus bradycardia); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "sph-A08552", "text": "STAC(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A08593", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A08649", "text": "IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A08657", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A08671", "text": "STAC(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "sph-A08675", "text": "STD(st deviation); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A08706", "text": "SB(sinus bradycardia); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 4.1}
+{"question_id": "sph-A08754", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A08781", "text": "STC(st deviation); PAC(atrial premature complex(es)", "model_id": "PULSE-7B", "sec": 4.1}
+{"question_id": "sph-A08788", "text": "PAC(atrial premature complex(es); STD(st deviation)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A08850", "text": "SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A08868", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "sph-A08960", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.5}
+{"question_id": "sph-A09002", "text": "PAC(atrial premature complex(es)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A09008", "text": "IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 3.1}
+{"question_id": "sph-A09024", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "sph-A09049", "text": "STC(st changes)", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "sph-A09150", "text": "SB(sinus bradycardia); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 4.7}
+{"question_id": "sph-A09159", "text": "PVC(ventricular premature complex(es); RBBB(right bundle-branch block)", "model_id": "PULSE-7B", "sec": 4.1}
+{"question_id": "sph-A09176", "text": "AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A09227", "text": "IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A09268", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A09295", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A09321", "text": "STD(st deviation)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "sph-A09412", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "sph-A09473", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "sph-A09536", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A09537", "text": "STD(st deviation); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A09589", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A09643", "text": "SB(sinus bradycardia); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 3.9}
+{"question_id": "sph-A09679", "text": "STC(st deviation)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "sph-A09684", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "sph-A09685", "text": "PVC(ventricular premature complex(es)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A09689", "text": "12-lead ECG; SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "sph-A09691", "text": "MI(myocardial infarction); TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 4.8}
+{"question_id": "sph-A09736", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A09745", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A09835", "text": "STD(st deviation)", "model_id": "PULSE-7B", "sec": 3.1}
+{"question_id": "sph-A09884", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A09898", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A09952", "text": "STD(st deviation)", "model_id": "PULSE-7B", "sec": 3.1}
+{"question_id": "sph-A09991", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A10055", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A10069", "text": "RBBB(right bundle-branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "sph-A10072", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A10102", "text": "SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "sph-A10103", "text": "SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A10163", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "sph-A10213", "text": "STD(st deviation); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 4.2}
+{"question_id": "sph-A10224", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A10250", "text": "RBBB(right bundle-branch block)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "sph-A10307", "text": "TAb(t-wave abnormality); STD(st deviation)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "sph-A10313", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A10342", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A10345", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "sph-A10347", "text": "SA(sinus arrhythmia); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "sph-A10390", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "sph-A10394", "text": "STach(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A10411", "text": "SA(sinus arrhythmia); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 3.9}
+{"question_id": "sph-A10451", "text": "TAb(t-wave abnormality); STD(st deviation); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 5.6}
+{"question_id": "sph-A10463", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A10470", "text": "SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "sph-A10505", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A10521", "text": "RBBB(right bundle-branch block)", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "sph-A10595", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A10613", "text": "MI(myocardial infarction)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A10637", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A10639", "text": "SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A10664", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A10686", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "sph-A10689", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "sph-A10708", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A10709", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A10769", "text": "PAC(atrial premature complex(es)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A10770", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A10855", "text": "PVC(ventricular premature complex(es); SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 4.7}
+{"question_id": "sph-A10860", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A10926", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A10940", "text": "SB(sinus bradycardia); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 4.7}
+{"question_id": "sph-A11022", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A11115", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A11129", "text": "MI(myocardial infarction); TAb(t-wave abnormality); SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 5.7}
+{"question_id": "sph-A11148", "text": "IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 3.1}
+{"question_id": "sph-A11159", "text": "IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "sph-A11177", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "sph-A11185", "text": "SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "sph-A11303", "text": "PVC(ventricular premature complex(es)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "sph-A11330", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A11333", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "sph-A11366", "text": "SB(sinus bradycardia); SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A11474", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "sph-A11488", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A11491", "text": "PVC(ventricular premature complex(es); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 5.1}
+{"question_id": "sph-A11548", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A11558", "text": "TAb(t-wave abnormality); STD(st deviation)", "model_id": "PULSE-7B", "sec": 4.2}
+{"question_id": "sph-A11591", "text": "PVC(ventricular premature complex(es); SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 4.8}
+{"question_id": "sph-A11617", "text": "TAb(t-wave abnormality); STD(st deviation); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 5.6}
+{"question_id": "sph-A11628", "text": "AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A11635", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "sph-A11669", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "sph-A11672", "text": "TAb(t-wave abnormality); STD(st deviation); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 5.5}
+{"question_id": "sph-A11748", "text": "SB(sinus bradycardia); PAC(atrial premature complex(es)", "model_id": "PULSE-7B", "sec": 4.7}
+{"question_id": "sph-A11769", "text": "PAC(atrial premature complex(es)", "model_id": "PULSE-7B", "sec": 3.1}
+{"question_id": "sph-A11779", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A11788", "text": "STach(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A11790", "text": "STC(st changes)", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "sph-A11798", "text": "PAC(atrial premature complex(es)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "sph-A11826", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A11850", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A11893", "text": "IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 3.1}
+{"question_id": "sph-A11948", "text": "STAC(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A12003", "text": "STach(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A12005", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A12062", "text": "IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A12070", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A12086", "text": "STD(st deviation)", "model_id": "PULSE-7B", "sec": 3.1}
+{"question_id": "sph-A12126", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A12128", "text": "AF(atrial fibrillation); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "sph-A12167", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A12334", "text": "PVC(ventricular premature complex(es)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "sph-A12358", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "sph-A12380", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A12388", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A12408", "text": "SA(sinus arrhythmia); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 4.7}
+{"question_id": "sph-A12416", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "sph-A12426", "text": "STach(sinus tachycardia); STTC(st deviation)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "sph-A12485", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A12505", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "sph-A12595", "text": "STAC(st deviation)", "model_id": "PULSE-7B", "sec": 3.1}
+{"question_id": "sph-A12615", "text": "STAC(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A12663", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A12669", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A12692", "text": "SB(sinus bradycardia); PVC(ventricular premature complex(es)", "model_id": "PULSE-7B", "sec": 4.7}
+{"question_id": "sph-A12702", "text": "TAb(t-wave abnormality); STD(st deviation)", "model_id": "PULSE-7B", "sec": 4.2}
+{"question_id": "sph-A12707", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A12754", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A12785", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "sph-A12800", "text": "SB(sinus bradycardia); AF(atrial fibrillation); PVC(ventricular premature complex(es); STD(st deviation); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 6.9}
+{"question_id": "sph-A12826", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A12842", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A12955", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "sph-A13051", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "sph-A13068", "text": "IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A13075", "text": "STC(st deviation); TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 4.2}
+{"question_id": "sph-A13079", "text": "SB(sinus bradycardia); AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 4.5}
+{"question_id": "sph-A13080", "text": "TAb(t-wave abnormality); STD(st deviation)", "model_id": "PULSE-7B", "sec": 4.2}
+{"question_id": "sph-A13102", "text": "PAC(atrial premature complex(es); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 4.1}
+{"question_id": "sph-A13141", "text": "STAC(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A13142", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A13144", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "sph-A13155", "text": "STach(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "sph-A13164", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "sph-A13176", "text": "TAb(t-wave abnormality); SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 4.2}
+{"question_id": "sph-A13183", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A13253", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A13291", "text": "PVC(ventricular premature complex(es); STach(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 4.9}
+{"question_id": "sph-A13331", "text": "PVC(ventricular premature complex(es); SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 4.8}
+{"question_id": "sph-A13397", "text": "SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A13443", "text": "PVC(ventricular premature complex(es); SB(sinus bradycardia); AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 5.8}
+{"question_id": "sph-A13448", "text": "SB(sinus bradycardia); SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 4.5}
+{"question_id": "sph-A13530", "text": "TAb(t-wave abnormality); STD(st deviation); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 5.6}
+{"question_id": "sph-A13541", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A13559", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A13645", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A13693", "text": "SB(sinus bradycardia); AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 4.5}
+{"question_id": "sph-A13707", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A13710", "text": "SB(sinus bradycardia); SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 4.5}
+{"question_id": "sph-A13801", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "sph-A13947", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.2}
+{"question_id": "sph-A13953", "text": "RBBB(right bundle-branch block)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A14002", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "sph-A14035", "text": "IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 3.1}
+{"question_id": "sph-A14048", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A14065", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A14083", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A14108", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A14129", "text": "TAb(t-wave abnormality); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 4.0}
+{"question_id": "sph-A14169", "text": "STAC(st deviation); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 4.5}
+{"question_id": "sph-A14177", "text": "TAb(t-wave abnormality); STD(st deviation); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 5.6}
+{"question_id": "sph-A14180", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "sph-A14194", "text": "IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "sph-A14249", "text": "PVC(ventricular premature complex(es)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "sph-A14269", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "sph-A14305", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "sph-A14309", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "sph-A14425", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "sph-A14426", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "sph-A14428", "text": "SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "sph-A14464", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A14506", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A14539", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A14571", "text": "PVC(ventricular premature complex(es); SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "sph-A14621", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A14644", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "sph-A14653", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "sph-A14665", "text": "AF(atrial fibrillation); STD(st deviation); STTC(st deviation with t-wave change)", "model_id": "PULSE-7B", "sec": 5.3}
+{"question_id": "sph-A14752", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A14824", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A14853", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "sph-A14869", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "sph-A14976", "text": "SA(sinus arrhythmia); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 3.9}
+{"question_id": "sph-A14982", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A15006", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A15026", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A15029", "text": "PVC(ventricular premature complex(es); SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 4.5}
+{"question_id": "sph-A15048", "text": "TAb(t-wave abnormality); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 4.1}
+{"question_id": "sph-A15057", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A15078", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "sph-A15136", "text": "IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A15186", "text": "AF(atrial fibrillation); RBBB(right bundle-branch block)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "sph-A15191", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A15202", "text": "PVC(ventricular premature complex(es)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A15218", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A15313", "text": "PAC(atrial premature complex(es); AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 4.6}
+{"question_id": "sph-A15350", "text": "IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "sph-A15351", "text": "SA(sinus arrhythmia); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 4.0}
+{"question_id": "sph-A15368", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A15425", "text": "STAC(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "sph-A15516", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A15536", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "sph-A15545", "text": "PVC(ventricular premature complex(es); AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.9}
+{"question_id": "sph-A15581", "text": "IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "sph-A15601", "text": "STD(st deviation)", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "sph-A15615", "text": "IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A15632", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A15656", "text": "STD(st deviation); TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 4.0}
+{"question_id": "sph-A15684", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A15715", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A15778", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A15789", "text": "SA(sinus arrhythmia); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "sph-A15791", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A15903", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "sph-A15916", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "sph-A16010", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A16039", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "sph-A16040", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A16091", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "sph-A16116", "text": "TAb(t-wave abnormality); STD(st deviation); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 4.7}
+{"question_id": "sph-A16146", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.1}
+{"question_id": "sph-A16177", "text": "TAb(t-wave abnormality); STD(st deviation); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 5.6}
+{"question_id": "sph-A16196", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A16236", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A16280", "text": "STach(sinus tachycardia); STDEV(st deviation); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 4.9}
+{"question_id": "sph-A16292", "text": "RBBB(right bundle-branch block)", "model_id": "PULSE-7B", "sec": 3.1}
+{"question_id": "sph-A16334", "text": "SB(sinus bradycardia); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 4.0}
+{"question_id": "sph-A16342", "text": "IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 3.2}
+{"question_id": "sph-A16347", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 4.3}
+{"question_id": "sph-A16415", "text": "NORM", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "sph-A16524", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "sph-A16559", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "sph-A16625", "text": "STach(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.1}
+{"question_id": "sph-A16715", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A16717", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "sph-A16767", "text": "STD(st deviation)", "model_id": "PULSE-7B", "sec": 3.1}
+{"question_id": "sph-A16774", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A16797", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A16845", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A16858", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A16862", "text": "TAb(t-wave abnormality); SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A16889", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A16950", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "sph-A16972", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A17003", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A17006", "text": "SB(sinus bradycardia); STC(st deviation)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "sph-A17058", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "sph-A17066", "text": "SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "sph-A17106", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A17116", "text": "SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "sph-A17122", "text": "PVC(ventricular premature complex(es); AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.9}
+{"question_id": "sph-A17133", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A17156", "text": "SB(sinus bradycardia); STC(st changes)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A17186", "text": "PVC(ventricular premature complex(es); TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 4.9}
+{"question_id": "sph-A17191", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A17239", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "sph-A17256", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A17264", "text": "TAb(t-wave abnormality); STD(st deviation); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 4.8}
+{"question_id": "sph-A17273", "text": "STAC(st deviation); STTC(st deviation with t-wave change)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "sph-A17358", "text": "SB(sinus bradycardia); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 5.0}
+{"question_id": "sph-A17431", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "sph-A17480", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "sph-A17561", "text": "STD(st deviation); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 4.3}
+{"question_id": "sph-A17616", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "sph-A17667", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "sph-A17689", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A17714", "text": "TAb(t-wave abnormality); SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "sph-A17739", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A17784", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "sph-A17797", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "sph-A17814", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "sph-A17820", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "sph-A17845", "text": "SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A17892", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A17905", "text": "SA(sinus arrhythmia); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "sph-A17927", "text": "MI(myocardial infarction)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "sph-A17946", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A18001", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A18020", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A18034", "text": "SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A18038", "text": "SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "sph-A18119", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A18175", "text": "SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A18189", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A18208", "text": "STach(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "sph-A18270", "text": "STAC(st deviation); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 4.4}
+{"question_id": "sph-A18280", "text": "IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 3.2}
+{"question_id": "sph-A18292", "text": "PAC(atrial premature complex(es)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A18302", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A18323", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "sph-A18330", "text": "STach(sinus tachycardia); STC(st changes)", "model_id": "PULSE-7B", "sec": 4.3}
+{"question_id": "sph-A18425", "text": "STach(sinus tachycardia); STTC(st deviation); STD(st deviation with t-wave change)", "model_id": "PULSE-7B", "sec": 5.6}
+{"question_id": "sph-A18431", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A18445", "text": "TAb(t-wave abnormality); STD(st deviation); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 4.6}
+{"question_id": "sph-A18447", "text": "RBBB(right bundle-branch block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A18519", "text": "RBBB(right bundle-branch block)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "sph-A18616", "text": "SB(sinus bradycardia); AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 4.4}
+{"question_id": "sph-A18686", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "sph-A18733", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "sph-A18740", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "sph-A18846", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.1}
+{"question_id": "sph-A18902", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "sph-A18905", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A18908", "text": "SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A18911", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "sph-A18938", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A18949", "text": "TAb(t-wave abnormality); SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 4.6}
+{"question_id": "sph-A18964", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A19030", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "sph-A19070", "text": "SB(sinus bradycardia); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 4.1}
+{"question_id": "sph-A19075", "text": "TAb(t-wave abnormality); STD(st deviation); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 5.7}
+{"question_id": "sph-A19128", "text": "AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A19210", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "sph-A19254", "text": "12-lead ECG; SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A19266", "text": "STC(st deviation); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 4.5}
+{"question_id": "sph-A19350", "text": "RBBB(right bundle-branch block)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "sph-A19402", "text": "SB(sinus bradycardia); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 4.0}
+{"question_id": "sph-A19404", "text": "STD(st deviation); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 4.5}
+{"question_id": "sph-A19420", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "sph-A19446", "text": "SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "sph-A19460", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A19484", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A19507", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A19537", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A19572", "text": "RBBB(right bundle-branch block)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A19629", "text": "STD(st deviation); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 4.4}
+{"question_id": "sph-A19669", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A19683", "text": "STach(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A19715", "text": "SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A19745", "text": "STC(st deviation); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 4.4}
+{"question_id": "sph-A19753", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A19815", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "sph-A19840", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "sph-A19878", "text": "PVC(ventricular premature complex(es); STach(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.9}
+{"question_id": "sph-A19926", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A19935", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "sph-A19938", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A19954", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A19983", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A19995", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "sph-A20036", "text": "STD(st deviation)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "sph-A20052", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A20185", "text": "AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "sph-A20260", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A20405", "text": "SA(sinus arrhythmia); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 3.9}
+{"question_id": "sph-A20417", "text": "PAC(atrial premature complex(es)", "model_id": "PULSE-7B", "sec": 3.1}
+{"question_id": "sph-A20446", "text": "AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "sph-A20464", "text": "PVC(ventricular premature complex(es); SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 3.9}
+{"question_id": "sph-A20468", "text": "SB(sinus bradycardia); STD(st deviation)", "model_id": "PULSE-7B", "sec": 4.2}
+{"question_id": "sph-A20486", "text": "STAC(st deviation); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 4.5}
+{"question_id": "sph-A20559", "text": "TAb(t-wave abnormality); SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.9}
+{"question_id": "sph-A20569", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A20572", "text": "AF(atrial fibrillation); STD(st deviation); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 4.6}
+{"question_id": "sph-A20608", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A20611", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A20623", "text": "STach(sinus tachycardia); RBBB(right bundle-branch block)", "model_id": "PULSE-7B", "sec": 4.8}
+{"question_id": "sph-A20651", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A20652", "text": "SB(sinus bradycardia); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 4.9}
+{"question_id": "sph-A20662", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A20726", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "sph-A20729", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "sph-A20824", "text": "AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "sph-A20878", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A20918", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "sph-A20925", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "sph-A20932", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "sph-A20944", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A20950", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A20953", "text": "SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A20961", "text": "SB(sinus bradycardia); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 4.0}
+{"question_id": "sph-A20970", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "sph-A21003", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "sph-A21009", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "sph-A21043", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "sph-A21066", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A21072", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "sph-A21088", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A21127", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A21144", "text": "PAC(atrial premature complex(es); SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 4.7}
+{"question_id": "sph-A21218", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A21227", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "sph-A21238", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A21276", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A21287", "text": "PVC(ventricular premature complex(es); STTC(st deviation)", "model_id": "PULSE-7B", "sec": 4.2}
+{"question_id": "sph-A21351", "text": "PVC(ventricular premature complex(es); SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 4.8}
+{"question_id": "sph-A21367", "text": "SB(sinus bradycardia); STC(st deviation); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 4.7}
+{"question_id": "sph-A21381", "text": "STC(st changes)", "model_id": "PULSE-7B", "sec": 3.2}
+{"question_id": "sph-A21395", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A21443", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "sph-A21480", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.0}
+{"question_id": "sph-A21485", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "sph-A21495", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "sph-A21550", "text": "STach(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "sph-A21733", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "sph-A21768", "text": "IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A21861", "text": "PVC(ventricular premature complex(es)", "model_id": "PULSE-7B", "sec": 3.1}
+{"question_id": "sph-A21862", "text": "STAC(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A21912", "text": "SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A21955", "text": "SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "sph-A21967", "text": "PAC(atrial premature complex(es)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "sph-A21973", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A21991", "text": "SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A22009", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "sph-A22024", "text": "STach(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A22030", "text": "STAC(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "sph-A22090", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "sph-A22127", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "sph-A22181", "text": "SB(sinus bradycardia); PAC(atrial premature complex(es)", "model_id": "PULSE-7B", "sec": 3.9}
+{"question_id": "sph-A22195", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "sph-A22295", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A22303", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "sph-A22330", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A22476", "text": "SB(sinus bradycardia); AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 4.5}
+{"question_id": "sph-A22486", "text": "SB(sinus bradycardia); PAC(atrial premature complex(es)", "model_id": "PULSE-7B", "sec": 4.8}
+{"question_id": "sph-A22488", "text": "SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A22496", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "sph-A22501", "text": "TAb(t-wave abnormality); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "sph-A22503", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.4}
+{"question_id": "sph-A22511", "text": "AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.2}
+{"question_id": "sph-A22548", "text": "SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A22573", "text": "STAC(st deviation); STTC(st deviation with t-wave change)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A22597", "text": "STD(st deviation); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "sph-A22637", "text": "STach(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.1}
+{"question_id": "sph-A22658", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "sph-A22696", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A22732", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A22781", "text": "TAb(t-wave abnormality); SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 3.8}
+{"question_id": "sph-A22838", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "sph-A22846", "text": "SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "sph-A22874", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "sph-A22919", "text": "STach(sinus tachycardia); STDEV(st deviation); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 5.6}
+{"question_id": "sph-A22926", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A22944", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "sph-A22945", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.2}
+{"question_id": "sph-A22990", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.5}
+{"question_id": "sph-A23042", "text": "AF(atrial fibrillation); STC(st changes)", "model_id": "PULSE-7B", "sec": 3.2}
+{"question_id": "sph-A23059", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "sph-A23100", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "sph-A23115", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A23173", "text": "SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A23195", "text": "RBBB(right bundle-branch block)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A23197", "text": "PVC(ventricular premature complex(es); TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 4.9}
+{"question_id": "sph-A23246", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A23272", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A23330", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "sph-A23332", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.5}
+{"question_id": "sph-A23373", "text": "SB(sinus bradycardia); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 4.7}
+{"question_id": "sph-A23386", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A23552", "text": "PVC(ventricular premature complex(es); TAb(t-wave abnormality); SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 6.0}
+{"question_id": "sph-A23609", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A23611", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "sph-A23720", "text": "STach(sinus tachycardia); STDEV(st deviation); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 5.7}
+{"question_id": "sph-A23808", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "sph-A23833", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A23890", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A23918", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "sph-A23929", "text": "PVC(ventricular premature complex(es); AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.9}
+{"question_id": "sph-A23936", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A23986", "text": "SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A23993", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "sph-A24032", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.6}
+{"question_id": "sph-A24042", "text": "PVC(ventricular premature complex(es); STD(st deviation)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A24056", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "sph-A24132", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "sph-A24199", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A24207", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "sph-A24222", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "sph-A24232", "text": "STach(sinus tachycardia)", "model_id": "PULSE-7B", "sec": 3.1}
+{"question_id": "sph-A24300", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A24326", "text": "SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A24351", "text": "SB(sinus bradycardia); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 4.8}
+{"question_id": "sph-A24431", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A24471", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A24553", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "sph-A24570", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 2.7}
+{"question_id": "sph-A24623", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A24687", "text": "STAC(st deviation); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A24722", "text": "PAC(atrial premature complex(es)", "model_id": "PULSE-7B", "sec": 3.1}
+{"question_id": "sph-A24734", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A24796", "text": "TAb(t-wave abnormality); STD(st deviation); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 4.7}
+{"question_id": "sph-A24813", "text": "SB(sinus bradycardia); PAC(atrial premature complex(es)", "model_id": "PULSE-7B", "sec": 4.8}
+{"question_id": "sph-A24904", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A24924", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A24938", "text": "SB(sinus bradycardia)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A25022", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "sph-A25047", "text": "SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A25049", "text": "PVC(ventricular premature complex(es); TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 4.8}
+{"question_id": "sph-A25065", "text": "AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "sph-A25077", "text": "SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 3.4}
+{"question_id": "sph-A25114", "text": "SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A25117", "text": "STach(sinus tachycardia); STTC(st deviation); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 5.6}
+{"question_id": "sph-A25168", "text": "STAC(st deviation); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 4.4}
+{"question_id": "sph-A25200", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A25202", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.3}
+{"question_id": "sph-A25219", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "sph-A25307", "text": "SB(sinus bradycardia); AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.7}
+{"question_id": "sph-A25388", "text": "AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 3.5}
+{"question_id": "sph-A25410", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.6}
+{"question_id": "sph-A25414", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A25461", "text": "STC(st changes)", "model_id": "PULSE-7B", "sec": 3.0}
+{"question_id": "sph-A25471", "text": "TAb(t-wave abnormality); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 4.0}
+{"question_id": "sph-A25482", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.9}
+{"question_id": "sph-A25521", "text": "RBBB(right bundle-branch block); AF(atrial fibrillation)", "model_id": "PULSE-7B", "sec": 4.4}
+{"question_id": "sph-A25531", "text": "TAb(t-wave abnormality)", "model_id": "PULSE-7B", "sec": 3.1}
+{"question_id": "sph-A25544", "text": "PVC(ventricular premature complex(es); SA(sinus arrhythmia)", "model_id": "PULSE-7B", "sec": 4.7}
+{"question_id": "sph-A25578", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A25587", "text": "SB(sinus bradycardia); STC(st changes)", "model_id": "PULSE-7B", "sec": 3.3}
+{"question_id": "sph-A25630", "text": "NORM", "model_id": "PULSE-7B", "sec": 2.8}
+{"question_id": "sph-A25724", "text": "SA(sinus arrhythmia); IRBBB(incomplete right bundle-branch block)", "model_id": "PULSE-7B", "sec": 3.8}
