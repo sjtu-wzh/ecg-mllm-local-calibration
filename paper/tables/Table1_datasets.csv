@@ -1,7 +1,11 @@
-Dataset,Origin,Relation to PULSE training,Task / prompt,Labels,Calibration pool,Test
-CPSC 2018 (ECGBench),China (multi-centre),out-of-domain,"multi-label classification, official ECGBench prompt",9,600,1461
-"CSN (ECGBench, multi-label version)",China (Shaoxing/Ningbo),out-of-domain,"multi-label, CPSC-style prompt (this work)",11,600,979
-"G12EC (ECGBench, multi-label version)",USA (Georgia),out-of-domain,"multi-label, CPSC-style prompt (this work)",24,600,1396
-SPH (rendered images; pre-registered),China (Shandong Provincial Hospital),"out-of-domain, new site","multi-label, CPSC-style prompt (this work)",12,600,2312
-CODE-15% (ECGBench),Brazil,in-domain (training source),"binary + multi-label, official prompts",1+6,600,800
-PTB-XL fold 10 (ECGBench images),Germany,in-domain (training source),CPSC 9-label prompt (domain analysis),8,600,≈757 (20 patient-grouped splits)
+Dataset (country),Study role,Source in PULSE training,Task; evaluated labels,Included ECGs,Development ECGs,Held-out ECGs,Split
+**A. Main analyses**,,,,,,,
+CPSC 2018 (China),Method development and evaluation,No,Multi-label; 9,"2,061",600,"1,461","Fixed, record-level ^a^"
+CSN (China),Out-of-domain evaluation,No,Multi-label; 11 ^b^,"1,579",600,979,"Fixed, record-level"
+G12EC (USA),Out-of-domain evaluation,No,Multi-label; 24 ^b^,"1,996",600,"1,396","Fixed, record-level"
+SPH (China),"Pre-registered validation, new site",No,Multi-label; 12 ^c^,"2,912",600,"2,312",Fixed; one ECG per patient
+**B. Supporting analyses**,,,,,,,
+CODE-15%: normal/abnormal (Brazil),"Boundary condition: in-domain, training prompt",Yes,Binary; 2 classes ^d^,700,300,400,"Fixed, record-level"
+CODE-15%: diagnoses (Brazil),"Boundary condition: in-domain, training prompt",Yes,Multi-label; 6 ^d^,700,300,400,"Fixed, record-level"
+PTB-XL fold 10: domain analysis (Germany),Pre-registered domain comparison,Yes,Multi-label; 8 ^e^,"1,357",600–601,756–757,20 patient-grouped partitions
+PTB-XL fold 10: transfer source (Germany),Source for PTB-XL → CPSC transfer,Yes,Multi-label; 9 ^f^,"2,082","1,457",625 ^f^,"Fixed, record-level ^f^"

@@ -49,7 +49,7 @@ for d, name, f in (("csn_ml", "CSN", "csn_ml"), ("g12_ml", "G12EC", "g12_ml"), (
         rows.append([name, L, nm, src, npos(s["pool"]), npos(s["test"]), sph_note(D["aha_codes"][L], D["records"]) if "aha_codes" in D else ""])
 write("TableS1_labels", ["Dataset", "Abbreviation", "Label (as in prompt)", "Source of gold label", "Positives in pool", "Positives in test", "Mapping note"], rows,
       "Pool = CPSC dev split (600) or the 600-record calibration pool; test = fixed held-out split. CSN/G12EC multi-label versions: gold = union of the "
-      "correct MCQ options of each record, labels kept if they have ≥ min_positives records (data/derived/*_ml.json). "
+      "correct MCQ options of each record, labels kept if they have at least 40 positive records, and records with none of them removed (CSN 1611 → 1579; G12EC 2026 → 1996; data/derived/*_ml.json). "
       "SPH: labels are the SPH primary statements of the AHA/ACC/HRS standard (Liu et al., Sci Data 2022), defined before any model output (docs/prereg_sph.md). "
       "Rules applied (clarity/build_sph.py): (1) one record per patient (lowest ECG_ID), random sample of 3000 (seed 42); (2) each statement is reduced to its "
       "primary code by dropping secondary modifiers after '+' (e.g. 145+362 'ST deviation, depression' and 145+363 'ST deviation, elevation' both count as 145); "

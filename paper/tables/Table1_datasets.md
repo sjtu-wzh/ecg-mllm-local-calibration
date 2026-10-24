@@ -1,10 +1,14 @@
-| Dataset | Origin | Relation to PULSE training | Task / prompt | Labels | Calibration pool | Test |
-|---|---|---|---|---|---|---|
-| CPSC 2018 (ECGBench) | China (multi-centre) | out-of-domain | multi-label classification, official ECGBench prompt | 9 | 600 | 1461 |
-| CSN (ECGBench, multi-label version) | China (Shaoxing/Ningbo) | out-of-domain | multi-label, CPSC-style prompt (this work) | 11 | 600 | 979 |
-| G12EC (ECGBench, multi-label version) | USA (Georgia) | out-of-domain | multi-label, CPSC-style prompt (this work) | 24 | 600 | 1396 |
-| SPH (rendered images; pre-registered) | China (Shandong Provincial Hospital) | out-of-domain, new site | multi-label, CPSC-style prompt (this work) | 12 | 600 | 2312 |
-| CODE-15% (ECGBench) | Brazil | in-domain (training source) | binary + multi-label, official prompts | 1+6 | 600 | 800 |
-| PTB-XL fold 10 (ECGBench images) | Germany | in-domain (training source) | CPSC 9-label prompt (domain analysis) | 8 | 600 | ≈757 (20 patient-grouped splits) |
+| Dataset (country) | Study role | Source in PULSE training | Task; evaluated labels | Included ECGs | Development ECGs | Held-out ECGs | Split |
+|---|---|---|---|---|---|---|---|
+| **A. Main analyses** |  |  |  |  |  |  |  |
+| CPSC 2018 (China) | Method development and evaluation | No | Multi-label; 9 | 2,061 | 600 | 1,461 | Fixed, record-level ^a^ |
+| CSN (China) | Out-of-domain evaluation | No | Multi-label; 11 ^b^ | 1,579 | 600 | 979 | Fixed, record-level |
+| G12EC (USA) | Out-of-domain evaluation | No | Multi-label; 24 ^b^ | 1,996 | 600 | 1,396 | Fixed, record-level |
+| SPH (China) | Pre-registered validation, new site | No | Multi-label; 12 ^c^ | 2,912 | 600 | 2,312 | Fixed; one ECG per patient |
+| **B. Supporting analyses** |  |  |  |  |  |  |  |
+| CODE-15%: normal/abnormal (Brazil) | Boundary condition: in-domain, training prompt | Yes | Binary; 2 classes ^d^ | 700 | 300 | 400 | Fixed, record-level |
+| CODE-15%: diagnoses (Brazil) | Boundary condition: in-domain, training prompt | Yes | Multi-label; 6 ^d^ | 700 | 300 | 400 | Fixed, record-level |
+| PTB-XL fold 10: domain analysis (Germany) | Pre-registered domain comparison | Yes | Multi-label; 8 ^e^ | 1,357 | 600–601 | 756–757 | 20 patient-grouped partitions |
+| PTB-XL fold 10: transfer source (Germany) | Source for PTB-XL → CPSC transfer | Yes | Multi-label; 9 ^f^ | 2,082 | 1,457 | 625 ^f^ | Fixed, record-level ^f^ |
 
-Pool = records from which n labelled ECGs are drawn; the test split is fixed and never used for fitting.
+Counts are ECG records, not patients. "Source in PULSE training" follows the source classification of PULSE/ECGBench and does not establish record-level overlap. Development records were used for fitting and threshold selection only. Images come from ECGBench, except SPH, which was rendered from the released signals. Label definitions and frequencies are given in Table S1 and prompts in Table S2. ^a^ CPSC test results were inspected repeatedly during method development. In the domain analysis, all 2,061 CPSC records were re-partitioned 20 times at record level (600 development records each), with 8 evaluated labels. ^b^ Reference labels derived from the correct ECGBench multiple-choice options (diagnoses absent from the options count as negative); labels with at least 40 positives kept; 1,611 → 1,579 (CSN) and 2,026 → 1,996 (G12EC) records with at least one kept label. ^c^ Primary AHA statement codes after removal of secondary modifiers; random sample of 3,000 patients → 2,912 records with at least one kept label. ^d^ The two CODE-15% tasks use disjoint records; a label budget n is split between them, and the reported macro-F1 is computed over all 800 test records. ^e^ Records with at least one CPSC-mapped label; nine-label prompt, ST elevation excluded from the primary metric. Development sets of 600–601 records (whole patients added until at least 600 records); at most 600 records were used for fitting. ^f^ All ECGBench PTB-XL images (725 without a CPSC-mapped label). Read-outs were fitted on the 1,457 fit records (thresholds by cross-validation within them) and evaluated on the CPSC test split; the 625 source hold-out records were not used for any reported result. The split is record-level (99 patients appear in both parts).
