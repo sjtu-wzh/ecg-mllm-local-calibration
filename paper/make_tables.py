@@ -46,32 +46,35 @@ src_csn, src_g12 = len(J("data/ECGBench/csn-test-no-cot.json")), len(J("data/ECG
 f = lambda n: f"{n:,}" if isinstance(n, int) else n
 rows = [
     ["**A. Main analyses**", "", "", "", "", "", "", ""],
-    ["CPSC 2018 (China)", "Method development and evaluation", "No", "Multi-label; 9", f(len(cpsc_all)), f(len(spl["cpsc"]["dev"])), f(len(spl["cpsc"]["test"])), "Fixed, record-level ^a^"],
-    ["CSN (China)", "Out-of-domain evaluation", "No", f"Multi-label; {len(csn['labels'])} ^b^", f(len(csn["records"])), f(len(spl["csn_ml"]["pool"])), f(len(spl["csn_ml"]["test"])), "Fixed, record-level"],
-    ["G12EC (USA)", "Out-of-domain evaluation", "No", f"Multi-label; {len(g12['labels'])} ^b^", f(len(g12["records"])), f(len(spl["g12_ml"]["pool"])), f(len(spl["g12_ml"]["test"])), "Fixed, record-level"],
-    ["SPH (China)", "Pre-registered validation, new site", "No", f"Multi-label; {len(sph['labels'])} ^c^", f(len(sph["records"])), f(len(spl["sph_ml"]["pool"])), f(len(spl["sph_ml"]["test"])), "Fixed; one ECG per patient"],
+    ["CPSC 2018 (China)", "Development and evaluation", "No", "Multi-label (9)", f(len(cpsc_all)), f(len(spl["cpsc"]["dev"])), f(len(spl["cpsc"]["test"])), "Fixed, record-level^a^"],
+    ["CSN (China)", "Out-of-domain evaluation", "No", f"Multi-label ({len(csn['labels'])})^b^", f(len(csn["records"])), f(len(spl["csn_ml"]["pool"])), f(len(spl["csn_ml"]["test"])), "Fixed, record-level"],
+    ["G12EC (USA)", "Out-of-domain evaluation", "No", f"Multi-label ({len(g12['labels'])})^b^", f(len(g12["records"])), f(len(spl["g12_ml"]["pool"])), f(len(spl["g12_ml"]["test"])), "Fixed, record-level"],
+    ["SPH (China)", "Pre-registered validation", "No", f"Multi-label ({len(sph['labels'])})^c^", f(len(sph["records"])), f(len(spl["sph_ml"]["pool"])), f(len(spl["sph_ml"]["test"])), "Fixed; one ECG per patient"],
     ["**B. Supporting analyses**", "", "", "", "", "", "", ""],
-    ["CODE-15%: normal/abnormal (Brazil)", "Boundary condition: in-domain, training prompt", "Yes", "Binary; 2 classes ^d^", f(c15["dev_pool"]["bin"] + c15["test"]["bin"]), f(c15["dev_pool"]["bin"]), f(c15["test"]["bin"]), "Fixed, record-level"],
-    ["CODE-15%: diagnoses (Brazil)", "Boundary condition: in-domain, training prompt", "Yes", "Multi-label; 6 ^d^", f(c15["dev_pool"]["multi"] + c15["test"]["multi"]), f(c15["dev_pool"]["multi"]), f(c15["test"]["multi"]), "Fixed, record-level"],
-    ["PTB-XL fold 10: domain analysis (Germany)", "Pre-registered domain comparison", "Yes", "Multi-label; 8 ^e^", f(len(ptb_dom)), dev_rng, test_rng, "20 patient-grouped partitions"],
-    ["PTB-XL fold 10: transfer source (Germany)", "Source for PTB-XL → CPSC transfer", "Yes", "Multi-label; 9 ^f^", f(len(tr["fit"]) + len(tr["heldout"])), f(len(tr["fit"])), f(len(tr["heldout"])) + " ^f^", "Fixed, record-level ^f^"],
+    ["CODE-15%: binary (Brazil)", "In-domain boundary condition", "Yes", "Binary (2)^d^", f(c15["dev_pool"]["bin"] + c15["test"]["bin"]), f(c15["dev_pool"]["bin"]), f(c15["test"]["bin"]), "Fixed, record-level"],
+    ["CODE-15%: multi-label (Brazil)", "In-domain boundary condition", "Yes", "Multi-label (6)^d^", f(c15["dev_pool"]["multi"] + c15["test"]["multi"]), f(c15["dev_pool"]["multi"]), f(c15["test"]["multi"]), "Fixed, record-level"],
+    ["PTB-XL: domain analysis (Germany)", "Matched domain comparison", "Yes", "Multi-label (8)^e^", f(len(ptb_dom)), dev_rng, test_rng, "20 patient-grouped partitions"],
+    ["PTB-XL: transfer source (Germany)", "Transfer source", "Yes", "Multi-label (9)^f^", f(len(tr["fit"]) + len(tr["heldout"])), f(len(tr["fit"])), f(len(tr["heldout"])) + "^f^", "Fixed, record-level^f^"],
 ]
-write("Table1_datasets", ["Dataset (country)", "Study role", "Source in PULSE training", "Task; evaluated labels", "Included ECGs", "Development ECGs", "Held-out ECGs", "Split"], rows,
-      "Counts are ECG records, not patients. \"Source in PULSE training\" follows the source classification of PULSE/ECGBench and does not establish "
-      "record-level overlap. Development records were used for fitting and threshold selection only. Images come from ECGBench, except SPH, which was "
-      "rendered from the released signals. Label definitions and frequencies are given in Table S1 and prompts in Table S2. "
+write("Table1_datasets", ["Dataset (country)", "Study role", "PULSE training source", "Task (labels)", "Included<br>(n)", "Development<br>(n)", "Held-out<br>(n)", "Split"], rows,
+      "All counts are ECG records, not patients. Task (labels) gives the number of evaluated classes: labels for multi-label tasks and two mutually exclusive "
+      "classes for the binary task. PULSE training source indicates whether the source dataset is among the training sources disclosed for PULSE "
+      "(ECGBench classification); it does not establish record-level overlap. Development records were used only for fitting and threshold selection. "
+      "Images come from ECGBench, except SPH, which was rendered from the released signals. Labels and prompts are listed in Tables S1 and S2. "
       f"^a^ CPSC test results were inspected repeatedly during method development. In the domain analysis, all {len(cpsc_all):,} CPSC records were "
-      "re-partitioned 20 times at record level (600 development records each), with 8 evaluated labels. "
-      f"^b^ Reference labels derived from the correct ECGBench multiple-choice options (diagnoses absent from the options count as negative); labels with "
-      f"at least 40 positives kept; {src_csn:,} → {len(csn['records']):,} (CSN) and {src_g12:,} → {len(g12['records']):,} (G12EC) records with at least one kept label. "
-      f"^c^ Primary AHA statement codes after removal of secondary modifiers; random sample of 3,000 patients → {len(sph['records']):,} records with at least one kept label. "
-      "^d^ The two CODE-15% tasks use disjoint records; a label budget n is split between them, and the reported macro-F1 is computed over all "
-      f"{c15['test']['bin'] + c15['test']['multi']} test records. "
-      f"^e^ Records with at least one CPSC-mapped label; nine-label prompt, ST elevation excluded from the primary metric. Development sets of "
-      f"{dev_rng} records (whole patients added until at least 600 records); at most 600 records were used for fitting. "
-      f"^f^ All ECGBench PTB-XL images ({n_unlab} without a CPSC-mapped label). Read-outs were fitted on the {len(tr['fit']):,} fit records "
-      f"(thresholds by cross-validation within them) and evaluated on the CPSC test split; the {len(tr['heldout'])} source hold-out records "
-      f"were not used for any reported result. The split is record-level ({shared_pat} patients appear in both parts).")
+      "re-partitioned 20 times at record level (600 development records each) and evaluated on 8 labels. "
+      f"^b^ Reference labels derived from the correct ECGBench multiple-choice options; diagnoses absent from the options count as negative, so labels may be "
+      f"incomplete. Labels with at least 40 positives were kept: {src_csn:,} → {len(csn['records']):,} (CSN) and {src_g12:,} → {len(g12['records']):,} (G12EC) records. "
+      f"^c^ Retained primary AHA statement codes after removal of secondary modifiers; one ECG per patient from a random sample of 3,000 patients "
+      f"(→ {len(sph['records']):,} records with at least one retained label). "
+      f"^d^ Binary: normal versus abnormal; multi-label: six diagnoses. The two tasks use disjoint records; a label budget n is split as floor(n/2) binary "
+      f"and the remainder multi-label records, and the reported macro-F1 is computed over all {c15['test']['bin'] + c15['test']['multi']} test records "
+      "(NORM, ABNORMAL and the six diagnoses). "
+      f"^e^ PTB-XL fold 10, records with at least one CPSC-mapped label; pre-specified analysis (Section 2.10). Nine-label prompt with ST elevation excluded "
+      f"from the evaluation. Whole patients were added to the development set until it held at least 600 records ({dev_rng}); at most 600 were used for fitting. "
+      f"^f^ PTB-XL fold 10, all ECGBench images ({n_unlab} without a CPSC-mapped label); a different cohort from the domain analysis. Read-outs were fitted on "
+      f"the {len(tr['fit']):,} fit records and evaluated on the CPSC test split; the {len(tr['heldout'])} records are a source-domain hold-out set not used for any "
+      f"reported result. The split is record-level and not patient-disjoint ({shared_pat} patients appear in both parts).")
 
 # ---------- Table 2: main results (macro-F1, held-out test)
 rows = []

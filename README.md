@@ -43,7 +43,7 @@ Each read-out is fitted on n = 25–600 labelled ECGs from the target site and e
   * a general VLM (Qwen2-VL-7B: P(yes) AUROC 0.53, gain +3.4);
   * PULSE in its training domain with its training prompt (CODE-15%: −2.4);
   * calibrators transferred between sites without local labels (PTB-XL → CPSC).
-* **Domain analysis.** The pre-registered in-domain versus out-of-domain comparison was inconclusive (`outputs/clarity/domain_results.json`).
+* **Domain analysis.** The pre-specified in-domain versus out-of-domain comparison (plan frozen during PTB-XL inference, before any metric was computed) was inconclusive (`outputs/clarity/domain_results.json`).
 
 ## Repository layout
 
@@ -66,7 +66,7 @@ verify_freeze.py  checks the md5 hashes recorded in the pre-registration freezes
 | Experiment | Plan | Freeze record (md5 of code, data, prompts) |
 |---|---|---|
 | SPH new-site validation (H1–H6) | `docs/prereg_sph.md` | `outputs/clarity/prereg_sph_freeze.json` |
-| In-domain vs out-of-domain analysis (P0–P4) | inside the freeze record | `outputs/clarity/preregistration_domain.json` |
+| In-domain vs out-of-domain analysis (P0–P4; pre-specified, frozen during PTB-XL inference: 487/1357 answers existed, none scored) | inside the freeze record | `outputs/clarity/preregistration_domain.json` |
 | Robustness to image degradation and prompt wording (R1–R4) | `docs/prereg_robustness.md` | `outputs/clarity/prereg_robust_freeze.json` |
 
 The pre-registrations are time-stamped documents in this repository. They were not deposited in an external registry. Run `python verify_freeze.py` to recompute the md5 hashes.

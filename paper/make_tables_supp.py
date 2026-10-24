@@ -1,5 +1,5 @@
 """Supplementary tables -> paper/tables_supp/TableS{1..5}.{csv,md}. Every number is read from data/ or outputs/clarity/.
-S1 label sets and prevalence, S2 prompts, S3 numerical validation, S4 exploratory / negative results, S5 pre-registered domain analysis."""
+S1 label sets and prevalence, S2 prompts, S3 numerical validation, S4 exploratory / negative results, S5 pre-specified domain analysis."""
 import collections, csv, json, os, re
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -126,7 +126,7 @@ write("TableS4_exploratory", ["Variant", "CPSC test macro-F1", "Comparison [95% 
       "Paired bootstrap over test records (B = 2000). These analyses were exploratory and are not used for any main claim. "
       "Variant codes E1–E3 replace the internal codes S2/S3/S4 (Table S6).")
 
-# ---------- Table S5: pre-registered domain analysis (PTB-XL fold 10 vs CPSC, same 9-label prompt, 8 primary labels)
+# ---------- Table S5: pre-specified domain analysis (PTB-XL fold 10 vs CPSC, same 9-label prompt, 8 primary labels)
 D = J("outputs/clarity/domain_results.json"); P1, P2, P3, P4 = D["P1"], D["P2"], D["P3"], D["P4"]
 mv = P4["mapping_variants"]
 rows = [
@@ -143,8 +143,8 @@ rows = [
      "R_std across mapping variants " + ", ".join(f"{k} {v['R_std_point']:.2f}" for k, v in mv.items()),
      f"H_label not supported; mapping-sensitive = {P4['mapping_sensitive']}"],
 ]
-write("TableS5_domain_analysis", ["Analysis", "Question", "Estimates (macro-F1 points, 95% CI)", "Pre-registered verdict"], rows,
-      "Plan and code frozen by md5 before the PTB-XL generated answers were read (outputs/clarity/preregistration_domain.json). 20 patient-grouped pool/test partitions; "
+write("TableS5_domain_analysis", ["Analysis", "Question", "Estimates (macro-F1 points, 95% CI)", "Pre-specified verdict"], rows,
+      "Plan, decision rules and code frozen by md5 during PTB-XL inference (487 of 1357 generated answers existed; about 150–200 interim answers had been inspected for error patterns during plan design; no PTB-XL metric was computed before the freeze; outputs/clarity/preregistration_domain.json). 20 patient-grouped pool/test partitions; "
       "bootstrap B = 200 per partition. Pre-registered secondary analyses not implemented: "
       + "; ".join(re.sub(r"^S\d+_", "", x).replace("_", " ") for x in D["not_implemented"]) + ".")
 

@@ -1,4 +1,4 @@
-"""Supplementary Figure S3 — Pre-registered in-domain vs out-of-domain analysis (same CPSC 9-label prompt; frozen PULSE-7B).
+"""Supplementary Figure S3 — Pre-specified in-domain vs out-of-domain analysis (same CPSC 9-label prompt; frozen PULSE-7B).
 a Gain G(n) = macro-F1(S1@n) - macro-F1(B0) over 8 labels (STE excluded) on CPSC (out-of-domain) and PTB-XL fold-10 images
   (in-domain; raw and re-weighted to CPSC case mix), 20 patient-grouped partitions, pooled cluster bootstrap 95% CI.
 b Decomposition of G(600): read-out (a), re-ranking (c), operating point (b), at-least-one rule (e), macro over labels.
@@ -25,6 +25,6 @@ for k, (key, lab, col) in enumerate(ARMS):
 a2.axhline(0, color="#333333", lw=0.8); a2.set_xticks(x); a2.set_xticklabels([l for _, l in comp], fontsize=6.8)
 a2.set_ylabel("Contribution to G(600) (Δ macro-F1)"); a2.set_title("Where the gain comes from", loc="left", fontsize=8.5)
 a2.grid(axis="y", color=C["grid"], lw=0.5); a2.set_axisbelow(True); S["panel_label"](a2, "b", x=-0.22)
-fig.text(0.01, -0.12, f"Pre-registered verdict (P2): inconclusive — CI of R_std wider than the pre-specified 0.8; R_std = {d['P2']['R_std'][0]:.2f} [{d['P2']['R_std'][1]:.2f}, {d['P2']['R_std'][2]:.2f}], "
+fig.text(0.01, -0.12, f"Pre-specified verdict (P2): inconclusive — CI of R_std wider than the pre-specified 0.8; R_std = {d['P2']['R_std'][0]:.2f} [{d['P2']['R_std'][1]:.2f}, {d['P2']['R_std'][2]:.2f}], "
          f"test-fold ESS ≥ {d['P2']['ESS_test_min']:.0f}.", fontsize=6.2, color="#555555")
 S["save"](fig, "FigS3_domain_analysis", supp=True)

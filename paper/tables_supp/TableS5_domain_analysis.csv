@@ -1,4 +1,4 @@
-Analysis,Question,"Estimates (macro-F1 points, 95% CI)",Pre-registered verdict
+Analysis,Question,"Estimates (macro-F1 points, 95% CI)",Pre-specified verdict
 P1,Gain G = S1@600 − B0,"CPSC +11.7 [8.8, 14.4]; PTB raw +5.3 [-0.0, 10.4]; DiD +6.5 [0.5, 12.6]; n* CPSC 200, PTB none",neither P1 condition met; interpret via P2
 P2,Case-mix standardisation (PTB reweighted to CPSC label-set mix),"G_PTB,std +3.4 [-6.9, 13.2]; R_std +0.31 [-0.59, 1.15]; CPSC→PTB mix +7.6 [1.5, 13.9]; test-fold ESS ≥ 145",Inconclusive (R_std CI width > 0.8)
 P3,Mechanism decomposition (read-out a / re-ranking c / operating point b / ≥1-label rule e),"CPSC: a -3.7, c +11.6, b +3.3, e +0.5; PTB_raw: a -2.2, c +2.7, b +4.5, e +0.4; PTB_std: a -9.3, c +7.6, b +4.8, e +0.3; Spearman r_L 0.50","Rules met: (i) H_dom, (ii) H_prev, (iii) H_task (directional) → no single cause"

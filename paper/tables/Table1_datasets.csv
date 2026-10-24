@@ -1,11 +1,11 @@
-Dataset (country),Study role,Source in PULSE training,Task; evaluated labels,Included ECGs,Development ECGs,Held-out ECGs,Split
+Dataset (country),Study role,PULSE training source,Task (labels),Included<br>(n),Development<br>(n),Held-out<br>(n),Split
 **A. Main analyses**,,,,,,,
-CPSC 2018 (China),Method development and evaluation,No,Multi-label; 9,"2,061",600,"1,461","Fixed, record-level ^a^"
-CSN (China),Out-of-domain evaluation,No,Multi-label; 11 ^b^,"1,579",600,979,"Fixed, record-level"
-G12EC (USA),Out-of-domain evaluation,No,Multi-label; 24 ^b^,"1,996",600,"1,396","Fixed, record-level"
-SPH (China),"Pre-registered validation, new site",No,Multi-label; 12 ^c^,"2,912",600,"2,312",Fixed; one ECG per patient
+CPSC 2018 (China),Development and evaluation,No,Multi-label (9),"2,061",600,"1,461","Fixed, record-level^a^"
+CSN (China),Out-of-domain evaluation,No,Multi-label (11)^b^,"1,579",600,979,"Fixed, record-level"
+G12EC (USA),Out-of-domain evaluation,No,Multi-label (24)^b^,"1,996",600,"1,396","Fixed, record-level"
+SPH (China),Pre-registered validation,No,Multi-label (12)^c^,"2,912",600,"2,312",Fixed; one ECG per patient
 **B. Supporting analyses**,,,,,,,
-CODE-15%: normal/abnormal (Brazil),"Boundary condition: in-domain, training prompt",Yes,Binary; 2 classes ^d^,700,300,400,"Fixed, record-level"
-CODE-15%: diagnoses (Brazil),"Boundary condition: in-domain, training prompt",Yes,Multi-label; 6 ^d^,700,300,400,"Fixed, record-level"
-PTB-XL fold 10: domain analysis (Germany),Pre-registered domain comparison,Yes,Multi-label; 8 ^e^,"1,357",600–601,756–757,20 patient-grouped partitions
-PTB-XL fold 10: transfer source (Germany),Source for PTB-XL → CPSC transfer,Yes,Multi-label; 9 ^f^,"2,082","1,457",625 ^f^,"Fixed, record-level ^f^"
+CODE-15%: binary (Brazil),In-domain boundary condition,Yes,Binary (2)^d^,700,300,400,"Fixed, record-level"
+CODE-15%: multi-label (Brazil),In-domain boundary condition,Yes,Multi-label (6)^d^,700,300,400,"Fixed, record-level"
+PTB-XL: domain analysis (Germany),Matched domain comparison,Yes,Multi-label (8)^e^,"1,357",600–601,756–757,20 patient-grouped partitions
+PTB-XL: transfer source (Germany),Transfer source,Yes,Multi-label (9)^f^,"2,082","1,457",625^f^,"Fixed, record-level^f^"
