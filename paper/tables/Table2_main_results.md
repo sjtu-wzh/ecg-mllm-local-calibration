@@ -1,13 +1,17 @@
-| Model | Dataset | B0 (generated) | Zero-shot P≥0.5 | THR n=100 | S1 n=100 | Probe n=100 | S1 n=600 | Probe n=600 | S1@600 − B0 [95% CI] |
-|---|---|---|---|---|---|---|---|---|---|
-| PULSE-7B | CPSC | 57.6 | 57.6 | 56.1 | 63.3 | 59.7 | 68.8 | 72.9 | +10.7 [8.2, 13.3] |
-| PULSE-7B | CSN | 39.3 | 49.9 | 53.8 | 53.0 | 52.1 | 59.2 | 62.7 | +20.5 [17.5, 23.5] |
-| PULSE-7B | G12EC | 32.4 | 39.0 | 43.0 | 38.5 | 38.2 | 49.0 | 51.4 | +17.2 [15.4, 19.1] |
-| PULSE-7B | SPH* | 47.4 | 43.8 | 50.3 | 51.6 | 44.0 | 61.8 | 64.2 | +13.5 [11.2, 15.8] |
-| MedGemma-4B-ECGInstruct | CPSC | 23.5 | 34.5 | 38.6 | 40.0 | — | 45.8 | — | +22.3 [20.1, 24.5] |
-| MedGemma-4B-ECGInstruct | CSN | 16.5 | 34.6 | 36.0 | 37.9 | — | 44.2 | — | +27.7 [25.2, 30.2] |
-| MedGemma-4B-ECGInstruct | SPH* | 21.2 | 32.1 | 36.3 | 35.5 | — | 41.8 | — | +20.7 [18.5, 22.9] |
-| Qwen2-VL-7B (general VLM) | CPSC | 19.7 | 17.6 | 19.7 | 21.0 | — | 23.2 | — | +3.4 [2.2, 4.7] |
-| PULSE-7B (in-domain) | CODE-15% | 85.2 | 73.2 | 75.3 | 76.0 | — | 82.2 | — | -2.4 [-4.4, -0.4] |
+| Dataset | B0 | ZS | THR<br>(n = 100) | S1<br>(n = 100) | Probe†<br>(n = 100) | THR<br>(n = 600) | S1<br>(n = 600) | Probe†<br>(n = 600) |
+|---|---|---|---|---|---|---|---|---|
+| **Primary analyses: PULSE-7B** |  |  |  |  |  |  |  |  |
+| CPSC | 57.6 | 57.6 | 56.1 | 63.3 | 59.7 | 57.2 | 68.8 | 72.9 |
+| CSN | 39.3 | 49.9 | 53.8 | 53.0 | 52.1 | 56.4 | 59.2 | 62.7 |
+| G12EC | 32.4 | 39.0 | 43.0 | 38.5 | 38.2 | 45.4 | 49.0 | 51.4 |
+| SPH (pre-registered) | 47.4 | 43.8 | 50.3 | 51.6 | 44.0 | 53.2 | 61.8 | 64.2 |
+| **Replication: MedGemma-4B-ECGInstruct** |  |  |  |  |  |  |  |  |
+| CPSC | 23.5 | 34.5 | 38.6 | 40.0 | NE | 41.9 | 45.8 | NE |
+| CSN | 16.5 | 34.6 | 36.0 | 37.9 | NE | 37.8 | 44.2 | NE |
+| SPH (pre-registered) | 21.2 | 32.1 | 36.3 | 35.5 | NE | 38.5 | 41.8 | NE |
+| **General-model control: Qwen2-VL-7B-Instruct** |  |  |  |  |  |  |  |  |
+| CPSC | 19.7 | 17.6 | 19.7 | 21.0 | NE | 21.1 | 23.2 | NE |
+| **In-domain control: PULSE-7B** |  |  |  |  |  |  |  |  |
+| CODE-15%^a^ | 85.2 | 73.2 | 75.3 | 76.0 | NE | 78.0 | 82.2 | NE |
 
-Macro-F1 (official ECGBench metric) on the fixed test split. n-label results: mean of 20 random draws from the pool. CI: paired bootstrap over test records (B = 2000). Probe = linear probe on the pool-selected PULSE hidden state (layer and token selected on all 600 development records, so at n = 100 the probe draws on more labelled records than n); not computed for other models. *SPH: pre-registered new site.
+Macro-F1 (%, official ECGBench metric) on the held-out test split of each dataset. B0 (generated answer) and ZS (P(yes) ≥ 0.5) are fixed predictions that use no local labels. THR, S1 and the probe are means of 20 repeated fits on n development records; at n = 600 all development records were used and the repetitions differ only in record order and cross-validation folds. The spread across repetitions is shown in Figure 3 and Figure S6; it is not a confidence interval. NE, not evaluated. Each dataset uses its own label set, so compare read-outs within a dataset, not across datasets. SPH is the pre-registered validation site; CPSC test results were inspected repeatedly during method development. † Linear probe on the PULSE-7B hidden state; its layer and token were selected on all 600 development records, so at n = 100 the probe draws on more labelled records than n. ^a^ Binary (normal/abnormal) and six-label tasks combined: n development records are split equally between the tasks (300 + 300 at n = 600), the test split has 400 + 400 records, and macro-F1 is computed over 8 classes on all 800 test records.

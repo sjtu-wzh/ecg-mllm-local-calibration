@@ -1,5 +1,5 @@
 """Main tables -> paper/tables/Table{1,2,3}.{csv,md}. Every number is read from outputs/clarity/*.json."""
-import csv, json, os
+import csv, json, os, re
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "paper/tables"); os.makedirs(OUT, exist_ok=True)
@@ -12,6 +12,7 @@ def write(name, header, rows, note):
     with open(os.path.join(OUT, f"{name}.csv"), "w", newline="") as fh:
         w = csv.writer(fh); w.writerow(header); w.writerows(rows)
     md = ["| " + " | ".join(header) + " |", "|" + "---|" * len(header)] + ["| " + " | ".join(map(str, r)) + " |" for r in rows]
+    md = [re.sub(r"(?<![\w.])-(?=\d)", "\u2212", l) for l in md]   # typographic minus for negative numbers (csv keeps ASCII)
     open(os.path.join(OUT, f"{name}.md"), "w").write("\n".join(md) + f"\n\n{note}\n")
     print(f"{name}: {len(rows)} rows")
 
@@ -76,32 +77,45 @@ write("Table1_datasets", ["Dataset (country)", "Study role", "PULSE training sou
       f"the {len(tr['fit']):,} fit records and evaluated on the CPSC test split; the {len(tr['heldout'])} records are a source-domain hold-out set not used for any "
       f"reported result. The split is record-level and not patient-disjoint ({shared_pat} patients appear in both parts).")
 
-# ---------- Table 2: main results (macro-F1, held-out test)
-rows = []
-for d, name in (("cpsc", "CPSC"), ("csn", "CSN"), ("g12", "G12EC"), ("sph", "SPH*")):
+# ---------- Table 2: (A) repeated-fit macro-F1 and fixed baselines; (B) separate full-pool S1 fit, paired bootstrap vs B0
+cb_ = lambda v: [f"{v[0]:+.1f}", f"[{v[1]:.1f}, {v[2]:.1f}]"]   # bootstrap mean difference, 95% percentile interval
+A, Bt = [], []
+A.append(["**Primary analyses: PULSE-7B**"] + [""] * 8)
+for d, name in (("cpsc", "CPSC"), ("csn", "CSN"), ("g12", "G12EC"), ("sph", "SPH (pre-registered)")):
     b = J(f"outputs/clarity/baselines_{d}.json")["results"]; cur = b["curve"]
     boot = J("outputs/clarity/pulse_bootstrap_cpsc.json")["bootstrap"]["S1@600-B0"] if d == "cpsc" else J(f"outputs/clarity/ml_curve_{d}.json")["results"]["bootstrap"]["S1@600-B0"]
-    rows.append(["PULSE-7B", name, f1(b["reference"]["B0"]["F1"]), f1(b["reference"]["ZS@0.5"]["F1"]),
-                 f1(cur["THR@100"]["F1"][0]), f1(cur["S1@100"]["F1"][0]), f1(cur["PROBE-LLM@100"]["F1"][0]),
-                 f1(cur["S1@600"]["F1"][0]), f1(cur["PROBE-LLM@600"]["F1"][0]), ci(boot)])
+    rawmean = lambda m, n: sum(r["F1"] for r in J(f"outputs/clarity/baselines_{d}.json")["rows"] if r["method"] == m and r["n"] == n) / 20  # no double rounding
+    A.append([name, f1(b["reference"]["B0"]["F1"]), f1(b["reference"]["ZS@0.5"]["F1"])]
+             + [f1(rawmean(m, n)) for n in (100, 600) for m in ("THR", "S1", "PROBE-LLM")])
+    Bt.append(["PULSE-7B", name] + cb_(boot))
+curve_row = lambda name, b0, zs, cur: [name, f1(b0), f1(zs)] + [f1(cur[f"{m}@{n}"]["F1_mean"]) if m != "PROBE" else "NE" for n in (100, 600) for m in ("THR", "S1", "PROBE")]
+A.append(["**Replication: MedGemma-4B-ECGInstruct**"] + [""] * 8)
 mg_c = J("outputs/clarity/mg_curve_cpsc.json")["results"]; mgb = J("outputs/clarity/mg_bootstrap_cpsc.json")
-rows.append(["MedGemma-4B-ECGInstruct", "CPSC", f1(mg_c["B0"][0]), f1(mg_c["B1@0.5"][0]), f1(mg_c["curve"]["THR@100"]["F1_mean"]),
-             f1(mg_c["curve"]["S1@100"]["F1_mean"]), "—", f1(mg_c["curve"]["S1@600"]["F1_mean"]), "—", ci(mgb["bootstrap"]["S1@600-B0"])])
-for d, name in (("csn", "CSN"), ("sph", "SPH*")):
+A.append(curve_row("CPSC", mg_c["B0"][0], mg_c["B1@0.5"][0], mg_c["curve"])); Bt.append(["MedGemma-4B-ECGInstruct", "CPSC"] + cb_(mgb["bootstrap"]["S1@600-B0"]))
+for d, name in (("csn", "CSN"), ("sph", "SPH (pre-registered)")):
     r = J(f"outputs/clarity/mg_ml_curve_{d}.json")["results"]
-    rows.append(["MedGemma-4B-ECGInstruct", name, f1(r["B0"][0]), f1(r["ZS"][0]), f1(r["curve"]["THR@100"]["F1_mean"]),
-                 f1(r["curve"]["S1@100"]["F1_mean"]), "—", f1(r["curve"]["S1@600"]["F1_mean"]), "—", ci(r["bootstrap"]["S1@600-B0"])])
+    A.append(curve_row(name, r["B0"][0], r["ZS"][0], r["curve"])); Bt.append(["MedGemma-4B-ECGInstruct", name] + cb_(r["bootstrap"]["S1@600-B0"]))
+A.append(["**General-model control: Qwen2-VL-7B-Instruct**"] + [""] * 8)
 q = J("outputs/clarity/qwen_curve_cpsc.json")["results"]; qb = J("outputs/clarity/qwen_bootstrap_cpsc.json")
-rows.append(["Qwen2-VL-7B (general VLM)", "CPSC", f1(q["B0"][0]), f1(q["B1@0.5"][0]), f1(q["curve"]["THR@100"]["F1_mean"]),
-             f1(q["curve"]["S1@100"]["F1_mean"]), "—", f1(q["curve"]["S1@600"]["F1_mean"]), "—", ci(qb["bootstrap"]["S1@600-B0"])])
+A.append(curve_row("CPSC", q["B0"][0], q["B1@0.5"][0], q["curve"])); Bt.append(["Qwen2-VL-7B-Instruct", "CPSC"] + cb_(qb["bootstrap"]["S1@600-B0"]))
+A.append(["**In-domain control: PULSE-7B**"] + [""] * 8)
 c = J("outputs/clarity/code15_curve.json")["results"]; cb = J("outputs/clarity/code15_bootstrap.json")
-rows.append(["PULSE-7B (in-domain)", "CODE-15%", f1(c["B0"]["F1"]), f1(c["B1@0.5 (zero-shot)"]["F1"]), f1(c["curve"]["THR@100"]["F1_mean"]),
-             f1(c["curve"]["S1@100"]["F1_mean"]), "—", f1(c["curve"]["S1@600"]["F1_mean"]), "—", ci(cb["S1@600-B0"])])
-write("Table2_main_results", ["Model", "Dataset", "B0 (generated)", "Zero-shot P≥0.5", "THR n=100", "S1 n=100", "Probe n=100",
-                              "S1 n=600", "Probe n=600", "S1@600 − B0 [95% CI]"], rows,
-      "Macro-F1 (official ECGBench metric) on the fixed test split. n-label results: mean of 20 random draws from the pool. "
-      "CI: paired bootstrap over test records (B = 2000). Probe = linear probe on the "
-      "pool-selected PULSE hidden state (layer and token selected on all 600 development records, so at n = 100 the probe draws on more labelled records than n); not computed for other models. *SPH: pre-registered new site.")
+A.append(curve_row("CODE-15%^a^", c["B0"]["F1"], c["B1@0.5 (zero-shot)"]["F1"], c["curve"])); Bt.append(["PULSE-7B (in-domain)", "CODE-15%^a^"] + cb_(cb["S1@600-B0"]))
+write("Table2_main_results", ["Dataset", "B0", "ZS", "THR<br>(n = 100)", "S1<br>(n = 100)", "Probe†<br>(n = 100)", "THR<br>(n = 600)", "S1<br>(n = 600)", "Probe†<br>(n = 600)"], A,
+      "Macro-F1 (%, official ECGBench metric) on the held-out test split of each dataset. B0 (generated answer) and ZS (P(yes) ≥ 0.5) are fixed predictions "
+      "that use no local labels. THR, S1 and the probe are means of 20 repeated fits on n development records; at n = 600 all development records were used "
+      "and the repetitions differ only in record order and cross-validation folds. The spread across repetitions is shown in Figure 3 and Figure S6; it is "
+      "not a confidence interval. NE, not evaluated. Each dataset uses its own label set, so compare read-outs within a dataset, not across datasets. "
+      "SPH is the pre-registered validation site; CPSC test results were inspected repeatedly during method development. "
+      "† Linear probe on the PULSE-7B hidden state; its layer and token were selected on all 600 development records, so at n = 100 the probe draws on "
+      "more labelled records than n. "
+      "^a^ Binary (normal/abnormal) and six-label tasks combined: n development records are split equally between the tasks (300 + 300 at n = 600), the "
+      "test split has 400 + 400 records, and macro-F1 is computed over 8 classes on all 800 test records.")
+write("Table2B_bootstrap", ["Model", "Dataset", "Bootstrap mean Δ macro-F1 (S1 − B0)", "95% percentile interval"], Bt,
+      "S1 was fitted once on all 600 development records (thresholds from out-of-fold predictions) and compared with B0 on the same test records by paired "
+      "bootstrap over test records (B = 2000). The point estimate is the mean of the bootstrap differences, as implemented in the pre-registered analysis; "
+      "the interval is the 2.5th–97.5th percentile. These values are not differences between entries in Table 2 (A), which are means of repeated fits. "
+      "^a^ As in Table 2 (A).")
 
 # ---------- Table 3: pre-registered hypotheses (SPH)
 P = J("outputs/clarity/ml_curve_sph.json")["results"]; M = J("outputs/clarity/mg_ml_curve_sph.json")["results"]; B = J("outputs/clarity/baselines_sph.json")["results"]

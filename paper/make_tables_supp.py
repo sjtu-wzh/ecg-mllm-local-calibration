@@ -13,6 +13,7 @@ def write(name, header, rows, note):
         w = csv.writer(fh); w.writerow(header); w.writerows(rows)
     cell = lambda x: str(x).replace("|", "\\|").replace("\n", " ")
     md = ["| " + " | ".join(header) + " |", "|" + "---|" * len(header)] + ["| " + " | ".join(map(cell, r)) + " |" for r in rows]
+    md = [re.sub(r"(?<![\w.])-(?=\d)", "\u2212", l) for l in md]   # typographic minus for negative numbers (csv keeps ASCII)
     open(os.path.join(OUT, f"{name}.md"), "w").write("\n".join(md) + f"\n\n{note}\n")
     print(f"{name}: {len(rows)} rows")
 
