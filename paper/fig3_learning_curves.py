@@ -1,31 +1,99 @@
-"""Figure 3 — Label-budget crossover on four out-of-domain datasets (frozen PULSE-7B).
-Lines: mean macro-F1 over 20 random label draws; bands: 2.5-97.5th percentile of draws (fixed test split).
-Data: outputs/clarity/baselines_{cpsc,csn,g12,sph}.json"""
+"""Figure 3 — Learning curves, read-out comparisons and feature ablations (frozen PULSE-7B; v2).
+a-d Test macro-F1 against the number of labelled ECGs used for read-out fitting (n = 25-600; 20 repetitions per n, fixed test split):
+    mean (line) and 2.5th-97.5th percentiles of repetitions (band; not confidence intervals). Horizontal lines: generated answer
+    (B0) and P(yes) >= 0.5 (ZS), which use no local labels. Probe (dagger): layer and token selected once on the full 600-record pool.
+e Probe minus S1 within each repetition: mean paired difference (top, percentage points) and repetitions with Probe > S1 (bottom).
+f n = 600, paired differences within repetitions (mean and 2.5th-97.5th percentiles): S1 - S1-uni (cross-label ablation),
+  Probe - S1 (read-out comparison), COMBO - Probe (adding the label logits to the hidden state).
+Data: outputs/clarity/baselines_{cpsc,csn,g12,sph}.json ("rows": one macro-F1 per method, n and repetition)"""
 import os, runpy
+import numpy as np
+from matplotlib.lines import Line2D
 S = runpy.run_path(os.path.join(os.path.dirname(os.path.abspath(__file__)), "figstyle.py"))
 plt, C, MM, SIZES = S["plt"], S["C"], S["MM"], S["SIZES"]
+NAMES = {"cpsc": "CPSC 2018", "csn": "CSN", "g12": "G12EC", "sph": "SPH (pre-registered)"}
+SHORT = {"cpsc": "CPSC", "csn": "CSN", "g12": "G12EC", "sph": "SPH"}
+METH = [("THR", "THR", "s", (0, (5, 1.5, 1, 1.5)), "Threshold only (THR)"), ("S1", "S1", "o", "-", "S1 read-out"),
+        ("PROBE", "PROBE-LLM", "^", (0, (4, 1.6)), "Hidden-state probe†")]
 
-fig, axes = plt.subplots(1, 4, figsize=(183 * MM, 58 * MM), sharex=True)
-for k, (ax, (d, title)) in enumerate(zip(axes, S["DATASETS"])):
-    r = S["baselines"](d); cur = r["curve"]
-    ax.axhline(r["reference"]["B0"]["F1"], color=C["B0"], ls=(0, (4, 2)), lw=1.0, zorder=1)
-    ax.axhline(r["reference"]["ZS@0.5"]["F1"], color=C["ZS"], ls=(0, (1, 1.5)), lw=1.0, zorder=1)
-    for m, key, lab in (("THR", "THR", "Probability + threshold"), ("S1", "S1", "Probability + S1 calibration"),
-                        ("PROBE", "PROBE-LLM", "Hidden-state linear probe")):
-        mu = [cur[f"{key}@{n}"]["F1"][0] for n in SIZES]; lo = [cur[f"{key}@{n}"]["F1"][1] for n in SIZES]; hi = [cur[f"{key}@{n}"]["F1"][2] for n in SIZES]
-        ax.fill_between(SIZES, lo, hi, color=C[m], alpha=0.14, lw=0, zorder=2)
-        ax.plot(SIZES, mu, color=C[m], marker="o", ms=2.6, lw=1.3, label=lab, zorder=3)
-    ax.set_xscale("log"); ax.set_xticks([25, 50, 100, 200, 600]); ax.set_xticklabels(["25", "50", "100", "200", "600"]); ax.minorticks_off()
-    ax.set_title(title, loc="left", fontsize=8.5); ax.grid(axis="y", color=C["grid"], lw=0.5); ax.set_axisbelow(True)
-    ax.set_xlabel("Labelled local ECGs (n)")
-    ymin = min([cur[f"{m}@{n}"]["F1"][0] for m in ("THR", "S1", "PROBE-LLM") for n in SIZES] + [r["reference"]["B0"]["F1"]]) - 4
-    ax.set_ylim(max(0, ymin), max(cur["PROBE-LLM@600"]["F1"][2], cur["S1@600"]["F1"][2]) + 3)  # every mean visible
-    S["panel_label"](ax, "abcd"[k], x=-0.2)
-axes[0].set_ylabel("Macro-F1 (held-out test)")
-h, l = axes[0].get_legend_handles_labels()
-from matplotlib.lines import Line2D
-h += [Line2D([], [], color=C["B0"], ls=(0, (4, 2)), lw=1.0), Line2D([], [], color=C["ZS"], ls=(0, (1, 1.5)), lw=1.0)]
-l += ["Generated answer (B0)", "Probability, P(yes) ≥ 0.5 (zero-shot)"]
-fig.legend(h, l, loc="lower center", ncol=5, bbox_to_anchor=(0.5, -0.07), handlelength=2.2, columnspacing=1.4)
-fig.tight_layout(w_pad=1.2)
+R = {}
+for d, _ in S["DATASETS"]:
+    rows = S["J"](f"outputs/clarity/baselines_{d}.json")["rows"]
+    F = {(r["n"], r["rep"], r["method"]): r["F1"] for r in rows}
+    assert len(F) == len(rows) == 6 * 7 * 20, d
+    R[d] = F
+reps = range(20)
+pair = lambda d, a, b, n: np.array([R[d][(n, k, a)] - R[d][(n, k, b)] for k in reps])
+
+fig = plt.figure(figsize=(183 * MM, 222 * MM))
+outer = fig.add_gridspec(2, 1, height_ratios=[2.1, 1.12], hspace=0.36, top=0.935, bottom=0.055)
+curves = outer[0].subgridspec(2, 2, hspace=0.36, wspace=0.22)
+# ------------------------------------------------------------------ a-d: learning curves
+for k, (d, _) in enumerate(S["DATASETS"]):
+    ax = fig.add_subplot(curves[k // 2, k % 2])
+    base = S["baselines"](d)["reference"]
+    ax.axhline(base["B0"]["F1"], color=C["B0"], ls=(0, (4, 2)), lw=1.0, zorder=1)
+    ax.axhline(base["ZS@0.5"]["F1"], color=C["ZS"], ls=(0, (1, 1.5)), lw=1.1, zorder=1)
+    for col, key, mk, ls, lab in METH:
+        v = np.array([[R[d][(n, r, key)] for r in reps] for n in SIZES])
+        ax.fill_between(SIZES, np.percentile(v, 2.5, axis=1), np.percentile(v, 97.5, axis=1), color=C[col], alpha=0.13, lw=0, zorder=2)
+        ax.plot(SIZES, v.mean(1), color=C[col], marker=mk, ms=3.2, lw=1.3, ls=ls, label=lab, zorder=3)
+    ax.set_xscale("log"); ax.set_xticks(SIZES); ax.set_xticklabels([str(n) for n in SIZES]); ax.minorticks_off()
+    ax.set_xlim(21, 700); ax.set_ylim(0, 80); ax.set_yticks(range(0, 81, 20))
+    ax.grid(axis="y", color=C["grid"], lw=0.5); ax.set_axisbelow(True)
+    ax.set_title(NAMES[d], loc="left", fontsize=8.5)
+    if k % 2 == 0: ax.set_ylabel("Test macro-F1 (%)")
+    if k >= 2: ax.set_xlabel("Labelled ECGs used for read-out fitting (n)")
+    S["panel_label"](ax, "abcd"[k], x=-0.13 if k % 2 == 0 else -0.08, y=1.04)
+    if k == 0: handles, labels = ax.get_legend_handles_labels()
+handles += [Line2D([], [], color=C["B0"], ls=(0, (4, 2)), lw=1.0), Line2D([], [], color=C["ZS"], ls=(0, (1, 1.5)), lw=1.1)]
+labels += ["Generated answer (B0)", "P(yes) ≥ 0.5 (ZS)"]
+fig.legend(handles, labels, loc="upper center", bbox_to_anchor=(0.5, 0.985), ncol=5, fontsize=7, frameon=False, handlelength=2.6, columnspacing=1.3)
+
+bot = outer[1].subgridspec(1, 2, width_ratios=[1.18, 1], wspace=0.42)
+# ------------------------------------------------------------------ e: Probe - S1 paired matrix
+ax = fig.add_subplot(bot[0])
+dsets = [d for d, _ in S["DATASETS"]]
+mean = np.array([[pair(d, "PROBE-LLM", "S1", n).mean() for n in SIZES] for d in dsets])
+wins = np.array([[(pair(d, "PROBE-LLM", "S1", n) > 0).sum() for n in SIZES] for d in dsets])
+ties = int(sum((pair(d, "PROBE-LLM", "S1", n) == 0).sum() for d in dsets for n in SIZES))
+im = ax.imshow(wins, cmap="Greys", vmin=0, vmax=20, aspect="auto")
+fmt = lambda x: f"{x:+.2f}" if abs(x) < 1 else f"{x:+.1f}"
+for i in range(len(dsets)):
+    for j in range(len(SIZES)):
+        tc = "white" if wins[i, j] >= 13 else "#111111"
+        ax.text(j, i - 0.16, fmt(mean[i, j]).replace("-", "−"), ha="center", va="center", fontsize=6.6, color=tc, fontweight="bold")
+        ax.text(j, i + 0.2, f"{wins[i, j]}/20", ha="center", va="center", fontsize=6.0, color=tc)
+ax.set_xticks(range(len(SIZES))); ax.set_xticklabels(SIZES); ax.set_yticks(range(len(dsets))); ax.set_yticklabels([SHORT[d] for d in dsets])
+ax.set_xlabel("Labelled ECGs used for read-out fitting (n)")
+ax.tick_params(length=0)
+for sp in ax.spines.values(): sp.set_visible(False)
+ax.set_title("Probe versus S1 across fitting-set sizes", loc="left", fontsize=8.5, pad=24)
+ax.text(0, 1.03, "Top: mean Probe − S1 (percentage points)\nBottom: repetitions with Probe > S1 (of 20)",
+        transform=ax.transAxes, fontsize=6.6, color="#444444", va="bottom", linespacing=1.25)
+cb = fig.colorbar(im, ax=ax, fraction=0.035, pad=0.02, ticks=[0, 10, 20])
+cb.set_label("Repetitions with Probe > S1", fontsize=6.6); cb.ax.tick_params(labelsize=6.5, length=2)
+S["panel_label"](ax, "e", x=-0.16, y=1.2)
+print("ties Probe == S1:", ties)
+
+# ------------------------------------------------------------------ f: n = 600 comparisons and ablations
+ax = fig.add_subplot(bot[1])
+GROUPS = [("S1", "S1-uni", "S1 − S1-uni (cross-label ablation)", C["S1"]),
+          ("PROBE-LLM", "S1", "Probe − S1 (read-out comparison)", C["PROBE"]),
+          ("COMBO", "PROBE-LLM", "COMBO − Probe (adding label logits)", C["COMBO"])]
+y, yt, yl = 0, [], []
+for a, b, title, col in GROUPS:
+    ax.text(-1.0, y - 0.75, title, fontsize=6.9, fontweight="bold", va="center", ha="left", color=col)
+    for d in dsets:
+        v = pair(d, a, b, 600)
+        ax.plot([np.percentile(v, 2.5), np.percentile(v, 97.5)], [y, y], color=col, lw=1.4, solid_capstyle="butt")
+        ax.scatter([v.mean()], [y], s=18, color=col, zorder=3)
+        yt.append(y); yl.append(SHORT[d]); y += 1
+    y += 1.4
+ax.axvline(0, color="#333333", lw=0.8, zorder=0)
+ax.set_yticks(yt); ax.set_yticklabels(yl, fontsize=6.8); ax.set_ylim(y - 1.0, -1.9); ax.tick_params(axis="y", length=0)
+ax.set_xlim(-1.0, 14); ax.set_xlabel("Paired difference at n = 600 (percentage points)")
+ax.grid(axis="x", color=C["grid"], lw=0.5); ax.set_axisbelow(True); ax.spines["left"].set_visible(False)
+ax.set_title("Read-out comparisons and feature ablations\nat n = 600", loc="left", fontsize=8.5, pad=10)
+S["panel_label"](ax, "f", x=-0.2, y=1.2)
 S["save"](fig, "Fig3_learning_curves")

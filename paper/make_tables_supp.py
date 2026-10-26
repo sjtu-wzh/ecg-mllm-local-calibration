@@ -68,9 +68,11 @@ rows = [["B0 (generated answer)", "All models; CPSC, CSN, G12EC, SPH, PTB-XL",
          "{ABBR1}({name1}), {ABBR2}({name2}), …\\nDirectly output the class name and separate with a semicolon.",
          "ECGBench CPSC template; label list replaced per dataset. Output parsed by the official scorer."],
         ["B0, CODE-15%", "PULSE-7B", "Official ECGBench CODE-15% prompts (binary normal/abnormal and 6-label multi-label)", "Native (training) prompt"],
-        ["Yes/No label question (ZS, THR, S1, probe)", "All models",
+        ["Yes/No label question (ZS, THR, S1)", "All models",
          "You are provided with an ECG signal image. Does this ECG show {name} ({abbr})? Answer Yes or No.",
-         "P(yes) = softmax over the 'Yes'/'No' next-token logits; image prefix KV-cached and reused across labels. Probe reads the hidden state of the last prompt token."]]
+         "P(yes) = softmax over the 'Yes'/'No' next-token logits; image prefix KV-cached and reused across labels."],
+        ["Neutral prompt (hidden-state probe)", "PULSE-7B", "Describe the ECG.",
+         "One forward pass per image; no diagnosis name in the prompt. Features: hidden state of the selected layer at the last prompt token (or mean over image tokens; Figure S6e)."]]
 rows += [[f"Evidence question: {k}", "PULSE-7B, CPSC and PTB-XL (exploratory)", f"You are provided with an ECG signal image. {q} Answer Yes or No.", "Table S4 (variants E1–E3)"] for k, q in ev.items()]
 RP = J("data/derived/sph_robust_prompts.json")
 rows += [["Robustness: Yes/No paraphrase QA", "PULSE-7B, SPH (Experiment 3)", RP["QA"], "Table S8, R3"],

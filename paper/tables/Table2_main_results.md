@@ -10,4 +10,4 @@
 | Qwen2-VL-7B (general VLM) | CPSC | 19.7 | 17.6 | 19.7 | 21.0 | — | 23.2 | — | +3.4 [2.2, 4.7] |
 | PULSE-7B (in-domain) | CODE-15% | 85.2 | 73.2 | 75.3 | 76.0 | — | 82.2 | — | -2.4 [-4.4, -0.4] |
 
-Macro-F1 (official ECGBench metric) on the fixed test split. n-label results: mean of 20 random draws from the pool. CI: paired bootstrap over test records (B = 2000). Probe = linear probe on the pool-selected PULSE hidden state; not computed for other models. *SPH: pre-registered new site.
+Macro-F1 (official ECGBench metric) on the fixed test split. n-label results: mean of 20 random draws from the pool. CI: paired bootstrap over test records (B = 2000). Probe = linear probe on the pool-selected PULSE hidden state (layer and token selected on all 600 development records, so at n = 100 the probe draws on more labelled records than n); not computed for other models. *SPH: pre-registered new site.

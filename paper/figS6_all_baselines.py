@@ -1,4 +1,4 @@
-"""Supplementary Figure S6 — All same-budget baselines (frozen PULSE-7B) and hidden-state feature selection.
+"""Supplementary Figure S6 — All read-outs with the same number of fitting records (frozen PULSE-7B) and hidden-state feature selection.
 a-d Learning curves of every read-out (mean of 20 draws). e Pool-only stage-1 selection: 5-fold OOF macro-F1 of linear probes on each
 saved feature (LLM layer 8/16/24/32, image-token mean or last prompt token; CLIP CLS / patch mean). Data: baselines_*.json"""
 import os, runpy

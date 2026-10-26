@@ -101,7 +101,7 @@ write("Table2_main_results", ["Model", "Dataset", "B0 (generated)", "Zero-shot P
                               "S1 n=600", "Probe n=600", "S1@600 − B0 [95% CI]"], rows,
       "Macro-F1 (official ECGBench metric) on the fixed test split. n-label results: mean of 20 random draws from the pool. "
       "CI: paired bootstrap over test records (B = 2000). Probe = linear probe on the "
-      "pool-selected PULSE hidden state; not computed for other models. *SPH: pre-registered new site.")
+      "pool-selected PULSE hidden state (layer and token selected on all 600 development records, so at n = 100 the probe draws on more labelled records than n); not computed for other models. *SPH: pre-registered new site.")
 
 # ---------- Table 3: pre-registered hypotheses (SPH)
 P = J("outputs/clarity/ml_curve_sph.json")["results"]; M = J("outputs/clarity/mg_ml_curve_sph.json")["results"]; B = J("outputs/clarity/baselines_sph.json")["results"]
