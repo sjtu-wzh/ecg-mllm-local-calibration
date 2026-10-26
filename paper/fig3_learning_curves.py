@@ -1,10 +1,9 @@
-"""Figure 3 — Learning curves, read-out comparisons and feature ablations (frozen PULSE-7B; v2).
+"""Figure 3 — Performance across fitting-set sizes (frozen PULSE-7B; v3).
 a-d Test macro-F1 against the number of labelled ECGs used for read-out fitting (n = 25-600; 20 repetitions per n, fixed test split):
     mean (line) and 2.5th-97.5th percentiles of repetitions (band; not confidence intervals). Horizontal lines: generated answer
     (B0) and P(yes) >= 0.5 (ZS), which use no local labels. Probe (dagger): layer and token selected once on the full 600-record pool.
 e Probe minus S1 within each repetition: mean paired difference (top, percentage points) and repetitions with Probe > S1 (bottom).
-f n = 600, paired differences within repetitions (mean and 2.5th-97.5th percentiles): S1 - S1-uni (cross-label ablation),
-  Probe - S1 (read-out comparison), COMBO - Probe (adding the label logits to the hidden state).
+(The n = 600 feature ablations, formerly panel f, are now Figure 2b,c.)
 Data: outputs/clarity/baselines_{cpsc,csn,g12,sph}.json ("rows": one macro-F1 per method, n and repetition)"""
 import os, runpy
 import numpy as np
@@ -25,8 +24,8 @@ for d, _ in S["DATASETS"]:
 reps = range(20)
 pair = lambda d, a, b, n: np.array([R[d][(n, k, a)] - R[d][(n, k, b)] for k in reps])
 
-fig = plt.figure(figsize=(183 * MM, 222 * MM))
-outer = fig.add_gridspec(2, 1, height_ratios=[2.1, 1.12], hspace=0.36, top=0.935, bottom=0.055)
+fig = plt.figure(figsize=(183 * MM, 205 * MM))
+outer = fig.add_gridspec(2, 1, height_ratios=[2.1, 0.86], hspace=0.38, top=0.935, bottom=0.06)
 curves = outer[0].subgridspec(2, 2, hspace=0.36, wspace=0.22)
 # ------------------------------------------------------------------ a-d: learning curves
 for k, (d, _) in enumerate(S["DATASETS"]):
@@ -50,9 +49,9 @@ handles += [Line2D([], [], color=C["B0"], ls=(0, (4, 2)), lw=1.0), Line2D([], []
 labels += ["Generated answer (B0)", "P(yes) ≥ 0.5 (ZS)"]
 fig.legend(handles, labels, loc="upper center", bbox_to_anchor=(0.5, 0.985), ncol=5, fontsize=7, frameon=False, handlelength=2.6, columnspacing=1.3)
 
-bot = outer[1].subgridspec(1, 2, width_ratios=[1.18, 1], wspace=0.42)
+bot = outer[1].subgridspec(1, 3, width_ratios=[0.1, 1, 0.1])
 # ------------------------------------------------------------------ e: Probe - S1 paired matrix
-ax = fig.add_subplot(bot[0])
+ax = fig.add_subplot(bot[1])
 dsets = [d for d, _ in S["DATASETS"]]
 mean = np.array([[pair(d, "PROBE-LLM", "S1", n).mean() for n in SIZES] for d in dsets])
 wins = np.array([[(pair(d, "PROBE-LLM", "S1", n) > 0).sum() for n in SIZES] for d in dsets])
@@ -73,27 +72,7 @@ ax.text(0, 1.03, "Top: mean Probe − S1 (percentage points)\nBottom: repetition
         transform=ax.transAxes, fontsize=6.6, color="#444444", va="bottom", linespacing=1.25)
 cb = fig.colorbar(im, ax=ax, fraction=0.035, pad=0.02, ticks=[0, 10, 20])
 cb.set_label("Repetitions with Probe > S1", fontsize=6.6); cb.ax.tick_params(labelsize=6.5, length=2)
-S["panel_label"](ax, "e", x=-0.16, y=1.2)
+S["panel_label"](ax, "e", x=-0.14, y=1.2)
 print("ties Probe == S1:", ties)
 
-# ------------------------------------------------------------------ f: n = 600 comparisons and ablations
-ax = fig.add_subplot(bot[1])
-GROUPS = [("S1", "S1-uni", "S1 − S1-uni (cross-label ablation)", C["S1"]),
-          ("PROBE-LLM", "S1", "Probe − S1 (read-out comparison)", C["PROBE"]),
-          ("COMBO", "PROBE-LLM", "COMBO − Probe (adding label logits)", C["COMBO"])]
-y, yt, yl = 0, [], []
-for a, b, title, col in GROUPS:
-    ax.text(-1.0, y - 0.75, title, fontsize=6.9, fontweight="bold", va="center", ha="left", color=col)
-    for d in dsets:
-        v = pair(d, a, b, 600)
-        ax.plot([np.percentile(v, 2.5), np.percentile(v, 97.5)], [y, y], color=col, lw=1.4, solid_capstyle="butt")
-        ax.scatter([v.mean()], [y], s=18, color=col, zorder=3)
-        yt.append(y); yl.append(SHORT[d]); y += 1
-    y += 1.4
-ax.axvline(0, color="#333333", lw=0.8, zorder=0)
-ax.set_yticks(yt); ax.set_yticklabels(yl, fontsize=6.8); ax.set_ylim(y - 1.0, -1.9); ax.tick_params(axis="y", length=0)
-ax.set_xlim(-1.0, 14); ax.set_xlabel("Paired difference at n = 600 (percentage points)")
-ax.grid(axis="x", color=C["grid"], lw=0.5); ax.set_axisbelow(True); ax.spines["left"].set_visible(False)
-ax.set_title("Read-out comparisons and feature ablations\nat n = 600", loc="left", fontsize=8.5, pad=10)
-S["panel_label"](ax, "f", x=-0.2, y=1.2)
 S["save"](fig, "Fig3_learning_curves")

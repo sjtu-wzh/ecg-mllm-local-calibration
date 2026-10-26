@@ -1,8 +1,8 @@
 """Supplementary Figure S8 — Robustness to image degradation and prompt wording (pre-registered Experiment 3; frozen PULSE-7B; SPH,
 300-record pool subset, 800-record test subset; docs/prereg_robustness.md).
+(The pre-registered contrasts R1-R4 are shown in Figure 4D.)
 a Macro-F1 per arm: generated answer (B0), zero-shot probability, S1 fitted on the arm's own pool (matched), S1 fitted on clean images.
-b Pre-registered contrasts R1-R4 with 95% paired-bootstrap CIs (B = 2000); dashed line = smallest effect of interest (3).
-c Learning curves (THR and S1, mean of 20 draws) for the clean and the three degraded-image arms.
+b,c Learning curves (THR and S1, mean of 20 draws) for the clean and degraded-image arms (b) and the paraphrased questions (c).
 Data: outputs/clarity/robust_results.json (path can be overridden with ROBUST_RESULTS for testing)"""
 import os, runpy
 import numpy as np
@@ -12,7 +12,7 @@ import json
 R = json.load(open(os.environ.get("ROBUST_RESULTS") or os.path.join(ROOT, "outputs/clarity/robust_results.json")))
 F = R["F1"]; ARMS = [("CLEAN", "Clean"), ("ROT", "Rotated"), ("PHOTO", "Phone photo"), ("SCAN", "Low-quality scan"),
                      ("QA", "Question QA"), ("QB", "Question QB"), ("P1", "Answer prompt P1")]
-fig = plt.figure(figsize=(183 * MM, 118 * MM)); gs = fig.add_gridspec(2, 2, height_ratios=[1, 1], width_ratios=[1.3, 1], hspace=0.6, wspace=0.85)
+fig = plt.figure(figsize=(183 * MM, 118 * MM)); gs = fig.add_gridspec(2, 2, height_ratios=[1, 1], width_ratios=[1, 1], hspace=0.6, wspace=0.25)
 
 ax = fig.add_subplot(gs[0, :]); x = np.arange(len(ARMS)); w = 0.2
 bars = [("B0", "Generated answer (B0)", C["B0"]), ("ZS", "Zero-shot P(yes) ≥ 0.5", C["ZS"]),
@@ -33,24 +33,21 @@ ax.set_xticks(x); ax.set_xticklabels([l for _, l in ARMS], fontsize=7); ax.set_y
 ax.grid(axis="y", color=C["grid"], lw=0.5); ax.set_axisbelow(True); ax.legend(ncol=4, fontsize=6.4, loc="upper center", bbox_to_anchor=(0.5, -0.13))
 S["panel_label"](ax, "a", x=-0.07, y=1.04)
 
-ax = fig.add_subplot(gs[1, 0]); H = list(R["hypotheses"].items())
-for k, (name, h) in enumerate(H[::-1]):
-    m, lo, hi = h["estimate"]; col = C["S1"] if h["verdict"] == "SUPPORTED" else C["down"]
-    ax.plot([lo, hi], [k, k], color=col, lw=1.5); ax.scatter([m], [k], s=18, color=col, zorder=3)
-    ax.text(1.02, k, f"{m:+.1f} [{lo:.1f}, {hi:.1f}]", transform=ax.get_yaxis_transform(), va="center", fontsize=6)
-ax.axvline(0, color="#333333", lw=0.8); ax.axvline(3, color="#999999", lw=0.8, ls=(0, (3, 2)))
-lab = lambda s: s.split(":")[0] + ": " + s.split(":")[1].strip().replace("S1_clean->", "S1 clean→").replace("_", " ").replace(" - ", " − ")
-ax.set_yticks(range(len(H))); ax.set_yticklabels([lab(n) for n, _ in H[::-1]], fontsize=6.2)
-ax.set_xlabel("Δ macro-F1 (95% CI)"); ax.set_title("Pre-registered contrasts", loc="left", fontsize=8.5)
-S["panel_label"](ax, "b", x=-0.75)
-
-ax = fig.add_subplot(gs[1, 1]); SIZES = [25, 50, 100, 200, 300]
+ax = fig.add_subplot(gs[1, 0]); SIZES = [25, 50, 100, 200, 300]
 cols = {"CLEAN": "#333333", "ROT": "#42949E", "PHOTO": "#B64342", "SCAN": "#9A4D8E"}
 for a, col in cols.items():
     ax.plot(SIZES, [R["curve"][f"{a}|S1@{n}"][0] for n in SIZES], color=col, marker="o", ms=2.4, lw=1.2, label=dict(ARMS)[a])
     ax.plot(SIZES, [R["curve"][f"{a}|THR@{n}"][0] for n in SIZES], color=col, lw=0.9, ls=(0, (2, 1.5)))
 ax.set_xscale("log"); ax.set_xticks(SIZES); ax.set_xticklabels(SIZES); ax.minorticks_off()
 ax.set_xlabel("Labelled ECGs (n)"); ax.set_ylabel("Macro-F1"); ax.grid(axis="y", color=C["grid"], lw=0.5)
-ax.set_title("Learning curves (solid S1, dashed threshold)", loc="left", fontsize=8.5); ax.legend(fontsize=6.2, loc="lower right")
-S["panel_label"](ax, "c", x=-0.25)
+ax.set_title("Image degradation (solid S1, dashed threshold)", loc="left", fontsize=8.5); ax.legend(fontsize=6.2, loc="lower right")
+S["panel_label"](ax, "b", x=-0.25); ylim = ax.get_ylim()
+ax = fig.add_subplot(gs[1, 1])
+for a, col in {"CLEAN": "#333333", "QA": "#42949E", "QB": "#B64342"}.items():
+    ax.plot(SIZES, [R["curve"][f"{a}|S1@{n}"][0] for n in SIZES], color=col, marker="o", ms=2.4, lw=1.2, label=dict(ARMS)[a])
+    ax.plot(SIZES, [R["curve"][f"{a}|THR@{n}"][0] for n in SIZES], color=col, lw=0.9, ls=(0, (2, 1.5)))
+ax.set_xscale("log"); ax.set_xticks(SIZES); ax.set_xticklabels(SIZES); ax.minorticks_off(); ax.set_ylim(ylim)
+ax.set_xlabel("Labelled ECGs (n)"); ax.grid(axis="y", color=C["grid"], lw=0.5)
+ax.set_title("Question wording (solid S1, dashed threshold)", loc="left", fontsize=8.5); ax.legend(fontsize=6.2, loc="lower right")
+S["panel_label"](ax, "c", x=-0.15)
 S["save"](fig, os.environ.get("ROBUST_FIGNAME", "FigS8_robustness"), supp=True)

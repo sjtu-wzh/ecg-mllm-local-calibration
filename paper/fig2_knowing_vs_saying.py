@@ -1,12 +1,11 @@
-"""Figure 2 — Generated answers versus read-outs of frozen PULSE-7B (v2).
+"""Figure 2 — Read-outs re-rank cases: ROC analysis and feature ablations (frozen PULSE-7B; v3).
 a CPSC test split (n = 1461), three diagnoses: ROC of the raw Yes/No probability (solid) and of the S1 read-out (dashed; logistic
   regression on all nine label log-odds, one fit on the 600 development records, as in clarity/verify_stack.py). Markers: generated
   answer (B0) and the S1 decision (out-of-fold threshold plus the at-least-one-label rule, so it can lie slightly off the S1 curve).
-b Held-out macro-F1 of four read-outs on four datasets. S1 and probe: mean and 2.5th-97.5th percentiles of 20 repetitions on the same
-  600-record development pool (record order and cross-validation folds differ); B0 and P(yes) >= 0.5 use no local labels.
-c Exploratory development-pool feature screening (5-fold out-of-fold macro-F1 with thresholds chosen on the same predictions; optimistic).
-  LLM: last prompt token by layer; CLIP: patch-token mean of the resized whole image (a different input view), shown separately.
-Data: b1_cpsc_{dev,test}.jsonl, pulse7b/cpsc-test answers, preds_test.json, baselines_*.json"""
+b Cross-label ablation at n = 600: S1 (all label log-odds) minus S1-uni (the label's own log-odds), paired within repetitions.
+c COMBO (hidden state plus all label log-odds) minus the hidden-state probe at n = 600, paired within repetitions.
+  b, c: mean and 2.5th-97.5th percentiles of 20 repetitions (record order and cross-validation folds differ).
+Data: b1_cpsc_{dev,test}.jsonl, pulse7b/cpsc-test answers, preds_test.json, baselines_*.json ("rows")"""
 import json, os, runpy
 import numpy as np
 from sklearn.linear_model import LogisticRegression
@@ -27,8 +26,8 @@ logit = lambda p: np.log(np.clip(p, 1e-4, 1 - 1e-4) / (1 - np.clip(p, 1e-4, 1 - 
 X = lambda ids: np.column_stack([logit(np.array([P[i][L] for i in ids])) for L in LABELS])
 Xd, Xt = X(dev), X(test)
 
-fig = plt.figure(figsize=(183 * MM, 150 * MM))
-outer = fig.add_gridspec(2, 1, height_ratios=[1, 1.08], hspace=0.62)
+fig = plt.figure(figsize=(183 * MM, 128 * MM))
+outer = fig.add_gridspec(2, 1, height_ratios=[1, 0.62], hspace=0.62)
 top = outer[0].subgridspec(1, 3, wspace=0.28)
 # ------------------------------------------------------------------ a: three ROC panels
 for k, L in enumerate(SHOW):
@@ -50,44 +49,25 @@ for k, L in enumerate(SHOW):
         handles, labels = ax.get_legend_handles_labels()
 fig.legend(handles, labels, loc="upper center", bbox_to_anchor=(0.5, 0.975), ncol=4, fontsize=7, frameon=False, handlelength=2.2, columnspacing=1.6)
 
-# ------------------------------------------------------------------ b: held-out macro-F1
-bot = outer[1].subgridspec(1, 2, width_ratios=[1.22, 1], wspace=0.32)
-ax = fig.add_subplot(bot[0])
-bars = [("B0", "Generated answer", C["B0"]), ("ZS", "P(yes) ≥ 0.5", C["ZS"]),
-        ("S1", "S1 read-out", C["S1"]), ("PROBE", "Hidden-state probe", C["PROBE"])]
-x = np.arange(4); w = 0.2
-for k, (key, lab, col) in enumerate(bars):
-    vals, err = [], [[], []]
-    for d, _ in S["DATASETS"]:
-        r = S["baselines"](d); cur = r["curve"]
-        if key == "B0": v, lo, hi = r["reference"]["B0"]["F1"], None, None
-        elif key == "ZS": v, lo, hi = r["reference"]["ZS@0.5"]["F1"], None, None
-        else: v, lo, hi = cur[("S1" if key == "S1" else "PROBE-LLM") + "@600"]["F1"]
-        vals.append(v); err[0].append(0 if lo is None else v - lo); err[1].append(0 if hi is None else hi - v)
-    ax.bar(x + (k - 1.5) * w, vals, w * 0.92, color=col, label=lab, yerr=err if key in ("S1", "PROBE") else None,
-           error_kw=dict(lw=0.7, capsize=1.5, ecolor="#333333"))
-ax.set_xticks(x); ax.set_xticklabels(["CPSC", "CSN", "G12EC", "SPH"]); ax.set_ylabel("Macro-F1 (%)")
-ax.set_ylim(0, 80); ax.grid(axis="y", color=C["grid"], lw=0.5); ax.set_axisbelow(True)
-ax.set_title("Held-out performance", loc="left", fontsize=8.5, pad=26)
-ax.legend(loc="lower left", bbox_to_anchor=(0, 1.0), ncol=2, fontsize=6.8, columnspacing=1.2, handlelength=1.1, handletextpad=0.4, borderaxespad=0.2)
-S["panel_label"](ax, "b", x=-0.15, y=1.2)
-
-# ------------------------------------------------------------------ c: development-pool feature screening
-ax = fig.add_subplot(bot[1])
-STY = {"cpsc": ("o", "-", "#0F4D92", "CPSC"), "csn": ("s", (0, (4, 1.5)), "#42949E", "CSN"),
-       "g12": ("^", (0, (1, 1.2)), "#B64342", "G12EC"), "sph": ("D", (0, (5, 1.5, 1, 1.5)), "#9A4D8E", "SPH")}
-XC = 4.9; jit = {"cpsc": -0.18, "csn": -0.06, "g12": 0.06, "sph": 0.18}
-for d, _ in S["DATASETS"]:
-    st = S["baselines"](d)["stage1_pool_oof_F1"]; mk, ls, col, nm = STY[d]
-    ax.plot([0, 1, 2, 3], [st[f"llm_L{L}_last"] for L in (8, 16, 24, 32)], color=col, ls=ls, marker=mk, ms=3.2, lw=1.1, label=nm)
-    ax.scatter([XC + jit[d]], [st["clip_patch"]], marker=mk, s=14, color=col, zorder=4)
-ax.axvline(4.0, color="#BBBBBB", lw=0.7, ls=(0, (2, 2)))
-ax.set_xticks([0, 1, 2, 3, XC]); ax.set_xticklabels(["L8", "L16", "L24", "L32", "CLIP"])
-ax.text(1.5, -0.13, "LLM layer (last prompt token)", transform=ax.get_xaxis_transform(), ha="center", va="top", fontsize=7)
-ax.text(XC, -0.13, "patch mean", transform=ax.get_xaxis_transform(), ha="center", va="top", fontsize=7)
-ax.set_xlim(-0.4, 5.5); ax.set_ylim(20, 80); ax.set_ylabel("Screening macro-F1 (%)")
-ax.grid(axis="y", color=C["grid"], lw=0.5); ax.set_axisbelow(True)
-ax.set_title("Development-pool feature screening", loc="left", fontsize=8.5, pad=26)
-ax.legend(loc="lower left", bbox_to_anchor=(0, 1.0), ncol=2, fontsize=6.8, columnspacing=1.2, handlelength=2.0, handletextpad=0.4, borderaxespad=0.2)
-S["panel_label"](ax, "c", x=-0.2, y=1.2)
+# ------------------------------------------------------------------ b, c: feature ablations at n = 600
+SHORT = {"cpsc": "CPSC", "csn": "CSN", "g12": "G12EC", "sph": "SPH"}
+R = {d: {(r["n"], r["rep"], r["method"]): r["F1"] for r in J(f"outputs/clarity/baselines_{d}.json")["rows"]} for d, _ in S["DATASETS"]}
+pair = lambda d, a, b: np.array([R[d][(600, k, a)] - R[d][(600, k, b)] for k in range(20)])
+bot = outer[1].subgridspec(1, 2, wspace=0.75)
+sg = lambda x: f"{x + 0:+.1f}" if round(x, 1) != 0 else "0.0"   # no "-0.0"
+PAN = [("S1", "S1-uni", C["S1"], "Cross-label ablation: S1 − S1-uni", "all label log-odds vs the label's own log-odds"),
+       ("COMBO", "PROBE-LLM", C["COMBO"], "Adding label log-odds: COMBO − probe", "hidden state + all label log-odds vs hidden state")]
+for k, (a, b, col, title, sub) in enumerate(PAN):
+    ax = fig.add_subplot(bot[k]); dsets = [d for d, _ in S["DATASETS"]]
+    for y, d in enumerate(dsets):
+        v = pair(d, a, b); lo, hi = np.percentile(v, [2.5, 97.5])
+        ax.plot([lo, hi], [y, y], color=col, lw=1.5, solid_capstyle="butt"); ax.scatter([v.mean()], [y], s=20, color=col, zorder=3)
+        ax.text(1.02, y, f"{sg(v.mean())} [{lo:.1f}, {hi:.1f}]".replace("-", "−"), transform=ax.get_yaxis_transform(), va="center", fontsize=6.3)
+    ax.axvline(0, color="#333333", lw=0.8, zorder=0)
+    ax.set_yticks(range(4)); ax.set_yticklabels([SHORT[d] for d in dsets]); ax.set_ylim(3.6, -0.6); ax.tick_params(axis="y", length=0)
+    ax.spines["left"].set_visible(False); ax.grid(axis="x", color=C["grid"], lw=0.5); ax.set_axisbelow(True)
+    ax.set_xlim(-2, 14); ax.set_xticks([0, 5, 10]); ax.set_xlabel("Paired difference at n = 600 (percentage points)")
+    ax.set_title(title, loc="left", fontsize=8.5, pad=16)
+    ax.text(0, 1.03, sub, transform=ax.transAxes, fontsize=6.6, color="#555555", va="bottom")
+    S["panel_label"](ax, "bc"[k], x=-0.2, y=1.16)
 S["save"](fig, "Fig2_knowing_vs_saying")
