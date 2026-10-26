@@ -12,4 +12,4 @@
 | Transfer PTB-XL → CPSC: S1 − B0 | — | −2.1 [−4.9, 0.5], p = 0.114 | No transferred variant beats B0 on the new site | Negative (Fig. S4b) |
 | Transfer PTB-XL → CPSC: E2 − B0 | — | −4.8 [−7.5, −2.3], p < 0.001 | No transferred variant beats B0 on the new site | Negative (Fig. S4b) |
 
-All variants fitted on the 600-record CPSC dev split and evaluated once on the 1461-record test split (clarity/verify_stack.py, clarity/stats_cpsc.py). Paired bootstrap over test records (B = 2000). These analyses were exploratory and are not used for any main claim. Variant codes E1–E3 replace the internal codes S2/S3/S4 (Table S6).
+All variants fitted on the 600-record CPSC dev split and evaluated once on the 1461-record test split (clarity/verify_stack.py, clarity/stats_cpsc.py). Paired bootstrap over test records (B = 1000, clarity/stats_cpsc.py; point estimate = mean of the bootstrap differences). These analyses were exploratory and are not used for any main claim. Variant codes E1–E3 replace the internal codes S2/S3/S4 (Table S6).

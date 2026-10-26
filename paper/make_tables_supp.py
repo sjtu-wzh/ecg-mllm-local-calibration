@@ -126,7 +126,7 @@ rows = [
 ] + [[f"Transfer PTB-XL → CPSC: {k.split(' (')[0].replace('S3', 'E2').replace(' - ', ' − ')}", "—", pct(v), "No transferred variant beats B0 on the new site", "Negative (Fig. S4b)"] for k, v in tr.items()]
 write("TableS4_exploratory", ["Variant", "CPSC test macro-F1", "Comparison [95% CI]", "Interpretation", "Status"], rows,
       "All variants fitted on the 600-record CPSC dev split and evaluated once on the 1461-record test split (clarity/verify_stack.py, clarity/stats_cpsc.py). "
-      "Paired bootstrap over test records (B = 2000). These analyses were exploratory and are not used for any main claim. "
+      "Paired bootstrap over test records (B = 1000, clarity/stats_cpsc.py; point estimate = mean of the bootstrap differences). These analyses were exploratory and are not used for any main claim. "
       "Variant codes E1–E3 replace the internal codes S2/S3/S4 (Table S6).")
 
 # ---------- Table S5: pre-specified domain analysis (PTB-XL fold 10 vs CPSC, same 9-label prompt, 8 primary labels)
@@ -183,4 +183,4 @@ if os.path.exists(os.path.join(ROOT, "outputs/clarity/robust_results.json")):
             for k, v in RR["hypotheses"].items()]
     rows += [["Descriptive", k.replace("S1_clean->", "S1 clean→").replace("_", " ").replace(" - ", " − "), ci(v), "—", "—"] for k, v in RR["descriptive"].items()]
     write("TableS8_robustness_contrasts", ["ID", "Contrast (800 test ECGs)", "Δ macro-F1 [95% CI]", "Decision rule", "Verdict"], rows,
-          "Paired bootstrap over test records (B = 2000). No multiplicity correction (pre-specified).")
+          "Paired bootstrap over test records (B = 2000); the point estimate is the observed difference on the test records. No multiplicity correction (pre-specified).")

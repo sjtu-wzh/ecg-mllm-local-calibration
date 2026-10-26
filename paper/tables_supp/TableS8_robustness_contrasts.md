@@ -24,4 +24,4 @@
 | Descriptive | S1 clean→QB − S1 QB | −0.7 [−2.2, 1.0] | — | — |
 | Descriptive | B0 P1 − B0 CLEAN | −0.3 [−3.1, 2.6] | — | — |
 
-Paired bootstrap over test records (B = 2000). No multiplicity correction (pre-specified).
+Paired bootstrap over test records (B = 2000); the point estimate is the observed difference on the test records. No multiplicity correction (pre-specified).
