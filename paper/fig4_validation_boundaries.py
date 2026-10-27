@@ -27,7 +27,7 @@ RB = J("outputs/clarity/robust_results.json"); RH, RD = RB["hypotheses"], RB["de
 rh = lambda prefix: RH[next(k for k in RH if k.startswith(prefix))]
 R1C, R2C, MIS = C["S1"], "#7FA6CF", "#6E6E6E"
 
-# row: (label, descriptor (text or (text, colour)) or None, [(estimate, colour, sesoi)], status or None); "gap" inserts space between groups
+# row: (label, descriptor (text or (text, color)) or None, [(estimate, color, sesoi)], status or None); "gap" inserts space between groups
 A = [("H1  PULSE-7B: S1 − B0", ("supported", "#444444"), [(P["S1@600-B0"], C["S1"], True)], None),
      ("H2  PULSE-7B: ZS − B0", ("not supported", C["down"]), [(P["ZS-B0"], C["ZS"], False)], None),
      ("H3  PULSE-7B: S1 − ZS", ("supported", "#444444"), [(P["S1@600-ZS"], C["S1"], False)], None),

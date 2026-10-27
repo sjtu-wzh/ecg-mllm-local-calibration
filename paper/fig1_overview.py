@@ -1,7 +1,7 @@
 """Figure 1 — Study overview (v3).
 a One frozen ECG multimodal LLM (PULSE-7B) receives the same ECG image with three different prompts: a classification prompt
   (generated answer, B0), one Yes/No question per diagnosis (per-label P(yes): ZS, THR, S1) and a neutral prompt (hidden state:
-  linear probe). Dashed borders mark read-outs that require local labelled data.
+  linear probe). Dashed borders mark read-outs that require local labeled data.
 b Design of the main analysis (CPSC, CSN, G12EC, SPH): n records are sampled from the 600-record development pool, read-outs are
   fitted on them and applied unchanged to the held-out test ECGs; test reference labels enter only the evaluation. In the original
   analysis the probe's layer and token were selected once on the full development pool.
@@ -65,7 +65,7 @@ OUTPUTS = [(R1, "Generated text\n(e.g., “NORM”)"), (R2, "Per-label P(yes)\nf
 for y, txt in OUTPUTS:
     arrow(89.5, y, 93.5, y)
     box(94, y - 6, 29, 12, txt, GREY, fs=7.2)
-# read-outs (dashed border = requires local labelled data; coloured tab = read-out identity)
+# read-outs (dashed border = requires local labeled data; colored tab = read-out identity)
 arrow(123.5, R1, 127.5, R1)
 box(128, R1 - 5, 53, 10, "B0: generated-answer baseline\nlabels parsed from the text", GREY, fs=7.4, bold_first=True)
 box(128, 115.5, 53, 5.2, "ZS: P(yes) ≥ 0.5 (no fitting)", C["ZS"], fs=7.2)
@@ -105,7 +105,7 @@ ax.plot([2, W - 2], [57.5, 57.5], color="#DDDDDD", lw=0.6)
 ax.text(2, 56.5, "b", fontsize=11, fontweight="bold", va="top")
 ax.text(8, 56.5, "Local fitting and held-out evaluation (main analysis: CPSC, CSN, G12EC, SPH)", fontsize=9, fontweight="bold", va="top")
 yb, hb = 23, 14                                              # main row: bottom, height
-box(3, yb, 33, hb, "Development pool\n600 labelled ECG records", GREY, fc="#F4F4F4", fs=7.4, bold_first=True)
+box(3, yb, 33, hb, "Development pool\n600 labeled ECG records", GREY, fc="#F4F4F4", fs=7.4, bold_first=True)
 arrow(36.5, yb + hb / 2, 40.5, yb + hb / 2)
 box(41, yb, 34, hb, "Sample n records\nn = 25, 50, 100, 200, 300,\n400 or 600; 20 draws each", GREY, fs=7.4, bold_first=True)
 arrow(75.5, yb + hb / 2, 79.5, yb + hb / 2, dashed=True)
@@ -131,5 +131,5 @@ arrow(165, 14.5, 165, yb - 0.5)
 ax.plot([3, 10], [16, 16], color=GREY, lw=0.9); ax.text(11.5, 16, "Prediction / data flow", fontsize=7, color=GREY, va="center")
 ax.plot([3, 10], [10.5, 10.5], color=GREY, lw=0.9, ls=DASH); ax.text(11.5, 10.5, "Development-stage fitting and selection", fontsize=7, color=GREY, va="center")
 ax.add_patch(FancyBboxPatch((3, 3.3), 7, 3.4, boxstyle="round,pad=0,rounding_size=0.8", fc="white", ec=GREY, lw=1, ls=DASH))
-ax.text(11.5, 5, "Requires local labelled data", fontsize=7, color=GREY, va="center")
+ax.text(11.5, 5, "Requires local labeled data", fontsize=7, color=GREY, va="center")
 S["save"](fig, "Fig1_overview")

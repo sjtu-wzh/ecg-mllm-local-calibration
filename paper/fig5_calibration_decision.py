@@ -2,7 +2,7 @@
 a,b Reliability diagrams (all label x record pairs, 10 equal-width bins with >= 20 pairs) with macro ECE.
 c   Decision curve for a diagnosis the generated answer already detects well (AF, CPSC): a control with little room for gain.
 d-f Decision curves (net benefit vs threshold probability) for diagnoses where the generated answer under-detects.
-    Decision curves for all evaluated diagnoses are summarised in the text and Figure S1; SPH subgroups moved to Figure S9.
+    Decision curves for all evaluated diagnoses are summarized in the text and Figure S1; SPH subgroups moved to Figure S9.
 Data: outputs/clarity/clinical_{cpsc,sph}.json"""
 import os, runpy
 import numpy as np

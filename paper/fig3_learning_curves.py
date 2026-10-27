@@ -1,5 +1,5 @@
 """Figure 3 — Performance across fitting-set sizes (frozen PULSE-7B; v3).
-a-d Test macro-F1 against the number of labelled ECGs used for read-out fitting (n = 25-600; 20 repetitions per n, fixed test split):
+a-d Test macro-F1 against the number of labeled ECGs used for read-out fitting (n = 25-600; 20 repetitions per n, fixed test split):
     mean (line) and 2.5th-97.5th percentiles of repetitions (band; not confidence intervals). Horizontal lines: generated answer
     (B0) and P(yes) >= 0.5 (ZS), which use no local labels. Probe (dagger): layer and token selected once on the full 600-record pool.
 e Probe minus S1 within each repetition: mean paired difference (top, percentage points) and repetitions with Probe > S1 (bottom).
@@ -42,7 +42,7 @@ for k, (d, _) in enumerate(S["DATASETS"]):
     ax.grid(axis="y", color=C["grid"], lw=0.5); ax.set_axisbelow(True)
     ax.set_title(NAMES[d], loc="left", fontsize=8.5)
     if k % 2 == 0: ax.set_ylabel("Test macro-F1 (%)")
-    if k >= 2: ax.set_xlabel("Labelled ECGs used for read-out fitting (n)")
+    if k >= 2: ax.set_xlabel("Labeled ECGs used for read-out fitting (n)")
     S["panel_label"](ax, "abcd"[k], x=-0.13 if k % 2 == 0 else -0.08, y=1.04)
     if k == 0: handles, labels = ax.get_legend_handles_labels()
 handles += [Line2D([], [], color=C["B0"], ls=(0, (4, 2)), lw=1.0), Line2D([], [], color=C["ZS"], ls=(0, (1, 1.5)), lw=1.1)]
@@ -64,7 +64,7 @@ for i in range(len(dsets)):
         ax.text(j, i - 0.16, fmt(mean[i, j]).replace("-", "−"), ha="center", va="center", fontsize=6.6, color=tc, fontweight="bold")
         ax.text(j, i + 0.2, f"{wins[i, j]}/20", ha="center", va="center", fontsize=6.0, color=tc)
 ax.set_xticks(range(len(SIZES))); ax.set_xticklabels(SIZES); ax.set_yticks(range(len(dsets))); ax.set_yticklabels([SHORT[d] for d in dsets])
-ax.set_xlabel("Labelled ECGs used for read-out fitting (n)")
+ax.set_xlabel("Labeled ECGs used for read-out fitting (n)")
 ax.tick_params(length=0)
 for sp in ax.spines.values(): sp.set_visible(False)
 ax.set_title("Probe versus S1 across fitting-set sizes", loc="left", fontsize=8.5, pad=24)

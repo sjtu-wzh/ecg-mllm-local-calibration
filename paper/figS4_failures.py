@@ -17,10 +17,10 @@ for key, col, lab in (("THR", C["THR"], "Threshold only"), ("S1", C["S1"], "S1")
     a1.plot(SIZES, [c["curve"][f"{key}@{n}"]["F1_mean"] for n in SIZES], color=col, marker="o", ms=2.8, label=lab)
 a1.axhline(c["B0"]["F1"], color=C["B0"], ls=(0, (4, 2)), lw=1.0, label=f"Generated answer (B0) {c['B0']['F1']:.1f}")
 a1.axhline(c["B1@0.5 (zero-shot)"]["F1"], color=C["ZS"], ls=(0, (1, 1.5)), lw=1.0, label="Zero-shot probability")
-a1.set_xscale("log"); a1.set_xticks(TICKS); a1.set_xticklabels(TICKS); a1.minorticks_off(); a1.set_xlabel("Labelled ECGs (n)"); a1.set_ylabel("Macro-F1")
+a1.set_xscale("log"); a1.set_xticks(TICKS); a1.set_xticklabels(TICKS); a1.minorticks_off(); a1.set_xlabel("Labeled ECGs (n)"); a1.set_ylabel("Macro-F1")
 a1.legend(fontsize=6.2, loc="upper center", bbox_to_anchor=(0.5, -0.22), ncol=2); a1.set_title("CODE-15% (in-domain)", loc="left", fontsize=8.5); a1.grid(axis="y", color=C["grid"], lw=0.5)
 S["panel_label"](a1, "a", x=-0.2)
-E3C = "#C48DBC"   # E3 shares the E2 family colour, lighter
+E3C = "#C48DBC"   # E3 shares the E2 family color, lighter
 V = [("B0 (official generation)", "Generated (B0)", C["B0"]), ("B1@0.5", "ZS, P(yes) ≥ 0.5 (no fitting)", C["ZS"]), ("B1@src", "THR (PTB-XL thresholds)", C["THR"]),
      ("S1", "S1 fitted on PTB-XL", C["S1"]), ("S1+EM", "S1 + EM prior shift", C["S1"]), ("S4", "E3 fitted on PTB-XL", E3C), ("S4+EM", "E3 + EM prior shift", E3C),
      ("S3", "E2 fitted on PTB-XL", C["COMBO"]), ("S3+EM", "E2 + EM prior shift", C["COMBO"])]  # keys: internal codes (Table S6)

@@ -1,5 +1,5 @@
 """Supplementary Figure S2 — ECGBench G12EC multiple-choice items can be solved without the image.
-Accuracy on the fixed test split (1426 items): official PULSE-7B answer (B0), and conditional-logit read-outs fitted on n labelled
+Accuracy on the fixed test split (1426 items): official PULSE-7B answer (B0), and conditional-logit read-outs fitted on n labeled
 items: position bias only (POS), position + diagnosis-code priors + PULSE letter probabilities (S1-MCQ), and the IMAGE-BLIND
 control (letter + code priors only; the model's letter probabilities removed). Data: mcq_curve_g12.json, mcq_blind_g12.json"""
 import os, runpy
@@ -18,6 +18,6 @@ ax.errorbar(bn, bm, yerr=[[bm[i] - bl["blind"][str(n)][1] for i, n in enumerate(
 ax.axhline(r["B0"], color=C["B0"], ls=(0, (4, 2)), lw=1.0, label=f"PULSE generated answer (B0) {r['B0']:.1f}")
 ax.axhline(12.5, color=C["ZS"], ls=(0, (1, 1.5)), lw=1.0, label="Chance (8 options) 12.5")
 ax.set_xscale("log"); ax.set_xticks(TICKS); ax.set_xticklabels(TICKS); ax.minorticks_off(); ax.set_ylim(0, 100)
-ax.set_xlabel("Labelled multiple-choice items (n)"); ax.set_ylabel("Accuracy (%)"); ax.grid(axis="y", color=C["grid"], lw=0.5)
+ax.set_xlabel("Labeled multiple-choice items (n)"); ax.set_ylabel("Accuracy (%)"); ax.grid(axis="y", color=C["grid"], lw=0.5)
 ax.legend(loc="lower right", fontsize=6.3); ax.set_title("G12EC multiple-choice: solvable without the image", loc="left", fontsize=8.5)
 S["save"](fig, "FigS2_mcq_flaw", supp=True)

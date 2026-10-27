@@ -1,4 +1,4 @@
-"""Shared style, colours and data loaders for the paper figures (paper/fig*.py). Loaded with runpy by each figure script."""
+"""Shared style, colors and data loaders for the paper figures (paper/fig*.py). Loaded with runpy by each figure script."""
 import json, os
 import matplotlib
 matplotlib.use("Agg")
@@ -15,7 +15,7 @@ plt.rcParams.update({
     "xtick.major.size": 3, "ytick.major.size": 3, "legend.frameon": False, "lines.linewidth": 1.4, "savefig.dpi": 300,
 })
 MM = 1 / 25.4  # mm -> inch; single column 89 mm, double column 183 mm
-C = {  # one colour per read-out, identical in every figure
+C = {  # one color per read-out, identical in every figure
     "B0": "#4D4D4D", "ZS": "#A8A8A8", "THR": "#42949E", "S1": "#0F4D92", "PROBE": "#B64342", "CLIP": "#B8B8B8",
     "COMBO": "#9A4D8E", "MedGemma": "#7884B4", "Qwen": "#CFCECE", "grid": "#E6E6E6", "up": "#2E9E44", "down": "#E53935",
 }

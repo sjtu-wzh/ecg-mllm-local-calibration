@@ -30,7 +30,7 @@ for k, (metric, title) in enumerate((("sens", "Sensitivity"), ("spec", "Specific
         ax.legend(loc="upper left", fontsize=6, bbox_to_anchor=(-0.02, 1.0))
 
 ax = fig.add_subplot(gs[2]); wn = cl["wrongly_normal_per_1000"]
-labels = ["Abnormal ECG\nlabelled normal\n(any NORM)", "Abnormal ECG\ncalled only\nnormal"]
+labels = ["Abnormal ECG\nlabeled normal\n(any NORM)", "Abnormal ECG\ncalled only\nnormal"]
 x = np.arange(2); w = 0.36
 ax.bar(x - w / 2, wn["B0"], w * 0.95, color=C["B0"], label="B0")
 ax.bar(x + w / 2, wn["S1_mean"], w * 0.95, color=C["S1"], label="S1",

@@ -13,7 +13,7 @@ for k, (d, title) in enumerate(S["DATASETS"]):
     for key, col, ls, lab in M:
         ax.plot(SIZES, [r["curve"][f"{key}@{n}"]["F1"][0] for n in SIZES], color=col, ls=ls, marker="o", ms=2.2, lw=1.1, label=lab)
     ax.axhline(r["reference"]["B0"]["F1"], color=C["B0"], ls=(0, (4, 2)), lw=0.9, label="Generated (B0)")
-    ax.set_xscale("log"); ax.set_xticks([25, 100, 600]); ax.set_xticklabels([25, 100, 600]); ax.minorticks_off(); ax.set_xlabel("Labelled ECGs (n)")
+    ax.set_xscale("log"); ax.set_xticks([25, 100, 600]); ax.set_xticklabels([25, 100, 600]); ax.minorticks_off(); ax.set_xlabel("Labeled ECGs (n)")
     ax.set_title(title, loc="left", fontsize=8.2); ax.grid(axis="y", color=C["grid"], lw=0.5); S["panel_label"](ax, "abcd"[k], x=-0.27)
     if k == 0: ax.set_ylabel("Macro-F1")
 h, l = fig.axes[0].get_legend_handles_labels(); fig.legend(h, l, loc="center", ncol=7, bbox_to_anchor=(0.5, 0.455), fontsize=6.4)

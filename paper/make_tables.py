@@ -108,7 +108,7 @@ write("Table2_main_results", ["Dataset", "B0", "ZS", "THR<br>(n = 100)", "S1<br>
       "not a confidence interval. NE, not evaluated. Each dataset uses its own label set, so compare read-outs within a dataset, not across datasets. "
       "SPH is the pre-registered validation site; CPSC test results were inspected repeatedly during method development. "
       "† Linear probe on the PULSE-7B hidden state; its layer and token were selected on all 600 development records, so at n = 100 the probe draws on "
-      "more labelled records than n. "
+      "more labeled records than n. "
       "^a^ Binary (normal/abnormal) and six-label tasks combined: n development records are split equally between the tasks (300 + 300 at n = 600), the "
       "test split has 400 + 400 records, and macro-F1 is computed over 8 classes on all 800 test records.")
 write("Table2B_bootstrap", ["Model", "Dataset", "Bootstrap mean Δ macro-F1 (S1 − B0)", "95% percentile interval"], Bt,

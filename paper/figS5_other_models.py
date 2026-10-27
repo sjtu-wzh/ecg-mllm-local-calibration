@@ -13,7 +13,7 @@ for k, (ax, (title, r, zs)) in enumerate(zip(axes, P)):
         ax.fill_between(SIZES, [cu[f"{key}@{n}"]["p2.5"] for n in SIZES], [cu[f"{key}@{n}"]["p97.5"] for n in SIZES], color=col, alpha=0.14, lw=0)
         ax.plot(SIZES, [cu[f"{key}@{n}"]["F1_mean"] for n in SIZES], color=col, marker="o", ms=2.6, label=lab)
     ax.axhline(r["B0"][0], color=C["B0"], ls=(0, (4, 2)), lw=1.0, label="Generated (B0)"); ax.axhline(r[zs][0], color=C["ZS"], ls=(0, (1, 1.5)), lw=1.0, label="Zero-shot P≥0.5")
-    ax.set_xscale("log"); ax.set_xticks([25, 100, 600]); ax.set_xticklabels([25, 100, 600]); ax.minorticks_off(); ax.set_xlabel("Labelled ECGs (n)")
+    ax.set_xscale("log"); ax.set_xticks([25, 100, 600]); ax.set_xticklabels([25, 100, 600]); ax.minorticks_off(); ax.set_xlabel("Labeled ECGs (n)")
     ax.set_title(title, loc="left", fontsize=8.3); ax.grid(axis="y", color=C["grid"], lw=0.5); S["panel_label"](ax, "abcd"[k], x=-0.25)
     ax.text(0.04, 0.93, f"prob. AUROC {r['prob_macroAUC']:.2f}", transform=ax.transAxes, ha="left", fontsize=6.2, color="#555555")
 axes[0].set_ylabel("Macro-F1"); h, l = axes[0].get_legend_handles_labels()

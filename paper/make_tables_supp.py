@@ -126,7 +126,7 @@ rows = [
     ["E2: all labels + all 11 evidence answers", f"{m3['S3']['F1']:.1f}", f"E2 − S1 {pct(bt['S3 - S1'])}", "Small gain for 2.2× questions per image", "Reported, not main method"],
     ["E2 + uncertainty gating (M4)", f"{m3['S3+M4(d=0.1)']['F1']:.1f}", f"development-selected δ routes {m3['S3+M4(d=0.1)']['uncertain_frac']:.0%} of records", "Gate degenerates to E2", "Not adopted"],
     ["Control: S1 protocol on B0 0/1 indicators", f"{st['control_b0_regression']['macroF1']:.1f}", f"B0 {st['control_b0_regression']['B0']:.1f}", "Gain needs the probabilities, not re-weighting of answers", "Control"],
-    ["Lead localisation by OCR (pilot)", "—", "lead names found per image (of 12): " + ", ".join(f"{OCRN[k]} {v['mean_leads_found']:.1f}" for k, v in ocr.items()),
+    ["Lead localization by OCR (pilot)", "—", "lead names found per image (of 12): " + ", ".join(f"{OCRN[k]} {v['mean_leads_found']:.1f}" for k, v in ocr.items()),
      "Lead labels not found reliably on ECGBench images", "Abandoned"],
 ]
 # transfer PTB-XL -> CPSC: every pre-specified variant; bootstrap contrasts exist for ZS, THR, S1 and E2 (clarity/stats_cpsc.py)
@@ -145,7 +145,7 @@ for k, name, status in TV:
 write("TableS4_exploratory", ["Variant", "CPSC test macro-F1", "Comparison [95% CI]", "Interpretation", "Status"], rows,
       "Rows above the transfer block: fitted on the 600-record CPSC development pool and evaluated once on the 1461-record test split (clarity/verify_stack.py, clarity/stats_cpsc.py). "
       "Transfer rows: fitted on the 1457 PTB-XL fit records (main text, Section 2.8) and applied unchanged to the CPSC test split, without CPSC labels; "
-      "EM re-estimates the label priors on the unlabelled CPSC test images (clarity/transfer.py). All transfer variants were specified in advance and all are shown. "
+      "EM re-estimates the label priors on the unlabeled CPSC test images (clarity/transfer.py). All transfer variants were specified in advance and all are shown. "
       f"B0 = {b0f:.1f}. Paired bootstrap over test records (B = 1000, clarity/stats_cpsc.py; point estimate = mean of the bootstrap differences) was computed for the contrasts shown with a CI; "
       "the other transfer rows give the observed difference only. These analyses were exploratory and are not used for any main claim. "
       "Variant codes E1–E3 replace the internal codes S2/S3/S4, and ZS/THR replace B1@0.5/B1@src (Table S6). "
@@ -157,7 +157,7 @@ mv = P4["mapping_variants"]
 rows = [
     ["P1", "Gain G = S1@600 − B0", f"CPSC {ci(P1['G_CPSC_600'])}; PTB raw {ci(P1['G_PTBraw_600'])}; DiD {ci(P1['DiD_600'])}; n* CPSC {P1['n_star']['CPSC']}, PTB not reached",
      "Neither P1 rule met (the PTB-XL gain interval spans the 3-point threshold); passed to P2"],
-    ["P2", "Case-mix standardisation (PTB reweighted to CPSC label-set mix)",
+    ["P2", "Case-mix standardization (PTB reweighted to CPSC label-set mix)",
      f"G_PTB,std {ci(P2['G_PTBstd_600'])}; R_std {ci(P2['R_std'], 2)}; CPSC→PTB mix {ci(P2['G_CPSC_to_PTBmix_600'])}; test-fold ESS ≥ {P2['ESS_test_min']:.0f}",
      "Inconclusive (R_std CI width > 0.8)"],
     ["P3", "Mechanism decomposition (read-out a / re-ranking c / operating point b / ≥1-label rule e)",
@@ -176,7 +176,7 @@ write("TableS5_domain_analysis", ["Analysis", "Question", "Estimates (macro-F1 p
       "ESS, effective sample size of the reweighted test fold; r_L, log ratio of the B0 call rate to the prevalence of label L (Spearman correlation across labels between arms). "
       "Candidate explanations: H_dom, image domain; H_prev, prevalence or case mix; H_task, the new 9-label prompt; H_label, label definition or concept difficulty. "
       "Mapping variants: L9, all 9 labels including ST elevation; L7_noSTE_noPAC, without ST elevation and PAC; norm_strict, PTB-XL NORM records kept only if NORM was the only label and recorded with 100% likelihood; "
-      "rbbb_irbbb, incomplete RBBB counted as RBBB; std_broad, ST depression also from non-specific ST change, digitalis effect, injury and ischaemia codes. "
+      "rbbb_irbbb, incomplete RBBB counted as RBBB; std_broad, ST depression also from non-specific ST change, digitalis effect, injury and ischemia codes. "
       "Pre-specified secondary analyses not implemented: "
       + "; ".join(re.sub(r"^S\d+_", "", x).replace("_", " ") for x in D["not_implemented"]) + ".")
 
@@ -186,7 +186,7 @@ rows = [
     ["E1 + B0", "S2H", "E1 + generated answer for that label", "clarity/verify_stack.py; results_m3.json"],
     ["E2", "S3", "Stack over all label P(yes) + all 11 evidence P(yes) (no clinical constraint)", "clarity/verify_stack.py, clarity/transfer.py, clarity/stats_cpsc.py; results_m3.json, results_transfer.json, stats_cpsc.json"],
     ["E2 + M4", "S3+M4(d=δ)", "E2 only for records whose S1 score lies within δ of its threshold, S1 elsewhere", "clarity/verify_stack.py; results_m3.json"],
-    ["S1/E2/E3 + EM", "S1+EM, S3+EM, S4+EM", "Read-out fitted on PTB-XL; label priors re-estimated by EM on the unlabelled CPSC images (Saerens et al. 2002)", "clarity/transfer.py; results_transfer.json"],
+    ["S1/E2/E3 + EM", "S1+EM, S3+EM, S4+EM", "Read-out fitted on PTB-XL; label priors re-estimated by EM on the unlabeled CPSC images (Saerens et al. 2002)", "clarity/transfer.py; results_transfer.json"],
     ["E3", "S4", "S1 + only the clinically linked evidence P(yes)", "clarity/verify_stack.py, clarity/stats_cpsc.py; results_m3.json, stats_cpsc.json"],
     ["ZS", "B1@0.5", "P(yes) ≥ 0.5 per label (no fitting)", "clarity/transfer.py, clarity/stats_cpsc.py; results_transfer.json, stats_cpsc.json"],
     ["THR", "B1@src (transfer); THR (learning curves)", "Per-label threshold on P(yes); in the transfer experiment the thresholds were selected on PTB-XL", "clarity/transfer.py, clarity/stats_cpsc.py; results_transfer.json, stats_cpsc.json"],

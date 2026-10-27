@@ -16,7 +16,7 @@ for k, (key, lab, col) in enumerate(ARMS):
     m = [cu[str(n)][0] for n in SIZES]; lo = [cu[str(n)][1] for n in SIZES]; hi = [cu[str(n)][2] for n in SIZES]
     a1.errorbar(x, m, yerr=[np.array(m) - lo, np.array(hi) - m], color=col, marker="o", ms=2.8, capsize=1.5, lw=1.1, label=lab)
 a1.axhline(0, color="#333333", lw=0.8); a1.set_xscale("log"); a1.set_xticks(TICKS); a1.set_xticklabels(TICKS); a1.minorticks_off()
-a1.set_xlabel("Labelled ECGs (n)"); a1.set_ylabel("Gain over B0 (Δ macro-F1)"); a1.legend(fontsize=6.3, loc="lower right")
+a1.set_xlabel("Labeled ECGs (n)"); a1.set_ylabel("Gain over B0 (Δ macro-F1)"); a1.legend(fontsize=6.3, loc="lower right")
 a1.set_title("Gain on out-of-domain vs in-domain images", loc="left", fontsize=8.5); a1.grid(axis="y", color=C["grid"], lw=0.5); S["panel_label"](a1, "a", x=-0.22)
 comp = [("a", "read-out"), ("c", "re-\nranking"), ("b", "operating\npoint"), ("e", "≥1-label\nrule")]
 x = np.arange(len(comp)); w = 0.26

@@ -17,7 +17,7 @@ ax.bar(range(len(SIZES)), d, color=[C["THR"] if v >= 0 else C["S1"] for v in d],
 ax.axhline(0, color="#333333", lw=0.8)
 ax.axvspan(-0.5, 2.5, color="#F2F2F2", zorder=0); ax.axvspan(3.5, 6.5, color="#F2F2F2", zorder=0)
 ax.text(1, max(d) + 0.8, "tested:\nTHR ≥ S1", ha="center", fontsize=6.2); ax.text(5, max(d) + 0.8, "tested:\nS1 > THR", ha="center", fontsize=6.2)
-ax.set_xticks(range(len(SIZES))); ax.set_xticklabels(SIZES, rotation=45); ax.set_xlabel("Labelled local ECGs (n)")
+ax.set_xticks(range(len(SIZES))); ax.set_xticklabels(SIZES, rotation=45); ax.set_xlabel("Labeled local ECGs (n)")
 ax.set_ylabel("THR − S1 (macro-F1)"); ax.set_ylim(min(d) - 1.5, max(d) + 4)
 ax.set_title("H4  label-budget rule", loc="left", fontsize=8.5); S["panel_label"](ax, "a", x=-0.3)
 
@@ -27,7 +27,7 @@ ax.axvspan(-0.5, 3.5, color="#F2F2F2", zorder=0); ax.axhline(0, color="#333333",
 ax.axhline(-3, color=C["down"], lw=0.8, ls=(0, (3, 2))); ax.text(-0.3, -3.6, "margin −3", ha="left", va="top", fontsize=6.2, color=C["down"])
 ax.errorbar(range(len(SIZES)), v[:, 0], yerr=[v[:, 0] - v[:, 1], v[:, 2] - v[:, 0]], fmt="o", ms=3.2, color=C["S1"], ecolor=C["S1"], elinewidth=1, capsize=2)
 ax.text(1.5, v[:, 2].max() + 1, "tested (n ≤ 200)", ha="center", fontsize=6.2)
-ax.set_xticks(range(len(SIZES))); ax.set_xticklabels(SIZES, rotation=45); ax.set_xlabel("Labelled local ECGs (n)")
+ax.set_xticks(range(len(SIZES))); ax.set_xticklabels(SIZES, rotation=45); ax.set_xlabel("Labeled local ECGs (n)")
 ax.set_ylabel("S1 − hidden-state probe (macro-F1)"); ax.set_title("H5  non-inferiority to probe", loc="left", fontsize=8.5)
 S["panel_label"](ax, "b", x=-0.3)
 
