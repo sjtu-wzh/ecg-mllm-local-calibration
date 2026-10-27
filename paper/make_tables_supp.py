@@ -184,3 +184,33 @@ if os.path.exists(os.path.join(ROOT, "outputs/clarity/robust_results.json")):
     rows += [["Descriptive", k.replace("S1_clean->", "S1 clean→").replace("_", " ").replace(" - ", " − "), ci(v), "—", "—"] for k, v in RR["descriptive"].items()]
     write("TableS8_robustness_contrasts", ["ID", "Contrast (800 test ECGs)", "Δ macro-F1 [95% CI]", "Decision rule", "Verdict"], rows,
           "Paired bootstrap over test records (B = 2000); the point estimate is the observed difference on the test records. No multiplicity correction (pre-specified).")
+
+
+# ---------- Table S9: operating points targeting sensitivity >= 0.90 (formerly main Table 4; clarity/clinical_eval.py + clinical_ci.py)
+NAMES = {"AF": "Atrial fibrillation", "I-AVB": "First-degree AV block", "STD": "ST depression", "PVC": "Premature ventricular complex",
+         "SB": "Sinus bradycardia", "STDEV": "ST deviation"}
+rows, n_below, n_exact = [], 0, 0
+for d, dn, sec in (("cpsc", "CPSC 2018", "A"), ("sph", "SPH", "B")):
+    cl, cc = J(f"outputs/clarity/clinical_{d}.json"), J(f"outputs/clarity/clinical_ci_{d}.json")
+    rows.append([f"**{sec}. {dn} test split ({cl['n_test']} ECGs)**", "", "", "", "", ""])
+    for L, o in cl["operating"].items():
+        k = cc["operating_counts"][L]
+        rows.append([f"*{NAMES[L]} ({L}): {k['n_pos']}/{k['n']} positive ({100 * k['n_pos'] / k['n']:.1f}%)*", "", "", "", "", ""])
+        for m, mn in (("B0", "Generated answer (B0)"), ("S1", "S1"), ("PROBE", "Hidden-state probe")):
+            cells = []
+            for q in ("sens", "spec", "PPV", "NPV"):
+                v = o[m][q]; mark = ""
+                if v[1] == v[2]:                       # degenerate bootstrap interval: report the exact interval instead
+                    lo, hi = k[m]["clopper_pearson"][q]; mark = "‡"; n_exact += 1
+                else: lo, hi = v[1], v[2]
+                if q == "sens" and m != "B0" and v[0] < 0.90: mark += "†"; n_below += 1
+                cells.append(f"{100 * v[0]:.1f}{mark} ({100 * lo:.1f}–{100 * hi:.1f})")
+            rows.append([mn, "—" if o[m]["threshold"] is None else f"{o[m]['threshold']:.3f}", *cells])
+write("TableS9_operating_points", ["Read-out", "Threshold τ", "Sensitivity, % (95% CI)", "Specificity, % (95% CI)", "PPV, % (95% CI)", "NPV, % (95% CI)"], rows,
+      "S1 and probe thresholds were selected on out-of-fold predictions in the 600-record development pool: for each diagnosis and read-out, "
+      "the highest threshold on a 0.001–0.999 grid (step 0.001) that reached a sensitivity of at least 0.90 was retained and applied unchanged "
+      "to the held-out test split. The 90% target illustrates a high-sensitivity strategy; it is not a clinically validated requirement, and "
+      "it does not guarantee the same sensitivity on the test split. B0 is the generated answer, evaluated as generated (no threshold). "
+      f"These thresholds use a different objective from the F1-oriented analyses. †Observed test sensitivity below 90% ({n_below} of 16 "
+      "S1 and probe entries). 95% CI: percentile bootstrap over test records (B = 1000); ‡the bootstrap interval was degenerate (all "
+      f"replicates equal), so the Clopper–Pearson exact interval is shown ({n_exact} cells). Counts: clarity/clinical_ci.py.")

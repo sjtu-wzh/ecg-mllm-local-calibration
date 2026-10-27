@@ -36,7 +36,7 @@ OUT_KEEP = ["b1_cpsc_dev.jsonl", "b1_cpsc_test.jsonl", "b1_cpsc_all.jsonl", "ev_
             "m1_ocr_pilot.json", "pulse_cache_check.json", "qwen_cache_check.json", "mg_batch_check_cpsc.json",
             "mg_batch_check_csnml.json", "mg_batch_check_g12ml.json", "mg_verify_cpsc.json", "mg_verify_csnml.json",
             "baselines_cpsc.json", "baselines_csn.json", "baselines_g12.json", "baselines_sph.json", "ml_curve_sph.json",
-            "mg_ml_curve_sph.json", "b1_sphml_all.jsonl", "mg_b1_sphml_all.jsonl", "clinical_cpsc.json", "clinical_sph.json",
+            "mg_ml_curve_sph.json", "b1_sphml_all.jsonl", "mg_b1_sphml_all.jsonl", "clinical_cpsc.json", "clinical_sph.json", "clinical_ci_cpsc.json", "clinical_ci_sph.json",
             "code15_bootstrap.json", "qwen_bootstrap_cpsc.json", "prereg_sph_freeze.json", "prereg_sph_verdicts.txt",
             "prereg_robust_freeze.json", "robust_results.json", "domain_rerun_check.json", "learning_curve.png", "learning_curves_cpsc_vs_code15.png", "learning_curves_3ood.png"]
 files += [f"outputs/clarity/{f}" for f in OUT_KEEP]

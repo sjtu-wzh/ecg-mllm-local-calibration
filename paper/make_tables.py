@@ -137,25 +137,23 @@ rows = [
 write("Table3_preregistered", ["Hypothesis", "Contrast (SPH test, n = 2312)", "Estimate", "Decision rule", "Verdict"], rows,
       "Pre-registration: docs/prereg_sph.md; code, data and images frozen by md5 before any SPH model output (outputs/clarity/prereg_sph_freeze.json).")
 
-# ---------- Table 4: operating points targeting sensitivity >= 0.90 (threshold chosen on pool OOF predictions)
-NAMES = {"AF": "Atrial fibrillation", "I-AVB": "1st-degree AV block", "STD": "ST depression", "PVC": "Premature ventricular complex",
-         "SB": "Sinus bradycardia", "STDEV": "ST deviation"}
-fmt = lambda v: f"{v[0]:.2f} ({v[1]:.2f}–{v[2]:.2f})"
+# ---------- Table 4: calibration and discrimination of the probability read-outs (macro over labels; CI from clarity/clinical_ci.py)
 rows = []
-for d, dn in (("cpsc", "CPSC"), ("sph", "SPH*")):
-    cl = J(f"outputs/clarity/clinical_{d}.json")
-    for L, o in cl["operating"].items():
-        for m, mn in (("B0", "Generated answer (B0)"), ("S1", "S1"), ("PROBE", "Hidden-state probe")):
-            rows.append([dn, NAMES[L], mn, fmt(o[m]["sens"]), fmt(o[m]["spec"]), fmt(o[m]["PPV"]), fmt(o[m]["NPV"])])
-write("Table4_operating_points", ["Dataset", "Diagnosis", "Read-out", "Sensitivity", "Specificity", "PPV", "NPV"], rows,
-      "S1 and probe thresholds were chosen on out-of-fold predictions in the 600-record pool to reach sensitivity ≥ 0.90, then applied unchanged to the test split. "
-      "B0 is the generated answer (fixed operating point). 95% CI: bootstrap over test records (B = 1000). *SPH: pre-registered new site.")
-
-# ---------- Table 5: probability calibration (macro over labels)
-rows = []
-for d, dn in (("cpsc", "CPSC"), ("sph", "SPH*")):
-    cal = J(f"outputs/clarity/clinical_{d}.json")["calibration"]
+for d, dn in (("cpsc", "CPSC"), ("sph", "SPH")):
+    cl, cc = J(f"outputs/clarity/clinical_{d}.json"), J(f"outputs/clarity/clinical_ci_{d}.json")
+    rows.append([f"**{dn} (test N = {cc['n_test']}; K = {cc['n_labels']} labels)**", "", "", ""])
     for m, mn in (("RAW", "Raw P(yes)"), ("S1", "S1"), ("PROBE", "Hidden-state probe")):
-        mm = cal[m]["macro"]; rows.append([dn, mn, f"{mm['ECE']:.3f}", f"{mm['Brier']:.4f}", f"{mm['AUROC']:.3f}"])
-write("Table5_calibration", ["Dataset", "Probability", "ECE (macro)", "Brier (macro)", "AUROC (macro)"], rows,
-      "ECE with 10 equal-width bins per label; macro = mean over labels. S1 and probe fitted on the 600-record pool. *SPH: pre-registered new site.")
+        mm, ci_ = cl["calibration"][m]["macro"], cc["calibration_ci"]["per_readout"][m]
+        cell = lambda k, f: f"{mm[k]:{f}}<br>({ci_[k]['ci95'][0]:{f}}–{ci_[k]['ci95'][1]:{f}})"
+        rows.append([mn, f"{mm['ECE']:.3f}", cell("Brier", ".4f"), cell("AUROC", ".3f")])   # no ECE interval: see note
+cb = J("outputs/clarity/clinical_ci_cpsc.json")["calibration_ci"]
+write("Table4_calibration", ["Probability read-out", "Macro ECE ↓", "Macro Brier ↓", "Macro AUROC ↑"], rows,
+      "Each metric was computed separately for each label and then averaged with equal weight across labels. ECE used 10 equal-width "
+      "probability bins per label and measures agreement between predicted probabilities and observed frequencies; the Brier score "
+      "measures overall probabilistic accuracy and AUROC measures discrimination. Lower ECE and Brier scores and higher AUROC are better. "
+      "S1 and the probe were fitted on the 600 development ECGs and evaluated on the fixed held-out test split; Raw P(yes) needs no local "
+      f"fitting. 95% CI for Brier and AUROC: percentile bootstrap over test records (B = {cb['B']}; fitted models fixed, so the intervals "
+      "reflect test-set sampling only; one record per patient). ECE is shown without an interval because its bootstrap distribution was "
+      "biased upwards (resampling adds noise to every bin, and for the well-calibrated read-outs the point estimate fell below the "
+      "bootstrap interval). The reliability diagrams in Figure 5 pool label–record pairs and therefore aggregate "
+      "differently from the macro-averaged ECE. SPH is the pre-registered validation site; this table is a secondary, descriptive analysis.")
