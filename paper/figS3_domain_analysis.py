@@ -1,6 +1,6 @@
 """Supplementary Figure S3 — Pre-specified in-domain vs out-of-domain analysis (same CPSC 9-label prompt; frozen PULSE-7B).
 a Gain G(n) = macro-F1(S1@n) - macro-F1(B0) over 8 labels (STE excluded) on CPSC (out-of-domain) and PTB-XL fold-10 images
-  (in-domain; raw and re-weighted to CPSC case mix), 20 patient-grouped partitions, pooled cluster bootstrap 95% CI.
+  (in-domain; raw and re-weighted to CPSC case mix), 20 partitions per arm (patient-grouped for PTB-XL, record-level for CPSC), pooled cluster bootstrap 95% CI.
 b Decomposition of G(600): read-out (a), re-ranking (c), operating point (b), at-least-one rule (e), macro over labels.
 Data: outputs/clarity/domain_results.json (plan: preregistration_domain.json)"""
 import os, runpy

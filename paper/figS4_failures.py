@@ -1,4 +1,4 @@
-"""Supplementary Figure S4 — Where local calibration does not help.
+"""Supplementary Figure S4 — Where local calibration helped little or not at all.
 a CODE-15% (in-domain for PULSE, native training prompts; 800 test items): learning curves never reach the generated answer.
 b Zero-shot transfer of calibrators fitted on PTB-XL images (no CPSC labels) to the CPSC test split.
 c Descriptive overview (formerly Figure 5b): generated-answer macro-F1 (x) against probability macro-AUROC (y); marker area = gain
@@ -11,7 +11,7 @@ S = runpy.run_path(os.path.join(os.path.dirname(os.path.abspath(__file__)), "fig
 TICKS = [25, 50, 100, 200, 400, 600]  # 300 omitted: collides with 400 on a log axis
 plt, C, MM, J, SIZES = S["plt"], S["C"], S["MM"], S["J"], S["SIZES"]
 c = J("outputs/clarity/code15_curve.json")["results"]; t = J("outputs/clarity/results_transfer.json")["cpsc_test"]
-fig, (a1, a2, a3) = plt.subplots(1, 3, figsize=(183 * MM, 64 * MM), gridspec_kw=dict(width_ratios=[1.0, 0.85, 1.05], wspace=0.95))
+fig, (a1, a2, a3) = plt.subplots(1, 3, figsize=(183 * MM, 64 * MM), gridspec_kw=dict(width_ratios=[1.0, 0.85, 1.05], wspace=1.05))
 for key, col, lab in (("THR", C["THR"], "Threshold only"), ("S1", C["S1"], "S1"), ("S1B0", C["COMBO"], "S1 + generated answer (exploratory)")):
     a1.fill_between(SIZES, [c["curve"][f"{key}@{n}"]["F1_p2.5"] for n in SIZES], [c["curve"][f"{key}@{n}"]["F1_p97.5"] for n in SIZES], color=col, alpha=0.13, lw=0)
     a1.plot(SIZES, [c["curve"][f"{key}@{n}"]["F1_mean"] for n in SIZES], color=col, marker="o", ms=2.8, label=lab)
@@ -20,13 +20,17 @@ a1.axhline(c["B1@0.5 (zero-shot)"]["F1"], color=C["ZS"], ls=(0, (1, 1.5)), lw=1.
 a1.set_xscale("log"); a1.set_xticks(TICKS); a1.set_xticklabels(TICKS); a1.minorticks_off(); a1.set_xlabel("Labelled ECGs (n)"); a1.set_ylabel("Macro-F1")
 a1.legend(fontsize=6.2, loc="upper center", bbox_to_anchor=(0.5, -0.22), ncol=2); a1.set_title("CODE-15% (in-domain)", loc="left", fontsize=8.5); a1.grid(axis="y", color=C["grid"], lw=0.5)
 S["panel_label"](a1, "a", x=-0.2)
-V = [("B0 (official generation)", "Generated (B0)", C["B0"]), ("B1@0.5", "P(yes) ≥ 0.5", C["ZS"]), ("B1@src", "P(yes), PTB-XL thresholds", C["THR"]),
-     ("S1", "S1 fitted on PTB-XL", C["S1"]), ("S1+EM", "S1 + EM prior shift", C["S1"]), ("S3", "E2 on PTB-XL", C["COMBO"]), ("S3+EM", "E2 + EM prior shift", C["COMBO"])]  # keys: internal codes (Table S6)
+E3C = "#C48DBC"   # E3 shares the E2 family colour, lighter
+V = [("B0 (official generation)", "Generated (B0)", C["B0"]), ("B1@0.5", "ZS, P(yes) ≥ 0.5 (no fitting)", C["ZS"]), ("B1@src", "THR (PTB-XL thresholds)", C["THR"]),
+     ("S1", "S1 fitted on PTB-XL", C["S1"]), ("S1+EM", "S1 + EM prior shift", C["S1"]), ("S4", "E3 fitted on PTB-XL", E3C), ("S4+EM", "E3 + EM prior shift", E3C),
+     ("S3", "E2 fitted on PTB-XL", C["COMBO"]), ("S3+EM", "E2 + EM prior shift", C["COMBO"])]  # keys: internal codes (Table S6)
 y = np.arange(len(V))[::-1]
-a2.barh(y, [t[k]["F1"] for k, _, _ in V], color=[c_ for *_, c_ in V], height=0.62, alpha=0.9)
-for yy, (k, _, _) in zip(y, V): a2.text(t[k]["F1"] - 0.4, yy, f"{t[k]['F1']:.1f}", va="center", ha="right", fontsize=6.3, color="white", fontweight="bold")
+bars = a2.barh(y, [t[k]["F1"] for k, _, _ in V], color=[c_ for *_, c_ in V], height=0.62, alpha=0.9)
+for b, (k, _, _) in zip(bars, V):
+    if k.endswith("+EM"): b.set_hatch("////"); b.set_edgecolor("white"); b.set_linewidth(0)
+for yy, (k, _, _) in zip(y, V): a2.text(t[k]["F1"] + 0.4, yy, f"{t[k]['F1']:.1f}", va="center", ha="left", fontsize=6.3, color="#222222", zorder=5, bbox=dict(fc="white", ec="none", pad=0.4))
 a2.axvline(t["B0 (official generation)"]["F1"], color=C["B0"], ls=(0, (4, 2)), lw=0.9)
-a2.set_yticks(y); a2.set_yticklabels([l for _, l, _ in V], fontsize=6.6); a2.set_xlim(40, 64); a2.set_xlabel("CPSC test macro-F1")
+a2.set_yticks(y); a2.set_yticklabels([l for _, l, _ in V], fontsize=6.6); a2.set_xlim(40, 66); a2.set_xlabel("CPSC test macro-F1")
 a2.set_title("Transferred PTB-XL → CPSC", loc="left", fontsize=8.5); S["panel_label"](a2, "b", x=-0.62)
 
 # ---------- c: descriptive overview of conditions (former Figure 5b)

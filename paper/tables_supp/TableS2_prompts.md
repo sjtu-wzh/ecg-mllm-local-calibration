@@ -2,7 +2,7 @@
 |---|---|---|---|
 | B0 (generated answer) | All models; CPSC, CSN, G12EC, SPH, PTB-XL | You are provided with an ECG signal image. Please classify the ECG image into the following diagnostic statement classes:\n{ABBR1}({name1}), {ABBR2}({name2}), …\nDirectly output the class name and separate with a semicolon. | ECGBench CPSC template; label list replaced per dataset. Output parsed by the official scorer. |
 | B0, CODE-15% | PULSE-7B | Official ECGBench CODE-15% prompts (binary normal/abnormal and 6-label multi-label) | Native (training) prompt |
-| Yes/No label question (ZS, THR, S1) | All models | You are provided with an ECG signal image. Does this ECG show {name} ({abbr})? Answer Yes or No. | P(yes) = softmax over the 'Yes'/'No' next-token logits; image prefix KV-cached and reused across labels. |
+| Yes/No label question (ZS, THR, S1) | All models | You are provided with an ECG signal image. Does this ECG show {name} ({abbr})? Answer Yes or No. | P(yes) = summed next-token probability of 'Yes'/'yes'/'YES' divided by that of the Yes and No variants together; image prefix KV-cached and reused across labels. |
 | Neutral prompt (hidden-state probe) | PULSE-7B | Describe the ECG. | One forward pass per image; no diagnosis name in the prompt. Features: hidden state of the selected layer at the last prompt token (or mean over image tokens; Figure S6e). |
 | Evidence question: irregular | PULSE-7B, CPSC and PTB-XL (exploratory) | You are provided with an ECG signal image. Is the rhythm irregularly irregular? Answer Yes or No. | Table S4 (variants E1–E3) |
 | Evidence question: no_p | PULSE-7B, CPSC and PTB-XL (exploratory) | You are provided with an ECG signal image. Are P waves absent and replaced by fibrillatory waves? Answer Yes or No. | Table S4 (variants E1–E3) |
@@ -15,8 +15,8 @@
 | Evidence question: st_elev | PULSE-7B, CPSC and PTB-XL (exploratory) | You are provided with an ECG signal image. Is there ST-segment elevation in two or more contiguous leads? Answer Yes or No. | Table S4 (variants E1–E3) |
 | Evidence question: st_dep | PULSE-7B, CPSC and PTB-XL (exploratory) | You are provided with an ECG signal image. Is there ST-segment depression in two or more contiguous leads? Answer Yes or No. | Table S4 (variants E1–E3) |
 | Evidence question: t_inv | PULSE-7B, CPSC and PTB-XL (exploratory) | You are provided with an ECG signal image. Are there T wave inversions? Answer Yes or No. | Table S4 (variants E1–E3) |
-| Robustness: Yes/No paraphrase QA | PULSE-7B, SPH (Experiment 3) | Based on this 12-lead ECG image, is {name} ({abbr}) present? Answer Yes or No. | Table S8, R3 |
-| Robustness: Yes/No paraphrase QB | PULSE-7B, SPH (Experiment 3) | Look at the ECG image. Would you diagnose {name} ({abbr})? Please answer with Yes or No. | Table S8, R3 |
-| Robustness: generated-answer paraphrase P1 | PULSE-7B, SPH (Experiment 3) | This is a 12-lead ECG image. Which of the following diagnoses are present?\n{classes}\nList every class that applies, using the abbreviations only, separated by semicolons. | Table S8, R4 |
+| Robustness: Yes/No paraphrase QA | PULSE-7B, SPH (robustness experiment) | Based on this 12-lead ECG image, is {name} ({abbr}) present? Answer Yes or No. | Table S8, R3 |
+| Robustness: Yes/No paraphrase QB | PULSE-7B, SPH (robustness experiment) | Look at the ECG image. Would you diagnose {name} ({abbr})? Please answer with Yes or No. | Table S8, R3 |
+| Robustness: generated-answer paraphrase P1 | PULSE-7B, SPH (robustness experiment) | This is a 12-lead ECG image. Which of the following diagnoses are present?\n{classes}\nList every class that applies, using the abbreviations only, separated by semicolons. | Table S8, R4 |
 
 Chat templates: PULSE-7B uses the LLaVA-v1.6 Vicuna template; Qwen2-VL and MedGemma use their own processor chat templates with the same user text.

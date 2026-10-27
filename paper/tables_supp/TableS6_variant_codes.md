@@ -2,10 +2,12 @@
 |---|---|---|---|
 | E1 | S2 | Per-label stack: label P(yes) + its clinically linked evidence P(yes) | clarity/verify_stack.py; results_m3.json |
 | E1 + B0 | S2H | E1 + generated answer for that label | clarity/verify_stack.py; results_m3.json |
-| E2 | S3 | Stack over all label P(yes) + all 11 evidence P(yes) (no clinical constraint) | verify_stack.py, transfer.py, stats_cpsc.py; results_m3.json, results_transfer.json, stats_cpsc.json |
+| E2 | S3 | Stack over all label P(yes) + all 11 evidence P(yes) (no clinical constraint) | clarity/verify_stack.py, clarity/transfer.py, clarity/stats_cpsc.py; results_m3.json, results_transfer.json, stats_cpsc.json |
 | E2 + M4 | S3+M4(d=δ) | E2 only for records whose S1 score lies within δ of its threshold, S1 elsewhere | clarity/verify_stack.py; results_m3.json |
-| E2 + EM | S3+EM | E2 fitted on PTB-XL; label priors re-estimated by EM on the unlabelled CPSC images (Saerens et al. 2002) | clarity/transfer.py; results_transfer.json |
-| E3 | S4 | S1 + only the clinically linked evidence P(yes) | verify_stack.py, stats_cpsc.py; results_m3.json, stats_cpsc.json |
+| S1/E2/E3 + EM | S1+EM, S3+EM, S4+EM | Read-out fitted on PTB-XL; label priors re-estimated by EM on the unlabelled CPSC images (Saerens et al. 2002) | clarity/transfer.py; results_transfer.json |
+| E3 | S4 | S1 + only the clinically linked evidence P(yes) | clarity/verify_stack.py, clarity/stats_cpsc.py; results_m3.json, stats_cpsc.json |
+| ZS | B1@0.5 | P(yes) ≥ 0.5 per label (no fitting) | clarity/transfer.py, clarity/stats_cpsc.py; results_transfer.json, stats_cpsc.json |
+| THR | B1@src (transfer); THR (learning curves) | Per-label threshold on P(yes); in the transfer experiment the thresholds were selected on PTB-XL | clarity/transfer.py, clarity/stats_cpsc.py; results_transfer.json, stats_cpsc.json |
 | H (unchanged) | H | Per-label P(yes) + generated answer, no cross-label terms | clarity/verify_stack.py; results_m3.json |
 | S1 (unchanged) | S1 | Main read-out: logistic regression per label on all label logits | all scripts |
 
